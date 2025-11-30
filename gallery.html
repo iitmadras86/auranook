@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Aura Nook - Inspiration &amp; Case Studies</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0a47c2",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#101623",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark">
+    <div class="relative flex min-h-screen w-full flex-col">
+        <!-- TopNavBar -->
+        <header
+            class="sticky top-0 z-50 flex items-center justify-center border-b border-solid border-white/10 bg-background-dark/80 backdrop-blur-md px-4 sm:px-8">
+            <div class="flex h-16 w-full max-w-7xl items-center justify-between">
+                <div class="flex items-center gap-4 text-white">
+                    <div class="size-6">
+                        <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.8261 17.4264C16.7203 18.1174 20.2244 18.5217 24 18.5217C27.7756 18.5217 31.2797 18.1174 34.1739 17.4264C36.9144 16.7722 39.9967 15.2331 41.3563 14.1648L24.8486 40.6391C24.4571 41.267 23.5429 41.267 23.1514 40.6391L6.64374 14.1648C8.00331 15.2331 11.0856 16.7722 13.8261 17.4264Z"
+                                fill="currentColor"></path>
+                            <path clip-rule="evenodd"
+                                d="M39.998 12.236C39.9944 12.2537 39.9875 12.2845 39.9748 12.3294C39.9436 12.4399 39.8949 12.5741 39.8346 12.7175C39.8168 12.7597 39.7989 12.8007 39.7813 12.8398C38.5103 13.7113 35.9788 14.9393 33.7095 15.4811C30.9875 16.131 27.6413 16.5217 24 16.5217C20.3587 16.5217 17.0125 16.131 14.2905 15.4811C12.0012 14.9346 9.44505 13.6897 8.18538 12.8168C8.17384 12.7925 8.16216 12.767 8.15052 12.7408C8.09919 12.6249 8.05721 12.5114 8.02977 12.411C8.00356 12.3152 8.00039 12.2667 8.00004 12.2612C8.00004 12.261 8 12.2607 8.00004 12.2612C8.00004 12.2359 8.0104 11.9233 8.68485 11.3686C9.34546 10.8254 10.4222 10.2469 11.9291 9.72276C14.9242 8.68098 19.1919 8 24 8C28.8081 8 33.0758 8.68098 36.0709 9.72276C37.5778 10.2469 38.6545 10.8254 39.3151 11.3686C39.9006 11.8501 39.9857 12.1489 39.998 12.236ZM4.95178 15.2312L21.4543 41.6973C22.6288 43.5809 25.3712 43.5809 26.5457 41.6973L43.0534 15.223C43.0709 15.1948 43.0878 15.1662 43.104 15.1371L41.3563 14.1648C43.104 15.1371 43.1038 15.1374 43.104 15.1371L43.1051 15.135L43.1065 15.1325L43.1101 15.1261L43.1199 15.1082C43.1276 15.094 43.1377 15.0754 43.1497 15.0527C43.1738 15.0075 43.2062 14.9455 43.244 14.8701C43.319 14.7208 43.4196 14.511 43.5217 14.2683C43.6901 13.8679 44 13.0689 44 12.2609C44 10.5573 43.003 9.22254 41.8558 8.2791C40.6947 7.32427 39.1354 6.55361 37.385 5.94477C33.8654 4.72057 29.133 4 24 4C18.867 4 14.1346 4.72057 10.615 5.94478C8.86463 6.55361 7.30529 7.32428 6.14419 8.27911C4.99695 9.22255 3.99999 10.5573 3.99999 12.2609C3.99999 13.1275 4.29264 13.9078 4.49321 14.3607C4.60375 14.6102 4.71348 14.8196 4.79687 14.9689C4.83898 15.0444 4.87547 15.1065 4.9035 15.1529C4.91754 15.1762 4.92954 15.1957 4.93916 15.2111L4.94662 15.223L4.95178 15.2312ZM35.9868 18.996L24 38.22L12.0131 18.996C12.4661 19.1391 12.9179 19.2658 13.3617 19.3718C16.4281 20.1039 20.0901 20.5217 24 20.5217C27.9099 20.5217 31.5719 20.1039 34.6383 19.3718C35.082 19.2658 35.5339 19.1391 35.9868 18.996Z"
+                                fill="currentColor" fill-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Aura Nook</h2>
+                </div>
+                <div class="flex flex-1 items-center justify-end gap-8">
+                    <nav class="hidden items-center gap-9 md:flex">
+                        <a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors"
+                            href="index.html">Home</a>
+                        <a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors"
+                            href="products.html">Products</a>
+                        <a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors"
+                            href="gallery.html">Gallery</a>
+                        <a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors"
+                            href="blog.html">Resources</a>
+                        <a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors"
+                            href="about.html">About Us</a>
+                        <a class="text-white/80 hover:text-white text-sm font-medium leading-normal transition-colors"
+                            href="contact.html">Contact</a>
+                    </nav>
+                    <a href="contact.html"
+                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+                        <span class="truncate">Request a Quote</span>
+                    </a>
+                    <button class="md:hidden text-white p-2 ml-4">
+                        <span class="material-symbols-outlined text-3xl">menu</span>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu"
+                class="hidden absolute top-full left-0 w-full bg-background-dark border-b border-white/10 p-4 flex flex-col gap-4 shadow-lg md:hidden z-50">
+                <a href="index.html" class="text-lg font-medium text-white hover:text-primary">Home</a>
+                <a href="products.html" class="text-lg font-medium text-white hover:text-primary">Products</a>
+                <a href="gallery.html" class="text-lg font-medium text-white hover:text-primary">Gallery</a>
+                <a href="blog.html" class="text-lg font-medium text-white hover:text-primary">Resources</a>
+                <a href="about.html" class="text-lg font-medium text-white hover:text-primary">About Us</a>
+                <a href="contact.html" class="text-lg font-medium text-white hover:text-primary">Contact</a>
+            </div>
+    </div>
+    </header>
+    <main class="flex flex-1 flex-col items-center">
+        <div class="w-full max-w-7xl px-4 sm:px-8 py-10 sm:py-16">
+            <!-- Hero Section -->
+            <section class="mb-10 sm:mb-16">
+                <div class="@container">
+                    <div class="flex min-h-[480px] flex-col gap-6 rounded-xl bg-cover bg-center bg-no-repeat p-8 text-center items-center justify-center"
+                        data-alt="A luxurious, modern living room with large windows and high-end furniture, showcasing premium wall panels and flooring."
+                        style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAEk4IHD4pfcJkUsCWcNMh29RM-lBU7DeKqAyENqh5RpPQU_r2YR1OW6R6uXrnbXFe2aHEsdU2RznKJWRFZSPLiLCF1kjMzgw-lt42wKw83pTOgsxgSnxNpC8ZUlYFhk67a733X_ESG4ZG1WWpSwmcSQcsiXj7zBPNDAdFL7nUinIvLhpsFAgICeuziGQGfghOJxH9buvH8MSpTAVIPcIGNLe43E9Z8ajlKiFn_sK4yahFIJRFEvnHYgaHvsKuaTVApCWp64JNUrOM");'>
+                        <div class="flex flex-col gap-4 max-w-2xl">
+                            <h1
+                                class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                                Design Inspiration Realized
+                            </h1>
+                            <h2
+                                class="text-white/90 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                                Explore stunning interiors and discover the transformative power of Aura Nook
+                                materials in real-world applications.
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Search and Filter Bar -->
+            <section
+                class="sticky top-[65px] z-40 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md -mx-4 sm:-mx-8 px-4 sm:px-8 py-4 mb-6">
+                <div class="flex flex-col sm:flex-row gap-4 items-center w-full max-w-7xl mx-auto">
+                    <div class="flex-grow w-full">
+                        <label class="flex flex-col min-w-40 h-12 w-full">
+                            <div class="flex w-full flex-1 items-stretch rounded-full h-full">
+                                <div
+                                    class="text-[#90a4cb] flex bg-[#222f49] items-center justify-center pl-4 rounded-l-full">
+                                    <span class="material-symbols-outlined text-2xl">search</span>
+                                </div>
+                                <input
+                                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-full text-white focus:outline-0 focus:ring-0 border-none bg-[#222f49] h-full placeholder:text-[#90a4cb] px-4 text-base font-normal leading-normal"
+                                    placeholder="Search projects by material, style, or application..." value="" />
+                            </div>
+                        </label>
+                    </div>
+                    <div class="flex gap-3 w-full sm:w-auto">
+                        <button
+                            class="flex h-12 flex-grow sm:flex-grow-0 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#222f49] pl-4 pr-3">
+                            <p class="text-white text-sm font-medium leading-normal">Filter by Product</p>
+                            <span class="material-symbols-outlined text-white text-2xl">expand_more</span>
+                        </button>
+                        <button
+                            class="flex h-12 flex-grow sm:flex-grow-0 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#222f49] pl-4 pr-3">
+                            <p class="text-white text-sm font-medium leading-normal">Filter by Application</p>
+                            <span class="material-symbols-outlined text-white text-2xl">expand_more</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- Image Grid -->
+            <section>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                    <div class="group relative aspect-[3/4] overflow-hidden rounded-xl">
+                        <div class="bg-cover bg-center flex flex-col justify-end w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110"
+                            data-alt="A minimalist loft apartment in a downtown high-rise building, featuring light wood flooring and concrete walls."
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCE4BIswep25WyIFQRAIuLBdny9aUY5W4VaxeQTO7tJyWiCf0o-F2JDt-GGcw8uX_VVw8NoeeTxee3Y4JTPQ_U1VIDJJDIygHRnccWx66_teTOSNcDc65fEFciTyOyuF9msGHD1tVIErWYDRoWUyAblTgZqe7z5bGqaIwsYeOyBqwh-cRBJqiFtAt4nTkN449-j4t4qXp6P4hODTLvWyvWvBOr5Q28T4W_wkYLD-hgVtq_m6iZ3Z3BS5juRl-pZzh1uqjRFbDNNDYE");'>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent p-4 flex flex-col justify-end">
+                            <p class="text-white text-base font-bold leading-tight line-clamp-2">The Minimalist
+                                Loft, Downtown</p>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-black/70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out p-4">
+                            <h3 class="text-white text-lg font-bold text-center">The Minimalist Loft</h3>
+                            <p class="text-white/80 text-sm mb-4">SPC Flooring</p>
+                            <button class="bg-primary text-white h-10 px-5 rounded-full text-sm font-bold">View
+                                Project</button>
+                        </div>
+                    </div>
+                    <div class="group relative aspect-[3/4] overflow-hidden rounded-xl">
+                        <div class="bg-cover bg-center flex flex-col justify-end w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110"
+                            data-alt="A grand corporate headquarters lobby with a high ceiling, marble reception desk, and large Polygranite wall panels."
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBUsMS6CBVb1ix6Ielk9cV1AsJo06fRrJiSDujOTVUdnbM2j-AGWT8Rdp139S674q9JGTadN2HRtt6lYHQ4dfS4nRoaHvhUSgUfrUxlXfUbOrSi0u0tOpuixfBlPJ03uS9g9w_N6jd1fPMpmO1e47D1CBYe8ktnecKZHnSB98dB2GD9Sfy6_3ToSKpLVL_QWFwS2oKQkfhnoRwQpqpDFU5R2FrlGvxNZhOacPuqBPlGznK53VsmkDV-qlq_8UTUppJN4n5uR5RKGq8");'>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent p-4 flex flex-col justify-end">
+                            <p class="text-white text-base font-bold leading-tight line-clamp-2">Corporate
+                                Headquarters Lobby</p>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-black/70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out p-4">
+                            <h3 class="text-white text-lg font-bold text-center">Corporate Lobby</h3>
+                            <p class="text-white/80 text-sm mb-4">Polygranite</p>
+                            <button class="bg-primary text-white h-10 px-5 rounded-full text-sm font-bold">View
+                                Project</button>
+                        </div>
+                    </div>
+                    <div class="group relative aspect-[3/4] overflow-hidden rounded-xl">
+                        <div class="bg-cover bg-center flex flex-col justify-end w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110"
+                            data-alt="A serene residential bathroom with a walk-in shower, freestanding tub, and textured 3D wall panels."
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBsfiDi6_d-8rwPdn3jKMYTE2foY6IaCTLpfuJQxuYfT_ANmwciLpUycg1LBaa-NFXaAiaKz_2mGRRRzjrS-LUGASEyMOnYynTr_55MhYZOvBqyA61j-zbAOmVMrdyL2UezPQH93XDTjh_pRUuuOnMXD3eQmUJDqtwfsIu7mRyXYq7ZEzYP3-eV0XkuLukBinWWnWRv5USZl5R0zV_WlRuyErqDUDLwlwip95n2jkeX8POBuBD9f8aigR2ujFi30e3-yW8d5TZDZiM");'>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent p-4 flex flex-col justify-end">
+                            <p class="text-white text-base font-bold leading-tight line-clamp-2">Serene Residential
+                                Bathroom</p>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-black/70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out p-4">
+                            <h3 class="text-white text-lg font-bold text-center">Serene Bathroom</h3>
+                            <p class="text-white/80 text-sm mb-4">3D Wall Panels</p>
+                            <button class="bg-primary text-white h-10 px-5 rounded-full text-sm font-bold">View
+                                Project</button>
+                        </div>
+                    </div>
+                    <div class="group relative aspect-[3/4] overflow-hidden rounded-xl">
+                        <div class="bg-cover bg-center flex flex-col justify-end w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110"
+                            data-alt="The reception area of a boutique hotel with a stylish desk and a feature wall made of elegant panels."
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB4ug2VUHk-M-4y2TN64XMbQHwUU6MY72Um55fN6yiVPUb-QhrYh7IXA7gaqAPrkdT8GBMZ1yk82sOt24c5DfrKBL6sFSi6TD3nQaGznUzj1otnRNEe2RNVAt1qpSAxcAmIZ6cTYeVAKpblZoe-tncahUprbHqohAXVd1Tz9kl2EaZpzHq1M31JleBQNE2aeGn0HcQRKFvgsFQQTvbeaAFsoi9CoZQG7Wnyrr3LVFP8_loKsaTABgMBuEkuaZwyUn27SZPI0cY-FEM");'>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent p-4 flex flex-col justify-end">
+                            <p class="text-white text-base font-bold leading-tight line-clamp-2">Boutique Hotel
+                                Reception</p>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-black/70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out p-4">
+                            <h3 class="text-white text-lg font-bold text-center">Boutique Hotel</h3>
+                            <p class="text-white/80 text-sm mb-4">Polygranite</p>
+                            <button class="bg-primary text-white h-10 px-5 rounded-full text-sm font-bold">View
+                                Project</button>
+                        </div>
+                    </div>
+                    <div class="group relative aspect-[3/4] overflow-hidden rounded-xl">
+                        <div class="bg-cover bg-center flex flex-col justify-end w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110"
+                            data-alt="A modern kitchen with sleek cabinets, a large island, and durable SPC flooring."
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDXvRS1lYYRRwrPVibyGN6HY_pSWOYv8GfOR9Y4nfz5hom2iMLWjfodhZRkO0OLLU5eQm8UgcgmtmK83Ol3IZXI4oXsThtSVo4Dsmp06LNzzu5oSKJ3jTg_VEQCUFQX0gYqDDZQnqeOKxekzGYYp5dmYPsj6RN2piifLeCv8FSKXS1QA0uYBRUo4-Rj5oOp4q_Xy0HDKSK6GiMEp_xLSa6m2rhwa_Us8UZFEsYE7CCFuUooFSNdSAuz_HFLZFj5a5zavKFc3_H1JQw");'>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent p-4 flex flex-col justify-end">
+                            <p class="text-white text-base font-bold leading-tight line-clamp-2">Modern Kitchen
+                                Renovation</p>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-black/70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out p-4">
+                            <h3 class="text-white text-lg font-bold text-center">Modern Kitchen</h3>
+                            <p class="text-white/80 text-sm mb-4">SPC Flooring</p>
+                            <button class="bg-primary text-white h-10 px-5 rounded-full text-sm font-bold">View
+                                Project</button>
+                        </div>
+                    </div>
+                    <div class="group relative aspect-[3/4] overflow-hidden rounded-xl">
+                        <div class="bg-cover bg-center flex flex-col justify-end w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110"
+                            data-alt="A luxury retail showroom with bright lighting, display cases, and reflective wall panels."
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD4bXG3oGNXAUJDX-JG1L7rIs9Qpm15wRDHhd1dpJbz3jjk_ilqJxGwrNS8rQuS73uK7MdwqmRNnz_9RoInkV4gkNyZkTOsybrkvUlYj04lpOoeHw7GS5jr1iW_-2UD8D_pW9wxaFwtXurSiQtxZIuozH2hobueo9Ss3FYjFypO_KspicbwcpWJXtpP7lW3C6PgNluOjbFEqgCVZY6_AARPLfa13oIupiN2s2KVyVK4cVEEfP4bYl1evspvm4Tc296jSmLJkGE8uHE");'>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent p-4 flex flex-col justify-end">
+                            <p class="text-white text-base font-bold leading-tight line-clamp-2">Luxury Retail
+                                Showroom</p>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-black/70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out p-4">
+                            <h3 class="text-white text-lg font-bold text-center">Retail Showroom</h3>
+                            <p class="text-white/80 text-sm mb-4">Polygranite</p>
+                            <button class="bg-primary text-white h-10 px-5 rounded-full text-sm font-bold">View
+                                Project</button>
+                        </div>
+                    </div>
+                    <div class="group relative aspect-[3/4] overflow-hidden rounded-xl">
+                        <div class="bg-cover bg-center flex flex-col justify-end w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110"
+                            data-alt="A hotel suite with a large bed and a prominent feature wall behind it using 3D panels."
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCnzqFRtZLvf_gSOuMIMJ671kyYuw5-_erwc-KsaA9C0sX8MZQ8NrwF0odEoKYspNAL9BpoTer5lIxr6YFjqlXz8iPaxuPyIB6p-iAlxi14aI7FmjDKoWMmf4bxJH1LTaFzW2JDU9-OdWQ4BUlqNrvvYT2jaC5bqr0pGllGuvDibz4soD-YriV94Yd0et5hE092-ZeKYY9acjFrbMEaX5TLCQIzLCIOPxKK_3EF7RYkloY1UouaSe9l7LloS0ABMFA-xMNJxllc7yc");'>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent p-4 flex flex-col justify-end">
+                            <p class="text-white text-base font-bold leading-tight line-clamp-2">Hospitality Suite
+                                Feature Wall</p>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-black/70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out p-4">
+                            <h3 class="text-white text-lg font-bold text-center">Hospitality Suite</h3>
+                            <p class="text-white/80 text-sm mb-4">3D Wall Panels</p>
+                            <button class="bg-primary text-white h-10 px-5 rounded-full text-sm font-bold">View
+                                Project</button>
+                        </div>
+                    </div>
+                    <div class="group relative aspect-[3/4] overflow-hidden rounded-xl">
+                        <div class="bg-cover bg-center flex flex-col justify-end w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-110"
+                            data-alt="An executive office with a large wooden desk, leather chair, and a sophisticated wall treatment."
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCMIYibpnvS6FiRbrK1-_8Xyb1nX2rNasKeIiO3zbjopJWkTBFhAHbeue95Gj22a66VdwSmvr7iRtgGzNX353am4Mv1XfoH-wuWvaAli1HW_-bTkxukERKqcRb2AHAnDnsq3EZ-HfFk3JhuM5OUHAp2hS2Clr7Imq5eO9iYVjbN4IxCSqB8HA-4uIACyGG4uq-m_jbtZo3VnN_FxeS3NN9RQx-t8SlplSRU1lqTWLMUJev5oeTYY05mInwgO3Zoc_GWgxVUUaHj6Hk");'>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent p-4 flex flex-col justify-end">
+                            <p class="text-white text-base font-bold leading-tight line-clamp-2">Executive Office
+                                Space</p>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-black/70 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out p-4">
+                            <h3 class="text-white text-lg font-bold text-center">Executive Office</h3>
+                            <p class="text-white/80 text-sm mb-4">SPC Flooring</p>
+                            <button class="bg-primary text-white h-10 px-5 rounded-full text-sm font-bold">View
+                                Project</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Load More Button -->
+            <section class="mt-12 text-center">
+                <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-primary/20 text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/30 transition-colors mx-auto">
+                    <span class="truncate">Load More Projects</span>
+                </button>
+            </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white/80">
+        <div class="mx-auto max-w-7xl px-4 sm:px-8 py-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+                <div class="col-span-2 md:col-span-4 lg:col-span-1">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="size-6 text-white">
+                            <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.8261 17.4264C16.7203 18.1174 20.2244 18.5217 24 18.5217C27.7756 18.5217 31.2797 18.1174 34.1739 17.4264C36.9144 16.7722 39.9967 15.2331 41.3563 14.1648L24.8486 40.6391C24.4571 41.267 23.5429 41.267 23.1514 40.6391L6.64374 14.1648C8.00331 15.2331 11.0856 16.7722 13.8261 17.4264Z"
+                                    fill="currentColor"></path>
+                                <path clip-rule="evenodd"
+                                    d="M39.998 12.236C39.9944 12.2537 39.9875 12.2845 39.9748 12.3294C39.9436 12.4399 39.8949 12.5741 39.8346 12.7175C39.8168 12.7597 39.7989 12.8007 39.7813 12.8398C38.5103 13.7113 35.9788 14.9393 33.7095 15.4811C30.9875 16.131 27.6413 16.5217 24 16.5217C20.3587 16.5217 17.0125 16.131 14.2905 15.4811C12.0012 14.9346 9.44505 13.6897 8.18538 12.8168C8.17384 12.7925 8.16216 12.767 8.15052 12.7408C8.09919 12.6249 8.05721 12.5114 8.02977 12.411C8.00356 12.3152 8.00039 12.2667 8.00004 12.2612C8.00004 12.261 8 12.2607 8.00004 12.2612C8.00004 12.2359 8.0104 11.9233 8.68485 11.3686C9.34546 10.8254 10.4222 10.2469 11.9291 9.72276C14.9242 8.68098 19.1919 8 24 8C28.8081 8 33.0758 8.68098 36.0709 9.72276C37.5778 10.2469 38.6545 10.8254 39.3151 11.3686C39.9006 11.8501 39.9857 12.1489 39.998 12.236ZM4.95178 15.2312L21.4543 41.6973C22.6288 43.5809 25.3712 43.5809 26.5457 41.6973L43.0534 15.223C43.0709 15.1948 43.0878 15.1662 43.104 15.1371L41.3563 14.1648C43.104 15.1371 43.1038 15.1374 43.104 15.1371L43.1051 15.135L43.1065 15.1325L43.1101 15.1261L43.1199 15.1082C43.1276 15.094 43.1377 15.0754 43.1497 15.0527C43.1738 15.0075 43.2062 14.9455 43.244 14.8701C43.319 14.7208 43.4196 14.511 43.5217 14.2683C43.6901 13.8679 44 13.0689 44 12.2609C44 10.5573 43.003 9.22254 41.8558 8.2791C40.6947 7.32427 39.1354 6.55361 37.385 5.94477C33.8654 4.72057 29.133 4 24 4C18.867 4 14.1346 4.72057 10.615 5.94478C8.86463 6.55361 7.30529 7.32428 6.14419 8.27911C4.99695 9.22255 3.99999 10.5573 3.99999 12.2609C3.99999 13.1275 4.29264 13.9078 4.49321 14.3607C4.60375 14.6102 4.71348 14.8196 4.79687 14.9689C4.83898 15.0444 4.87547 15.1065 4.9035 15.1529C4.91754 15.1762 4.92954 15.1957 4.93916 15.2111L4.94662 15.223L4.95178 15.2312ZM35.9868 18.996L24 38.22L12.0131 18.996C12.4661 19.1391 12.9179 19.2658 13.3617 19.3718C16.4281 20.1039 20.0901 20.5217 24 20.5217C27.9099 20.5217 31.5719 20.1039 34.6383 19.3718C35.082 19.2658 35.5339 19.1391 35.9868 18.996Z"
+                                    fill="currentColor" fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-white text-lg font-bold">Aura Nook</h2>
+                    </div>
+                    <p class="text-sm">Premium building materials for architects and designers. Crafting the future
+                        of spaces.</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Products</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a class="hover:text-white transition-colors" href="products.html#polygranite">Polygranite
+                                Sheets</a></li>
+                        <li><a class="hover:text-white transition-colors" href="products.html#spc">SPC Flooring</a>
+                        </li>
+                        <li><a class="hover:text-white transition-colors" href="products.html#3d-panels">3D Wall
+                                Panels</a></li>
+                        <li><a class="hover:text-white transition-colors" href="products.html">View All</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Company</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a class="hover:text-white transition-colors" href="about.html">About Us</a></li>
+                        <li><a class="hover:text-white transition-colors" href="gallery.html">Inspiration</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Careers</a></li>
+                        <li><a class="hover:text-white transition-colors" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Resources</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a class="hover:text-white transition-colors" href="blog.html">Blog</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Downloads</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-white mb-4">Legal</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a class="hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+                        <li><a class="hover:text-white transition-colors" href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center">
+                <p class="text-sm text-white/60">© 2024 Aura Nook. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 sm:mt-0">
+                    <!-- Social Icons would go here -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    </div>
+    <script src="js/mobile-menu.js"></script>
+</body>
+
+</html>

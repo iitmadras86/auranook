@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Aura Nook - Polygranite Luxury Surfaces</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Playfair+Display:wght@700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1A2E40",
+                        "background-light": "#F8F8F8",
+                        "background-dark": "#101622",
+                        "accent": "#C0A172",
+                        "text-light": "#222222",
+                        "text-dark": "#E0E0E0",
+                        "subtle-light": "#666666",
+                        "subtle-dark": "#A0A0A0",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24
+        }
+    </style>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <!-- TopNavBar -->
+            <div
+                class="px-4 sm:px-10 lg:px-20 xl:px-40 flex justify-center w-full sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+                <div class="layout-content-container flex flex-col w-full max-w-7xl">
+                    <header
+                        class="relative flex items-center justify-between whitespace-nowrap border-b border-solid border-black/10 dark:border-white/10 px-4 sm:px-10 py-4">
+                        <div class="flex items-center gap-4 text-text-light dark:text-text-dark">
+                            <div class="size-6 text-primary dark:text-accent">
+                                <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.8261 17.4264C16.7203 18.1174 20.2244 18.5217 24 18.5217C27.7756 18.5217 31.2797 18.1174 34.1739 17.4264C36.9144 16.7722 39.9967 15.2331 41.3563 14.1648L24.8486 40.6391C24.4571 41.267 23.5429 41.267 23.1514 40.6391L6.64374 14.1648C8.00331 15.2331 11.0856 16.7722 13.8261 17.4264Z"
+                                        fill="currentColor"></path>
+                                    <path clip-rule="evenodd"
+                                        d="M39.998 12.236C39.9944 12.2537 39.9875 12.2845 39.9748 12.3294C39.9436 12.4399 39.8949 12.5741 39.8346 12.7175C39.8168 12.7597 39.7989 12.8007 39.7813 12.8398C38.5103 13.7113 35.9788 14.9393 33.7095 15.4811C30.9875 16.131 27.6413 16.5217 24 16.5217C20.3587 16.5217 17.0125 16.131 14.2905 15.4811C12.0012 14.9346 9.44505 13.6897 8.18538 12.8168C8.17384 12.7925 8.16216 12.767 8.15052 12.7408C8.09919 12.6249 8.05721 12.5114 8.02977 12.411C8.00356 12.3152 8.00039 12.2667 8.00004 12.2612C8.00004 12.261 8 12.2607 8.00004 12.2612C8.00004 12.2359 8.0104 11.9233 8.68485 11.3686C9.34546 10.8254 10.4222 10.2469 11.9291 9.72276C14.9242 8.68098 19.1919 8 24 8C28.8081 8 33.0758 8.68098 36.0709 9.72276C37.5778 10.2469 38.6545 10.8254 39.3151 11.3686C39.9006 11.8501 39.9857 12.1489 39.998 12.236ZM4.95178 15.2312L21.4543 41.6973C22.6288 43.5809 25.3712 43.5809 26.5457 41.6973L43.0534 15.223C43.0709 15.1948 43.0878 15.1662 43.104 15.1371L41.3563 14.1648C43.104 15.1371 43.1038 15.1374 43.104 15.1371L43.1051 15.135L43.1065 15.1325L43.1101 15.1261L43.1199 15.1082C43.1276 15.094 43.1377 15.0754 43.1497 15.0527C43.1738 15.0075 43.2062 14.9455 43.244 14.8701C43.319 14.7208 43.4196 14.511 43.5217 14.2683C43.6901 13.8679 44 13.0689 44 12.2609C44 10.5573 43.003 9.22254 41.8558 8.2791C40.6947 7.32427 39.1354 6.55361 37.385 5.94477C33.8654 4.72057 29.133 4 24 4C18.867 4 14.1346 4.72057 10.615 5.94478C8.86463 6.55361 7.30529 7.32428 6.14419 8.27911C4.99695 9.22255 3.99999 10.5573 3.99999 12.2609C3.99999 13.1275 4.29264 13.9078 4.49321 14.3607C4.60375 14.6102 4.71348 14.8196 4.79687 14.9689C4.83898 15.0444 4.87547 15.1065 4.9035 15.1529C4.91754 15.1762 4.92954 15.1957 4.93916 15.2111L4.94662 15.223L4.95178 15.2312ZM35.9868 18.996L24 38.22L12.0131 18.996C12.4661 19.1391 12.9179 19.2658 13.3617 19.3718C16.4281 20.1039 20.0901 20.5217 24 20.5217C27.9099 20.5217 31.5719 20.1039 34.6383 19.3718C35.082 19.2658 35.5339 19.1391 35.9868 18.996Z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-text-light dark:text-text-dark text-xl font-bold">Aura Nook</h2>
+                        </div>
+                        <div class="hidden lg:flex flex-1 justify-end items-center gap-8">
+                            <div class="flex items-center gap-9">
+                                <a class="text-text-light dark:text-text-dark text-sm font-medium hover:text-accent dark:hover:text-accent"
+                                    href="index.html">Home</a>
+                                <a class="text-text-light dark:text-text-dark text-sm font-medium hover:text-accent dark:hover:text-accent"
+                                    href="products.html">Products</a>
+                                <a class="text-text-light dark:text-text-dark text-sm font-medium hover:text-accent dark:hover:text-accent"
+                                    href="gallery.html">Gallery</a>
+                                <a class="text-text-light dark:text-text-dark text-sm font-medium hover:text-accent dark:hover:text-accent"
+                                    href="blog.html">Resources</a>
+                                <a class="text-text-light dark:text-text-dark text-sm font-medium hover:text-accent dark:hover:text-accent"
+                                    href="about.html">About Us</a>
+                                <a class="text-text-light dark:text-text-dark text-sm font-medium hover:text-accent dark:hover:text-accent"
+                                    href="contact.html">Contact</a>
+                            </div>
+                            <a href="contact.html"
+                                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold hover:bg-opacity-90">
+                                <span class="truncate">Get a Quote</span>
+                            </a>
+                        </div>
+                        <div class="lg:hidden">
+                            <button class="p-2 rounded-md text-text-light dark:text-text-dark">
+                                <span class="material-symbols-outlined text-3xl">menu</span>
+                            </button>
+                        </div>
+                        <div id="mobile-menu"
+                            class="hidden absolute top-full left-0 w-full bg-background-light dark:bg-background-dark border-b border-black/10 dark:border-white/10 p-4 flex flex-col gap-4 shadow-lg lg:hidden z-50">
+                            <a href="index.html"
+                                class="text-lg font-medium text-text-light dark:text-text-dark hover:text-accent">Home</a>
+                            <a href="products.html"
+                                class="text-lg font-medium text-text-light dark:text-text-dark hover:text-accent">Products</a>
+                            <a href="gallery.html"
+                                class="text-lg font-medium text-text-light dark:text-text-dark hover:text-accent">Gallery</a>
+                            <a href="blog.html"
+                                class="text-lg font-medium text-text-light dark:text-text-dark hover:text-accent">Resources</a>
+                            <a href="about.html"
+                                class="text-lg font-medium text-text-light dark:text-text-dark hover:text-accent">About
+                                Us</a>
+                            <a href="contact.html"
+                                class="text-lg font-medium text-text-light dark:text-text-dark hover:text-accent">Contact</a>
+                        </div>
+                    </header>
+                </div>
+            </div>
+            <main class="flex-grow">
+                <!-- HeroSection -->
+                <div class="px-4 sm:px-10 lg:px-20 xl:px-40 flex justify-center py-5">
+                    <div class="layout-content-container flex flex-col w-full max-w-7xl">
+                        <div class="w-full">
+                            <div class="flex min-h-[60vh] md:min-h-[75vh] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl items-center justify-center p-4 text-center"
+                                data-alt="A high-end kitchen with a large island made of polygranite, showing a luxurious and clean aesthetic."
+                                style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC8nV2xXX1ZFosrOICyRXHKFFwNTe-cb8W12BGwtBtSVDBJV0gNtgb0e4YiXbJfKNDcTlT58jvm-P_66xf9acs7_YKmr1S8J6XzlFqEggdkrk_NHsm-SRQWdEs51pJ-X52saVukGg9M-mPf_kbFL7HUZMVKQN_ge561W6z0S1NqCK93JX0-PwmUfEop2ejW9om2-u_WtUaF5vkAFJxnie-o6InKWl_JI3KZ_7371hDLZWe2QpueKx__R7EcHXvKUU4Ooc5BtvZWUks");'>
+                                <div class="flex flex-col gap-4 max-w-3xl">
+                                    <h1 class="text-white font-serif text-4xl font-bold leading-tight md:text-6xl">
+                                        Polygranite: The Future of Luxury Surfaces
+                                    </h1>
+                                    <p class="text-white/90 text-base font-normal leading-normal md:text-lg">
+                                        Where timeless elegance meets unparalleled durability. Transform your space with
+                                        the next generation of building materials.
+                                    </p>
+                                </div>
+                                <a href="contact.html"
+                                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-accent text-primary text-base font-bold tracking-wide hover:opacity-90 transition-opacity">
+                                    <span class="truncate">Request a Sample</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FeatureSection -->
+                <div class="px-4 sm:px-10 lg:px-20 xl:px-40 flex justify-center py-10 md:py-20">
+                    <div class="layout-content-container flex flex-col w-full max-w-7xl">
+                        <div class="flex flex-col gap-10 px-4">
+                            <div class="flex flex-col gap-4 text-center items-center">
+                                <h2
+                                    class="text-text-light dark:text-text-dark font-serif text-3xl font-bold md:text-4xl max-w-2xl">
+                                    The Art of Advanced Surfacing</h2>
+                                <p
+                                    class="text-subtle-light dark:text-subtle-dark text-base font-normal leading-relaxed max-w-3xl">
+                                    Aura Nook's Polygranite is engineered for beauty and built for life. Experience a
+                                    superior alternative to traditional materials, offering flawless aesthetics without
+                                    compromise.</p>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                                <div
+                                    class="flex flex-col gap-4 rounded-lg border border-black/10 dark:border-white/10 p-6 text-center items-center bg-background-light dark:bg-background-dark">
+                                    <span class="material-symbols-outlined text-4xl text-accent">water_drop</span>
+                                    <div class="flex flex-col gap-1">
+                                        <h3 class="text-text-light dark:text-text-dark text-lg font-bold">100%
+                                            Waterproof</h3>
+                                        <p
+                                            class="text-subtle-light dark:text-subtle-dark text-sm font-normal leading-relaxed">
+                                            Perfect for kitchens, bathrooms, and moisture-prone areas.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-4 rounded-lg border border-black/10 dark:border-white/10 p-6 text-center items-center bg-background-light dark:bg-background-dark">
+                                    <span class="material-symbols-outlined text-4xl text-accent">shield</span>
+                                    <div class="flex flex-col gap-1">
+                                        <h3 class="text-text-light dark:text-text-dark text-lg font-bold">Stain &amp;
+                                            Scratch Resistant</h3>
+                                        <p
+                                            class="text-subtle-light dark:text-subtle-dark text-sm font-normal leading-relaxed">
+                                            Maintains its pristine look against daily wear and tear.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-4 rounded-lg border border-black/10 dark:border-white/10 p-6 text-center items-center bg-background-light dark:bg-background-dark">
+                                    <span class="material-symbols-outlined text-4xl text-accent">auto_awesome</span>
+                                    <div class="flex flex-col gap-1">
+                                        <h3 class="text-text-light dark:text-text-dark text-lg font-bold">Effortless
+                                            Maintenance</h3>
+                                        <p
+                                            class="text-subtle-light dark:text-subtle-dark text-sm font-normal leading-relaxed">
+                                            A non-porous surface that cleans with a simple wipe.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-4 rounded-lg border border-black/10 dark:border-white/10 p-6 text-center items-center bg-background-light dark:bg-background-dark">
+                                    <span class="material-symbols-outlined text-4xl text-accent">construction</span>
+                                    <div class="flex flex-col gap-1">
+                                        <h3 class="text-text-light dark:text-text-dark text-lg font-bold">Seamless
+                                            Installation</h3>
+                                        <p
+                                            class="text-subtle-light dark:text-subtle-dark text-sm font-normal leading-relaxed">
+                                            Lightweight and easy to handle for quick, flawless results.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature Split Layout -->
+                <div
+                    class="px-4 sm:px-10 lg:px-20 xl:px-40 flex justify-center py-10 md:py-16 bg-black/[.02] dark:bg-white/[.02]">
+                    <div class="layout-content-container flex flex-col w-full max-w-7xl items-center">
+                        <div class="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-16 p-4">
+                            <div class="w-full lg:w-1/2 flex-1">
+                                <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                    data-alt="Close-up detailed shot of a polygranite slab showing its intricate veining and smooth texture."
+                                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBqJQfMQ9FWYj4ia1GjBtLXUnvKENsTaP7eXmtPUdVindv8S6vNFNlyaA0DiSPlDh-L2_mwecJd7CVqDdyVqDTsvMbooo5Dz1OWZHUJlj30IulZSSDGqVEiLqyqzeJJvGxQrFS2RvqfqT-ZXK2uzrzV1H-AgxhCRA6OZ7FBrZnysnojx4drvXqZ6DfEw7x6bitRAOl63OXrWib8AMVqeWmt4X71YRBKB62-UNPCtWrwbTIJ1Lx0Umic-NDOt1VW90mDwzsKdq5PKPk");'>
+                                </div>
+                            </div>
+                            <div class="flex flex-[1.1_1.1_0%] flex-col gap-4 items-start text-left">
+                                <h2 class="font-serif text-3xl font-bold text-text-light dark:text-text-dark">Unmatched
+                                    Composition, Unlimited Potential</h2>
+                                <p
+                                    class="text-subtle-light dark:text-subtle-dark text-base font-normal leading-relaxed">
+                                    Polygranite is a revolutionary composite material, blending natural stone powders
+                                    with advanced polymers. This unique fusion creates a surface that replicates the
+                                    stunning look of marble and granite while offering superior performance and
+                                    versatility for feature walls, cabinetry, and bespoke furniture.
+                                </p>
+                                <a href="gallery.html"
+                                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 mt-4 bg-primary/10 dark:bg-accent/10 text-primary dark:text-accent text-sm font-bold hover:bg-primary/20 dark:hover:bg-accent/20">
+                                    <span class="truncate">Explore Applications</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Visual Gallery -->
+                <div class="px-4 sm:px-10 lg:px-20 xl:px-40 flex justify-center py-10 md:py-20">
+                    <div class="layout-content-container flex flex-col w-full max-w-7xl gap-8">
+                        <div class="text-center">
+                            <h2 class="text-text-light dark:text-text-dark font-serif text-3xl font-bold md:text-4xl">
+                                Explore the Collection</h2>
+                        </div>
+                        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+                            <div class="group cursor-pointer">
+                                <div class="aspect-square w-full rounded-lg bg-cover bg-center"
+                                    data-alt="A swatch of 'Carrara Mist' polygranite, a white marble with soft grey veining."
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCrGKiHtZedKFNn5jSeTV4R04Qk5pDZs7VjdBw-DwEZzWXZHVWk8pTtTSCB669vTI_4Pz8qKPMYmpDEbVvUxUnOBiM6Zg6IphOj3EQio_2P3KH6gtn4pDAvuEVngFJydgp3p1lAzRlIKLhc4sPO5Q7jS9lvhjauVJRnVwyDkoFF54Q6fhQ2GzQUS57ysDWObAST-tCuG9gUmYwVIhn9t4_BWhTouvdFJe0DCbCkBhOympveC5-QmhCo-uvFOeuMq0LvhiUUP-0S0oI');">
+                                </div>
+                                <div class="pt-3 text-center">
+                                    <p class="font-bold text-text-light dark:text-text-dark">Carrara Mist</p>
+                                    <p
+                                        class="text-sm text-subtle-light dark:text-subtle-dark group-hover:opacity-100 opacity-0 transition-opacity">
+                                        PG-101</p>
+                                </div>
+                            </div>
+                            <div class="group cursor-pointer">
+                                <div class="aspect-square w-full rounded-lg bg-cover bg-center"
+                                    data-alt="A swatch of 'Volcanic Ash' polygranite, a dark charcoal surface with subtle texturing."
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB3LzlEyqYaxJUpT4gg86_2d0eKUkHPhmNpZ_Wi8d6rFYK4kLLb6y8Ny8HLjESsY27BJ-ipHoVMXjl44QVcgTw-XnSlkODEzgAIAhmXtQiGpRSqYmlgn1TYtNj2zhcdYHH00MDWPpCzkUOAGkvKXlpaesx3NTFbhhu7S4-GHK3ooRLqlE8oMZuUC-xlSgWx1BtYSxY9CGcHPYfv4lQ7pkyYcee8pb5r8Lg3MKrhrE3KTswc2WOdonkvQ11WxM1xR5ywKo4vnbJiA14');">
+                                </div>
+                                <div class="pt-3 text-center">
+                                    <p class="font-bold text-text-light dark:text-text-dark">Volcanic Ash</p>
+                                    <p
+                                        class="text-sm text-subtle-light dark:text-subtle-dark group-hover:opacity-100 opacity-0 transition-opacity">
+                                        PG-205</p>
+                                </div>
+                            </div>
+                            <div class="group cursor-pointer">
+                                <div class="aspect-square w-full rounded-lg bg-cover bg-center"
+                                    data-alt="A swatch of 'Golden Calacatta' polygranite, a white base with dramatic gold and grey veining."
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuArCHh9X8TVEPBk34FZhRNe2Czec1V_uOZ4TC5b6bf6JwMpejJN8NaAlEkc-ikCrjv8B3bQg0kKtRiwEDiwS2OXZkBrGV2gBoL37_GeMIdbWaWOAjLatANL5p8WI1d2SQ8rFtG_tu4V95dbMdDZ0orM3XN0vxs49XIVHhFlvxNT_unV1kunOGDq9sazvv_l8NHKov9JJYM_Z0wE6oYJiGJcjpS0bKqX9H7KR0B5e9zxNYZ5t6vJxTnnhyJbbUjHemJmHX7RvvmHxZQ');">
+                                </div>
+                                <div class="pt-3 text-center">
+                                    <p class="font-bold text-text-light dark:text-text-dark">Golden Calacatta</p>
+                                    <p
+                                        class="text-sm text-subtle-light dark:text-subtle-dark group-hover:opacity-100 opacity-0 transition-opacity">
+                                        PG-310</p>
+                                </div>
+                            </div>
+                            <div class="group cursor-pointer">
+                                <div class="aspect-square w-full rounded-lg bg-cover bg-center"
+                                    data-alt="A swatch of 'Emerald Vein' polygranite, a deep green stone with light, web-like veins."
+                                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD_sfGUFVMZFmy637Pd7tG9T7lwvX7Yso0AB6Ea2cjVJaKVm-Gq_XE1X12w-TVZPBn46oW8prURovJ_aKiZSbJpibamZCKZ_C8tNLqK8kgWOMpQQxPh_VCnPwW9QacBpL0vfHYGx9vWqKumEFlA83ICDxmBvVxkDmYA3Dy1K7GqwPaU_UlHMmYUs-xXd8y22gd4uz_1wYR-5wV6-hAPIsYbYLbJqTNNXRnCsIHCnPFjFqsrCKI1cVq0tYtIx0Gi7LmSJ13CdUQ58vY');">
+                                </div>
+                                <div class="pt-3 text-center">
+                                    <p class="font-bold text-text-light dark:text-text-dark">Emerald Vein</p>
+                                    <p
+                                        class="text-sm text-subtle-light dark:text-subtle-dark group-hover:opacity-100 opacity-0 transition-opacity">
+                                        PG-422</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Technical Specs and Value Prop -->
+                <div
+                    class="px-4 sm:px-10 lg:px-20 xl:px-40 flex justify-center py-10 md:py-16 bg-black/[.02] dark:bg-white/[.02]">
+                    <div
+                        class="layout-content-container grid grid-cols-1 lg:grid-cols-2 w-full max-w-7xl gap-12 lg:gap-16">
+                        <!-- Technical Table -->
+                        <div class="flex flex-col gap-5">
+                            <h3 class="font-serif text-2xl font-bold text-text-light dark:text-text-dark">Technical
+                                Specifications</h3>
+                            <div class="overflow-x-auto">
+                                <table class="w-full text-left text-sm">
+                                    <tbody class="divide-y divide-black/10 dark:divide-white/10">
+                                        <tr class="divide-x divide-black/10 dark:divide-white/10">
+                                            <td class="whitespace-nowrap py-3 px-4 font-semibold">Panel Size</td>
+                                            <td class="whitespace-nowrap py-3 px-4">1220mm x 2440mm</td>
+                                        </tr>
+                                        <tr class="divide-x divide-black/10 dark:divide-white/10">
+                                            <td class="whitespace-nowrap py-3 px-4 font-semibold">Thickness</td>
+                                            <td class="whitespace-nowrap py-3 px-4">3.5mm</td>
+                                        </tr>
+                                        <tr class="divide-x divide-black/10 dark:divide-white/10">
+                                            <td class="whitespace-nowrap py-3 px-4 font-semibold">Weight</td>
+                                            <td class="whitespace-nowrap py-3 px-4">~16 kg per panel</td>
+                                        </tr>
+                                        <tr class="divide-x divide-black/10 dark:divide-white/10">
+                                            <td class="whitespace-nowrap py-3 px-4 font-semibold">Composition</td>
+                                            <td class="whitespace-nowrap py-3 px-4">Stone Powder &amp; Polymer Resin
+                                            </td>
+                                        </tr>
+                                        <tr class="divide-x divide-black/10 dark:divide-white/10">
+                                            <td class="whitespace-nowrap py-3 px-4 font-semibold">Fire Rating</td>
+                                            <td class="whitespace-nowrap py-3 px-4">Class B (ASTM E84)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <button
+                                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg h-10 px-5 w-fit border border-primary/50 dark:border-accent/50 text-primary dark:text-accent text-sm font-bold hover:bg-primary/10 dark:hover:bg-accent/10">
+                                <span class="material-symbols-outlined text-xl">download</span>
+                                <span class="truncate">Download Technical Datasheet (PDF)</span>
+                            </button>
+                        </div>
+                        <!-- Cost & Value -->
+                        <div class="flex flex-col gap-5">
+                            <h3 class="font-serif text-2xl font-bold text-text-light dark:text-text-dark">An Investment
+                                in Style &amp; Durability</h3>
+                            <p class="text-subtle-light dark:text-subtle-dark text-base leading-relaxed">While natural
+                                stone carries a premium price and demanding upkeep, Polygranite offers a compelling
+                                value proposition. Enjoy the opulent aesthetic of marble or granite at a more accessible
+                                price point, with significantly lower installation and long-term maintenance costs. It's
+                                a smart investment that pays dividends in both beauty and performance.</p>
+                            <div class="mt-2 grid grid-cols-2 gap-4 text-center">
+                                <div
+                                    class="rounded-lg p-4 bg-background-light dark:bg-background-dark border border-black/5 dark:border-white/5">
+                                    <p class="font-bold text-lg text-accent">30%</p>
+                                    <p class="text-sm text-subtle-light dark:text-subtle-dark">Lower Average Cost vs.
+                                        Marble</p>
+                                </div>
+                                <div
+                                    class="rounded-lg p-4 bg-background-light dark:bg-background-dark border border-black/5 dark:border-white/5">
+                                    <p class="font-bold text-lg text-accent">99%</p>
+                                    <p class="text-sm text-subtle-light dark:text-subtle-dark">Maintenance-Free
+                                        Durability</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- Footer -->
+            <footer
+                class="px-4 sm:px-10 lg:px-20 xl:px-40 flex justify-center py-10 border-t border-black/10 dark:border-white/10">
+                <div
+                    class="layout-content-container flex flex-col md:flex-row justify-between items-center w-full max-w-7xl gap-6">
+                    <p class="text-sm text-subtle-light dark:text-subtle-dark">© 2024 Aura Nook. All rights reserved.
+                    </p>
+                    <div class="flex items-center gap-6">
+                        <a class="text-sm text-subtle-light dark:text-subtle-dark hover:text-accent dark:hover:text-accent"
+                            href="#">Privacy Policy</a>
+                        <a class="text-sm text-subtle-light dark:text-subtle-dark hover:text-accent dark:hover:text-accent"
+                            href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="js/mobile-menu.js"></script>
+</body>
+
+</html>

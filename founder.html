@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Aura Nook - The Founder's Vision</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Playfair+Display:wght@700&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#b49b6e",
+            background: {
+              light: "#F8F8F8",
+              dark: "#101622",
+            },
+            "primary-darker": "#222222",
+            "primary-lighter": "#6A7A83",
+          },
+          fontFamily: {
+            display: ["Manrope", "sans-serif"],
+            serif: ["Playfair Display", "serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    }
+  </style>
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-primary-darker dark:text-gray-300">
+  <div class="relative flex min-h-screen w-full flex-col">
+    <header
+      class="relative sticky top-0 z-50 w-full border-b border-gray-200/50 bg-background-light/80 backdrop-blur-sm dark:border-white/10 dark:bg-background-dark/80">
+      <div class="mx-auto flex max-w-screen-xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center gap-4 py-4 text-primary-darker dark:text-white">
+          <svg class="h-6 w-6 text-primary" fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.8261 17.4264C16.7203 18.1174 20.2244 18.5217 24 18.5217C27.7756 18.5217 31.2797 18.1174 34.1739 17.4264C36.9144 16.7722 39.9967 15.2331 41.3563 14.1648L24.8486 40.6391C24.4571 41.267 23.5429 41.267 23.1514 40.6391L6.64374 14.1648C8.00331 15.2331 11.0856 16.7722 13.8261 17.4264Z">
+            </path>
+            <path clip-rule="evenodd"
+              d="M39.998 12.236C39.9944 12.2537 39.9875 12.2845 39.9748 12.3294C39.9436 12.4399 39.8949 12.5741 39.8346 12.7175C39.8168 12.7597 39.7989 12.8007 39.7813 12.8398C38.5103 13.7113 35.9788 14.9393 33.7095 15.4811C30.9875 16.131 27.6413 16.5217 24 16.5217C20.3587 16.5217 17.0125 16.131 14.2905 15.4811C12.0012 14.9346 9.44505 13.6897 8.18538 12.8168C8.17384 12.7925 8.16216 12.767 8.15052 12.7408C8.09919 12.6249 8.05721 12.5114 8.02977 12.411C8.00356 12.3152 8.00039 12.2667 8.00004 12.2612C8.00004 12.261 8 12.2607 8.00004 12.2612C8.00004 12.2359 8.0104 11.9233 8.68485 11.3686C9.34546 10.8254 10.4222 10.2469 11.9291 9.72276C14.9242 8.68098 19.1919 8 24 8C28.8081 8 33.0758 8.68098 36.0709 9.72276C37.5778 10.2469 38.6545 10.8254 39.3151 11.3686C39.9006 11.8501 39.9857 12.1489 39.998 12.236ZM4.95178 15.2312L21.4543 41.6973C22.6288 43.5809 25.3712 43.5809 26.5457 41.6973L43.0534 15.223C43.0709 15.1948 43.0878 15.1662 43.104 15.1371L41.3563 14.1648C43.104 15.1371 43.1038 15.1374 43.104 15.1371L43.1051 15.135L43.1065 15.1325L43.1101 15.1261L43.1199 15.1082C43.1276 15.094 43.1377 15.0754 43.1497 15.0527C43.1738 15.0075 43.2062 14.9455 43.244 14.8701C43.319 14.7208 43.4196 14.511 43.5217 14.2683C43.6901 13.8679 44 13.0689 44 12.2609C44 10.5573 43.003 9.22254 41.8558 8.2791C40.6947 7.32427 39.1354 6.55361 37.385 5.94477C33.8654 4.72057 29.133 4 24 4C18.867 4 14.1346 4.72057 10.615 5.94478C8.86463 6.55361 7.30529 7.32428 6.14419 8.27911C4.99695 9.22255 3.99999 10.5573 3.99999 12.2609C3.99999 13.1275 4.29264 13.9078 4.49321 14.3607C4.60375 14.6102 4.71348 14.8196 4.79687 14.9689C4.83898 15.0444 4.87547 15.1065 4.9035 15.1529C4.91754 15.1762 4.92954 15.1957 4.93916 15.2111L4.94662 15.223L4.95178 15.2312ZM35.9868 18.996L24 38.22L12.0131 18.996C12.4661 19.1391 12.9179 19.2658 13.3617 19.3718C16.4281 20.1039 20.0901 20.5217 24 20.5217C27.9099 20.5217 31.5719 20.1039 34.6383 19.3718C35.082 19.2658 35.5339 19.1391 35.9868 18.996Z"
+              fill-rule="evenodd"></path>
+          </svg>
+          <h1 class="text-xl font-bold">Aura Nook</h1>
+        </div>
+        <nav class="hidden items-center gap-8 md:flex">
+          <a class="text-sm font-medium transition-colors hover:text-primary dark:text-gray-300 dark:hover:text-primary"
+            href="index.html">Home</a>
+          <a class="text-sm font-medium transition-colors hover:text-primary dark:text-gray-300 dark:hover:text-primary"
+            href="products.html">Products</a>
+          <a class="text-sm font-medium transition-colors hover:text-primary dark:text-gray-300 dark:hover:text-primary"
+            href="gallery.html">Gallery</a>
+          <a class="text-sm font-medium transition-colors hover:text-primary dark:text-gray-300 dark:hover:text-primary"
+            href="blog.html">Resources</a>
+          <a class="text-sm font-medium transition-colors hover:text-primary dark:text-gray-300 dark:hover:text-primary"
+            href="about.html">About Us</a>
+          <a class="text-sm font-medium transition-colors hover:text-primary dark:text-gray-300 dark:hover:text-primary"
+            href="founder.html">Founder</a>
+          <a class="text-sm font-medium transition-colors hover:text-primary dark:text-gray-300 dark:hover:text-primary"
+            href="contact.html">Contact</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <a href="contact.html"
+            class="flex h-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-5 text-sm font-bold text-white transition-opacity hover:opacity-90">Get
+            a Quote</a>
+          <button class="p-2 md:hidden">
+            <span class="material-symbols-outlined text-primary-darker dark:text-white">menu</span>
+          </button>
+        </div>
+      </div>
+  </div>
+  <div id="mobile-menu"
+    class="hidden absolute top-full left-0 w-full bg-background-light dark:bg-background-dark border-b border-gray-200 dark:border-white/10 p-4 flex flex-col gap-4 shadow-lg md:hidden z-50">
+    <a href="index.html" class="text-lg font-medium text-primary-darker dark:text-white hover:text-primary">Home</a>
+    <a href="products.html"
+      class="text-lg font-medium text-primary-darker dark:text-white hover:text-primary">Products</a>
+    <a href="gallery.html"
+      class="text-lg font-medium text-primary-darker dark:text-white hover:text-primary">Gallery</a>
+    <a href="blog.html" class="text-lg font-medium text-primary-darker dark:text-white hover:text-primary">Resources</a>
+    <a href="about.html" class="text-lg font-medium text-primary-darker dark:text-white hover:text-primary">About Us</a>
+    <a href="founder.html"
+      class="text-lg font-medium text-primary-darker dark:text-white hover:text-primary">Founder</a>
+    <a href="contact.html"
+      class="text-lg font-medium text-primary-darker dark:text-white hover:text-primary">Contact</a>
+  </div>
+  </header>
+  <main class="flex-grow">
+    <div class="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:py-24">
+      <section class="mb-16 md:mb-24">
+        <div class="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-12">
+          <div class="relative aspect-[3/4] h-auto w-full overflow-hidden rounded-xl">
+            <div class="h-full w-full bg-cover bg-center"
+              data-alt="Professional portrait of the founder, a woman in a grey suit, seated in her office."
+              style='background-image: url("founder_story_page/MadhuKumari.png");'>
+            </div>
+          </div>
+          <div class="flex flex-col text-center md:text-left">
+            <h2 class="font-serif text-4xl font-bold text-primary-darker dark:text-white sm:text-5xl lg:text-6xl">
+              Designing the Future, Material by Material.</h2>
+            <p class="mt-4 text-lg text-primary-lighter dark:text-gray-400">Meet Madhu Kumari, the visionary bridging
+              the gap between computer science and tangible, luxurious design.</p>
+          </div>
+        </div>
+      </section>
+      <div class="space-y-16">
+        <section>
+          <h3 class="font-serif text-3xl font-bold text-primary-darker dark:text-white">Our Origin: A Fusion of Code and
+            Craft</h3>
+          <div class="mt-4 h-0.5 w-16 bg-primary"></div>
+          <p class="mt-6 text-base leading-relaxed text-primary-lighter dark:text-gray-400 sm:text-lg">My journey began
+            not in a design studio, but in the world of computer science. It was there I learned the power of systems,
+            precision, and elegant solutions. I saw an opportunity to apply that same innovative thinking to the
+            building materials industry—a field ripe for disruption. Aura Nook was born from a simple question: What if
+            we could engineer luxury materials that were not only beautiful and durable but also accessible to everyone?
+          </p>
+        </section>
+        <section class="grid grid-cols-1 gap-8 text-center sm:grid-cols-3">
+          <div class="flex flex-col items-center">
+            <div
+              class="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary-lighter dark:bg-primary-lighter/10">
+              <span class="material-symbols-outlined text-3xl">lightbulb</span>
+            </div>
+            <h4 class="mt-4 text-lg font-bold text-primary-darker dark:text-white">Innovation</h4>
+            <p class="mt-1 text-sm text-primary-lighter dark:text-gray-400">Pushing the boundaries of material science.
+            </p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div
+              class="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary-lighter dark:bg-primary-lighter/10">
+              <span class="material-symbols-outlined text-3xl">terminal</span>
+            </div>
+            <h4 class="mt-4 text-lg font-bold text-primary-darker dark:text-white">Technology</h4>
+            <p class="mt-1 text-sm text-primary-lighter dark:text-gray-400">Leveraging code for precision and quality.
+            </p>
+          </div>
+          <div class="flex flex-col items-center">
+            <div
+              class="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary-lighter dark:bg-primary-lighter/10">
+              <span class="material-symbols-outlined text-3xl">verified</span>
+            </div>
+            <h4 class="mt-4 text-lg font-bold text-primary-darker dark:text-white">Quality</h4>
+            <p class="mt-1 text-sm text-primary-lighter dark:text-gray-400">Uncompromising standards in every panel.</p>
+          </div>
+        </section>
+        <section>
+          <h3 class="font-serif text-3xl font-bold text-primary-darker dark:text-white">The Vision: Accessible Luxury
+            Through Technology</h3>
+          <div class="mt-4 h-0.5 w-16 bg-primary"></div>
+          <p class="mt-6 text-base leading-relaxed text-primary-lighter dark:text-gray-400 sm:text-lg">At Aura Nook, our
+            vision extends beyond products. We aim to democratize luxury design. By integrating cutting-edge technology
+            into our manufacturing processes, we create premium materials that are sustainable, cost-effective, and
+            consistently flawless. We believe everyone deserves to live in a space that inspires them, and we're
+            building the future where that is a reality.</p>
+        </section>
+        <section class="relative my-16 py-12">
+          <div class="absolute inset-0 -skew-y-1 transform bg-gray-100 dark:bg-primary-darker/20"></div>
+          <div class="relative mx-auto max-w-3xl px-4 text-center">
+            <p class="font-serif text-2xl font-bold italic text-primary-darker dark:text-white sm:text-3xl">"The most
+              elegant solutions, whether in code or in materials, are born from a deep understanding of structure and a
+              passion for beauty."</p>
+          </div>
+        </section>
+        <section class="text-center">
+          <p class="text-base text-primary-lighter dark:text-gray-400 sm:text-lg">I invite you to explore what we've
+            created and join us on this journey.</p>
+          <img alt="Digital signature of Madhu Kumari" class="mx-auto mt-6 h-16 w-auto invert dark:invert-0"
+            data-alt="A stylized digital signature reading 'Madhu Kumari'."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYmmXW21C3rH9uxki-2tzRMDHR7KrVGF3zqdX9o_6xSsLZFY4CQvxY39orSDOPs91Jg8QACmYtFJa_DmY3dwD2j-unVN_rz-fhiXJHeDtr2nI1fSNzYRnmT1f7W6JKw1YdJZAetf9rnsZHx9EZ8aQKSBTA5s-40r7bcwBqyw7ClhSXlD0vsVpmWbtW132LNrE6rHwL8L8ZAggWxGcMJ4GjY-9cqW3bvvBARMdlKs3g7XSEw33btypPnKy71O6LyLuKLzy4EUnFa9E" />
+          <p class="mt-2 text-sm font-bold tracking-wider text-primary-darker dark:text-white">MADHU KUMARI, FOUNDER
+            &amp; CEO</p>
+        </section>
+        <section class="pt-8 text-center">
+          <a href="products.html"
+            class="mx-auto flex h-12 min-w-56 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-6 text-base font-bold text-white shadow-lg shadow-primary/20 transition-transform duration-300 hover:scale-105 hover:shadow-primary/30">Explore
+            Our Innovations</a>
+        </section>
+      </div>
+    </div>
+  </main>
+  </div>
+  </div>
+  <footer class="mt-16 border-t border-slate-200 dark:border-white/10 pt-10 pb-8 px-4 sm:px-10 lg:px-20">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+      <div class="col-span-2 md:col-span-1">
+        <div class="flex items-center gap-2">
+          <div class="size-5 text-primary">
+            <svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M13.8261 17.4264C16.7203 18.1174 20.2244 18.5217 24 18.5217C27.7756 18.5217 31.2797 18.1174 34.1739 17.4264C36.9144 16.7722 39.9967 15.2331 41.3563 14.1648L24.8486 40.6391C24.4571 41.267 23.5429 41.267 23.1514 40.6391L6.64374 14.1648C8.00331 15.2331 11.0856 16.7722 13.8261 17.4264Z">
+              </path>
+              <path clip-rule="evenodd"
+                d="M39.998 12.236C39.9944 12.2537 39.9875 12.2845 39.9748 12.3294C39.9436 12.4399 39.8949 12.5741 39.8346 12.7175C39.8168 12.7597 39.7989 12.8007 39.7813 12.8398C38.5103 13.7113 35.9788 14.9393 33.7095 15.4811C30.9875 16.131 27.6413 16.5217 24 16.5217C20.3587 16.5217 17.0125 16.131 14.2905 15.4811C12.0012 14.9346 9.44505 13.6897 8.18538 12.8168C8.17384 12.7925 8.16216 12.767 8.15052 12.7408C8.09919 12.6249 8.05721 12.5114 8.02977 12.411C8.00356 12.3152 8.00039 12.2667 8.00004 12.2612C8.00004 12.261 8 12.2607 8.00004 12.2612C8.00004 12.2359 8.0104 11.9233 8.68485 11.3686C9.34546 10.8254 10.4222 10.2469 11.9291 9.72276C14.9242 8.68098 19.1919 8 24 8C28.8081 8 33.0758 8.68098 36.0709 9.72276C37.5778 10.2469 38.6545 10.8254 39.3151 11.3686C39.9006 11.8501 39.9857 12.1489 39.998 12.236ZM4.95178 15.2312L21.4543 41.6973C22.6288 43.5809 25.3712 43.5809 26.5457 41.6973L43.0534 15.223C43.0709 15.1948 43.0878 15.1662 43.104 15.1371L41.3563 14.1648C43.104 15.1371 43.1038 15.1374 43.104 15.1371L43.1051 15.135L43.1065 15.1325L43.1101 15.1261L43.1199 15.1082C43.1276 15.094 43.1377 15.0754 43.1497 15.0527C43.1738 15.0075 43.2062 14.9455 43.244 14.8701C43.319 14.7208 43.4196 14.511 43.5217 14.2683C43.6901 13.8679 44 13.0689 44 12.2609C44 10.5573 43.003 9.22254 41.8558 8.2791C40.6947 7.32427 39.1354 6.55361 37.385 5.94477C33.8654 4.72057 29.133 4 24 4C18.867 4 14.1346 4.72057 10.615 5.94478C8.86463 6.55361 7.30529 7.32428 6.14419 8.27911C4.99695 9.22255 3.99999 10.5573 3.99999 12.2609C3.99999 13.1275 4.29264 13.9078 4.49321 14.3607C4.60375 14.6102 4.71348 14.8196 4.79687 14.9689C4.83898 15.0444 4.87547 15.1065 4.9035 15.1529C4.91754 15.1762 4.92954 15.1957 4.93916 15.2111L4.94662 15.223L4.95178 15.2312ZM35.9868 18.996L24 38.22L12.0131 18.996C12.4661 19.1391 12.9179 19.2658 13.3617 19.3718C16.4281 20.1039 20.0901 20.5217 24 20.5217C27.9099 20.5217 31.5719 20.1039 34.6383 19.3718C35.082 19.2658 35.5339 19.1391 35.9868 18.996Z"
+                fill="currentColor" fill-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h2 class="text-lg font-bold">Aura Nook</h2>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">Premium building materials for the modern
+          aesthetic.</p>
+      </div>
+      <div>
+        <h3 class="font-bold mb-4 text-slate-800 dark:text-white">Company</h3>
+        <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+          <li><a class="hover:text-primary" href="about.html">About Us</a></li>
+          <li><a class="hover:text-primary" href="founder.html">Founder's Vision</a></li>
+          <li><a class="hover:text-primary" href="trust.html">Trust &amp; Transparency</a></li>
+          <li><a class="hover:text-primary" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold mb-4 text-slate-800 dark:text-white">Materials</h3>
+        <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+          <li><a class="hover:text-primary" href="products.html#polygranite">Polygranite</a></li>
+          <li><a class="hover:text-primary" href="products.html#spc">SPC Flooring</a></li>
+          <li><a class="hover:text-primary" href="products.html#3d-panels">3D Wall Panels</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold mb-4 text-slate-800 dark:text-white">Follow Us</h3>
+        <div class="flex space-x-4">
+          <a class="text-slate-500 hover:text-primary" href="#"><span
+              class="material-symbols-outlined">public</span></a>
+          <a class="text-slate-500 hover:text-primary" href="#"><span
+              class="material-symbols-outlined">alternate_email</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="mt-8 text-center text-sm text-slate-500 dark:text-slate-400">
+      <p>© 2024 Aura Nook. All rights reserved.</p>
+    </div>
+  </footer>
+  </div>
+  <script src="js/mobile-menu.js"></script>
+</body>
+
+</html>
