@@ -17,10 +17,9 @@ export const projects: Project[] = [
     challenge: 'The client required a premium, acoustically optimized open workspace without compromising on modern aesthetic appeal.',
     solution: 'We deployed our Uniceil uPVC Baffle Ceilings across the main floor to drastically reduce noise reverberation while adding a stunning linear architectural element.',
     materialsUsed: ['Uniceil Baffle Ceilings', 'SPC Flooring', '3D Wall Panels'],
-    heroImage: '/assets/projects/tech-hub-hero.jpg',
+    heroImage: '/assets/projects/about_hero.png',
     gallery: [
-      '/assets/projects/tech-hub-1.jpg',
-      '/assets/projects/tech-hub-2.jpg'
+      '/assets/projects/about_hero.png'
     ]
   },
   {
@@ -30,9 +29,9 @@ export const projects: Project[] = [
     challenge: 'Creating a highly durable, moisture-resistant yet luxurious surface finish for living areas exposed to coastal humidity.',
     solution: 'Incorporated Polygranite Sheets in high-gloss marble finish to deliver the opulence of natural stone with zero maintenance and absolute moisture resistance.',
     materialsUsed: ['Polygranite Sheets'],
-    heroImage: '/assets/projects/residence-hero.jpg',
+    heroImage: '/assets/projects/polygranite_sheet.png',
     gallery: [
-      '/assets/projects/residence-1.jpg'
+      '/assets/projects/polygranite_sheet.png'
     ]
   }
 ];

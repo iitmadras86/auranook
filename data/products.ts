@@ -27,7 +27,7 @@ export const products: Product[] = [
       { title: 'Acoustic Benefits', description: 'Exceptional noise reduction for commercial environments.' },
       { title: 'Modern Aesthetics', description: 'Clean, linear architectural lines that elevate any space.' }
     ],
-    images: ['/assets/products/baffle-1.jpg', '/assets/products/baffle-2.jpg'],
+    images: ['/assets/products/hero_luxury.png'],
     applications: ['Corporate Offices', 'Retail Spaces', 'Airports', 'Educational Institutions'],
     specifications: {
       'Material': 'High-grade uPVC',
@@ -46,7 +46,7 @@ export const products: Product[] = [
       { title: 'Sustainability', description: 'Eco-friendly materials with high energy efficiency ratings.' },
       { title: 'Architectural Cladding', description: 'Seamless installation for a striking modern exterior.' }
     ],
-    images: ['/assets/products/facade-1.jpg', '/assets/products/facade-2.jpg'],
+    images: ['/assets/products/hero_luxury.png'],
     applications: ['Commercial Buildings', 'Residential Complexes', 'Hotels & Hospitality'],
     specifications: {
       'Material': 'Composite Cladding',
@@ -64,7 +64,7 @@ export const products: Product[] = [
       { title: 'Marble Finish', description: 'Authentic stone texture and high-gloss polish.' },
       { title: 'Scratch Resistant', description: 'Highly durable surface that resists daily wear.' }
     ],
-    images: ['/assets/products/polygranite-1.jpg'],
+    images: ['/assets/products/polygranite_sheet.png', '/assets/products/hero_polygranite.png'],
     applications: ['Living Rooms', 'Bathrooms', 'Accent Walls'],
     specifications: {
       'Thickness': '3mm - 5mm',
@@ -82,7 +82,7 @@ export const products: Product[] = [
       { title: '100% Waterproof', description: 'Perfect for kitchens, bathrooms, and commercial areas.' },
       { title: 'Click-Lock Installation', description: 'Fast, seamless, and glueless installation.' }
     ],
-    images: ['/assets/products/spc-1.jpg'],
+    images: ['/assets/products/hero_spc.png'],
     applications: ['Residential Flooring', 'Commercial Spaces', 'High-traffic areas'],
     specifications: {
       'Core': 'Stone Plastic Composite',
@@ -100,7 +100,7 @@ export const products: Product[] = [
       { title: 'Geometric Design', description: 'Contemporary patterns for feature walls.' },
       { title: 'Paintable Surface', description: 'Customize the panels to match any color palette.' }
     ],
-    images: ['/assets/products/3d-panel-1.jpg'],
+    images: ['/assets/products/hero_3d_panels.png'],
     applications: ['Feature Walls', 'Reception Areas', 'Bedrooms'],
     specifications: {
       'Material': 'Plant Fiber / PVC',
