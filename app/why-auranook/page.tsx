@@ -3,33 +3,33 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, PenTool, ClipboardList, Layers, HardHat, FileBadge } from "lucide-react";
+import { ArrowRight, Search, ClipboardCheck, Settings, Truck, CheckCircle } from "lucide-react";
 
-const pillars = [
+const processSteps = [
   {
-    icon: <PenTool className="w-8 h-8 text-primary" />,
-    title: "Technical Consultation",
-    desc: "We don't just sell products; we solve design challenges. Our engineering team assists with acoustic calculations, load analyses, and custom profile detailing."
+    icon: <Search className="w-8 h-8 text-primary" />,
+    title: "Design Discovery",
+    desc: "Collaborative analysis of your architectural intent, acoustic requirements, and visual objectives."
   },
   {
-    icon: <Layers className="w-8 h-8 text-primary" />,
-    title: "Product Selection Assistance",
-    desc: "Navigating hundreds of finishes and systems can be daunting. We curate selections based strictly on your project's technical specifications and design intent."
+    icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
+    title: "System Specification",
+    desc: "Rigorous curation of ceiling, wall, and façade systems that meet engineering and aesthetic criteria."
   },
   {
-    icon: <ClipboardList className="w-8 h-8 text-primary" />,
-    title: "BOQ & Budget Estimation",
-    desc: "Accurate Bill of Quantities (BOQ) generation ensures there are no surprises during procurement. We provide transparent, competitive pricing structures."
+    icon: <Settings className="w-8 h-8 text-primary" />,
+    title: "Technical Coordination",
+    desc: "Generation of detailed shop drawings, CAD details, and load calculations for seamless integration."
   },
   {
-    icon: <FileBadge className="w-8 h-8 text-primary" />,
-    title: "CAD & Detail Drawings",
-    desc: "We supply comprehensive installation details, junction sections, and shop drawings to ensure the contractor executes your vision flawlessly."
+    icon: <Truck className="w-8 h-8 text-primary" />,
+    title: "Procurement Support",
+    desc: "Transparent BOQ generation and synchronized supply chain management to meet project timelines."
   },
   {
-    icon: <HardHat className="w-8 h-8 text-primary" />,
-    title: "Site Coordination",
-    desc: "From pre-installation site surveys to managing vendor networks, our project managers ensure materials are installed precisely to specification."
+    icon: <CheckCircle className="w-8 h-8 text-primary" />,
+    title: "Project Execution",
+    desc: "On-site technical support and contractor coordination to ensure flawless physical installation."
   }
 ];
 
@@ -88,7 +88,7 @@ export default function WhyAuranook() {
                  transition={{ duration: 0.8, delay: 0.2 }}
                  className="aspect-[4/5] relative rounded-3xl overflow-hidden group shadow-2xl mt-12"
                >
-                 <Image src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop" alt="Acoustic Ceiling Architecture" fill className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-out" />
+                 <Image src="/assets/products/prod_baffle_ceiling.png" alt="Acoustic Ceiling Architecture" fill className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-out" />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
                    <p className="text-white font-bold text-lg tracking-wide">Precision Engineering</p>
                  </div>
@@ -102,13 +102,13 @@ export default function WhyAuranook() {
                  className="space-y-4 md:space-y-6"
                >
                  <div className="aspect-square relative rounded-3xl overflow-hidden group shadow-xl">
-                   <Image src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" alt="Premium Surfaces" fill className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-out" />
+                   <Image src="/assets/products/prod_polygranite.png" alt="Premium Surfaces" fill className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-out" />
                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
                      <p className="text-white font-bold text-lg tracking-wide">Material Mastery</p>
                    </div>
                  </div>
                  <div className="aspect-[4/3] relative rounded-3xl overflow-hidden group shadow-xl">
-                   <Image src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop" alt="Facade Integration" fill className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-out" />
+                   <Image src="/assets/products/prod_facade.png" alt="Facade Integration" fill className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-out" />
                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
                      <p className="text-white font-bold text-lg tracking-wide">Flawless Integration</p>
                    </div>
@@ -119,49 +119,60 @@ export default function WhyAuranook() {
         </div>
       </section>
 
-      {/* Core Pillars */}
-      <section className="py-24 bg-stone-100">
-        <div className="container mx-auto px-6 md:px-12">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-4xl font-extrabold mb-6">How We Support Your Projects</h2>
-            <p className="text-lg text-muted-foreground">Comprehensive technical services designed to mitigate risk and ensure structural and aesthetic perfection.</p>
+      {/* Process Timeline */}
+      <section className="py-24 bg-stone-900 relative overflow-hidden">
+        {/* Architectural blueprint background texture */}
+        <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'linear-gradient(#ffffff44 1px, transparent 1px), linear-gradient(90deg, #ffffff44 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+        
+        <div className="container mx-auto px-6 md:px-12 relative z-10">
+          <div className="text-center max-w-4xl mx-auto mb-20">
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-white leading-tight">From Design Intent to Project Delivery</h2>
+            <p className="text-lg text-white/70">A seamless, technical-led specification methodology designed to mitigate execution risk and guarantee structural and aesthetic perfection.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {pillars.map((pillar, idx) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-row gap-6 relative">
+            {/* Connecting Line for desktop */}
+            <div className="hidden lg:block absolute top-12 left-0 right-0 h-0.5 bg-white/10 z-0">
+              <motion.div 
+                className="h-full bg-primary"
+                initial={{ width: "0%" }}
+                whileInView={{ width: "100%" }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.5, ease: "easeInOut" }}
+              />
+            </div>
+            
+            {processSteps.map((step, idx) => (
               <motion.div 
                 key={idx}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                className="bg-white p-8 border border-border shadow-sm hover:shadow-xl transition-shadow"
+                transition={{ delay: idx * 0.2, duration: 0.6 }}
+                className="flex-1 relative z-10"
               >
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                  {pillar.icon}
+                <div className="bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-2xl h-full shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:bg-white/10 transition-colors group">
+                  <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform shadow-[0_0_15px_rgba(184,159,93,0.3)]">
+                    {step.icon}
+                  </div>
+                  <h3 className="text-xl font-bold mb-4 text-white font-serif">{step.title}</h3>
+                  <p className="text-white/60 leading-relaxed text-sm">{step.desc}</p>
                 </div>
-                <h3 className="text-xl font-bold mb-4">{pillar.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{pillar.desc}</p>
               </motion.div>
             ))}
-            
-            {/* CTA Card in Grid */}
+          </div>
+
+          <div className="mt-20 text-center">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.5 }}
-              className="bg-foreground text-background p-8 border border-foreground shadow-sm flex flex-col justify-center"
+              transition={{ delay: 1 }}
             >
-              <h3 className="text-2xl font-bold mb-4 text-white">Need Project Support?</h3>
-              <p className="text-white/70 mb-6 leading-relaxed">Send us your floor plans or design intent, and our engineers will provide a customized specification strategy.</p>
-              <div className="mb-8">
-                <p className="text-white/70 text-sm mb-1">Speak directly with our Specification Team:</p>
-                <a href="tel:+919507054062" className="text-primary font-bold hover:text-white transition-colors text-lg">+91 95070 54062</a>
-              </div>
-              <Link href="/contact" className="inline-flex items-center text-primary font-bold hover:text-white transition-colors gap-2 mt-auto">
-                Submit Project Details <ArrowRight size={18} />
+              <Link href="/contact" className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground font-bold hover:brightness-110 transition-all shadow-[0_0_30px_-5px_rgba(184,159,93,0.4)] rounded-full gap-2 text-lg">
+                Submit Project Details <ArrowRight size={20} />
               </Link>
+              <p className="mt-6 text-white/50 text-sm">Speak directly with our Specification Team: <a href="tel:+919507054062" className="text-primary hover:underline">+91 95070 54062</a></p>
             </motion.div>
           </div>
         </div>

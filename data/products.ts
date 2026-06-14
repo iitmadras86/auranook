@@ -33,9 +33,8 @@ export const products: Product[] = [
       { title: 'Modern Aesthetics', description: 'Clean, linear architectural lines that elevate any design intent.' }
     ],
     images: [
-      'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1556761175-5973dc0f32b7?q=80&w=2000&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1497215842964-222b430dc094?q=80&w=2000&auto=format&fit=crop'
+      '/assets/products/prod_baffle_ceiling.png',
+      '/assets/uniceil/portfolio_baffle.png'
     ],
     applications: ['Corporate Offices', 'Retail Spaces', 'Airports', 'Educational Institutions'],
     specifications: {
@@ -57,8 +56,8 @@ export const products: Product[] = [
       { title: 'Architectural Cladding', description: 'Seamless installation for a striking modern exterior profile.' }
     ],
     images: [
-      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=2000&auto=format&fit=crop'
+      '/assets/products/prod_facade.png',
+      '/assets/uniceil/portfolio_facade.png'
     ],
     applications: ['Commercial Buildings', 'Residential Complexes', 'Hotels & Hospitality', 'Transit Hubs'],
     specifications: {
@@ -79,9 +78,8 @@ export const products: Product[] = [
       { title: 'Scratch Resistant', description: 'Highly durable surface that resists daily wear in high-traffic zones.' }
     ],
     images: [
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2000&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=2000&auto=format&fit=crop'
+      '/assets/products/prod_polygranite.png',
+      '/assets/uniceil/portfolio_wall.png'
     ],
     applications: ['Hospitality Lobbies', 'Luxury Bathrooms', 'Commercial Accent Walls'],
     specifications: {
@@ -102,8 +100,8 @@ export const products: Product[] = [
       { title: 'Click-Lock Installation', description: 'Fast, seamless, and glueless installation reduces project timelines.' }
     ],
     images: [
-      'https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=2000&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2000&auto=format&fit=crop'
+      '/assets/products/prod_spc.png',
+      '/assets/products/hero_spc.png'
     ],
     applications: ['Retail Flooring', 'Commercial Spaces', 'Healthcare Corridors'],
     specifications: {
@@ -124,8 +122,8 @@ export const products: Product[] = [
       { title: 'Paintable Surface', description: 'Customize the panels to match exact brand color palettes.' }
     ],
     images: [
-      'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1600607688969-a5bfcd64bd40?q=80&w=2000&auto=format&fit=crop'
+      '/assets/products/prod_3d_wall.png',
+      '/assets/products/hero_3d_panels.png'
     ],
     applications: ['Corporate Feature Walls', 'Reception Areas', 'Boutique Retail'],
     specifications: {

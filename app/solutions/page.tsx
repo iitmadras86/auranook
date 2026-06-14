@@ -69,7 +69,7 @@ const solutions = [
       "High impact resistance against daily wear",
       "Sustainable and safe material composition"
     ],
-    img: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2000&auto=format&fit=crop"
+    img: "/assets/uniceil/sector_education.png"
   },
   {
     id: "luxury-residential",

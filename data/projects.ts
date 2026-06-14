@@ -29,9 +29,9 @@ export const projects: Project[] = [
       'Rapid Installation Capability'
     ],
     designIntent: 'Acoustic Performance',
-    heroImage: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop',
+    heroImage: '/assets/uniceil/portfolio_baffle.png',
     gallery: [
-      'https://images.unsplash.com/photo-1556761175-5973dc0f32b7?q=80&w=2000&auto=format&fit=crop'
+      '/assets/uniceil/portfolio_baffle.png'
     ]
   },
   {
@@ -49,9 +49,9 @@ export const projects: Project[] = [
       'Structural Load Reduction'
     ],
     designIntent: 'Premium Interior Surfaces',
-    heroImage: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2000&auto=format&fit=crop',
+    heroImage: '/assets/products/prod_facade.png',
     gallery: [
-      'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000&auto=format&fit=crop'
+      '/assets/uniceil/sector_hospitality.png'
     ]
   }
 ];

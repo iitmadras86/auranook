@@ -181,7 +181,7 @@ export default function Home() {
               { name: "Hospitality", img: "/assets/uniceil/sector_hospitality.png" },
               { name: "Retail", img: "/assets/uniceil/sector_retail.png" },
               { name: "Healthcare", img: "/assets/uniceil/sector_healthcare.png" },
-              { name: "Education", img: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2000&auto=format&fit=crop" },
+              { name: "Education", img: "/assets/uniceil/sector_education.png" },
               { name: "Luxury Res.", img: "/assets/uniceil/sector_luxury_res.png" },
             ].map((sector, idx) => (
               <Link href={`/solutions#${sector.name.toLowerCase().replace(' ', '-')}`} key={sector.name}>

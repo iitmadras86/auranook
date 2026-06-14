@@ -77,10 +77,10 @@ export default function UniceilBrandPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
-              { title: "Baffle & Linear Ceilings", desc: "Linear architectural appearance with superior acoustic benefits.", img: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop" },
-              { title: "Acoustic Ceilings", desc: "High NRC rating systems for demanding corporate and educational environments.", img: "https://images.unsplash.com/photo-1497215842964-222b430dc094?q=80&w=2000&auto=format&fit=crop" },
-              { title: "Interior Wall Systems", desc: "Durable, high-impact cladding for high-traffic commercial zones.", img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000&auto=format&fit=crop" },
-              { title: "Exterior Façades", desc: "Weather-resistant, UV-stable building envelope solutions.", img: "/assets/products/prod_facade.png" }
+              { title: "Baffle & Linear Ceilings", desc: "Linear architectural appearance with superior acoustic benefits.", img: "/assets/uniceil/portfolio_baffle.png" },
+              { title: "Acoustic Ceilings", desc: "High NRC rating systems for demanding corporate and educational environments.", img: "/assets/uniceil/portfolio_acoustic.png" },
+              { title: "Interior Wall Systems", desc: "Durable, high-impact cladding for high-traffic commercial zones.", img: "/assets/uniceil/portfolio_wall.png" },
+              { title: "Exterior Façades", desc: "Weather-resistant, UV-stable building envelope solutions.", img: "/assets/uniceil/portfolio_facade.png" }
             ].map((sys, i) => (
               <motion.div 
                 key={i} 
