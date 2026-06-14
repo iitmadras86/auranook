@@ -10,7 +10,9 @@ export default function ContactPage() {
     company: "",
     email: "",
     phone: "",
-    inquiryType: "General Inquiry",
+    profession: "Architect",
+    projectStage: "Concept Design",
+    requirement: "Technical Consultation",
     message: ""
   });
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
@@ -36,7 +38,7 @@ export default function ContactPage() {
 
       if (response.ok) {
         setStatus("success");
-        setFormData({ name: "", company: "", email: "", phone: "", inquiryType: "General Inquiry", message: "" });
+        setFormData({ name: "", company: "", email: "", phone: "", profession: "Architect", projectStage: "Concept Design", requirement: "Technical Consultation", message: "" });
       } else {
         setStatus("error");
         setErrorMessage(result.error || "An error occurred. Please try again.");
@@ -133,16 +135,50 @@ export default function ContactPage() {
                   </div>
                 </div>
 
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label className="text-sm font-bold text-card-foreground/80">Profession</label>
+                    <select 
+                      name="profession" value={formData.profession} onChange={handleChange}
+                      className="w-full bg-background border border-border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all text-foreground appearance-none"
+                    >
+                      <option>Architect</option>
+                      <option>Interior Designer</option>
+                      <option>PMC</option>
+                      <option>Contractor</option>
+                      <option>Builder</option>
+                      <option>Developer</option>
+                      <option>Distributor</option>
+                      <option>Dealer</option>
+                    </select>
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-sm font-bold text-card-foreground/80">Project Stage</label>
+                    <select 
+                      name="projectStage" value={formData.projectStage} onChange={handleChange}
+                      className="w-full bg-background border border-border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all text-foreground appearance-none"
+                    >
+                      <option>Concept Design</option>
+                      <option>Design Development</option>
+                      <option>Tender Stage</option>
+                      <option>Procurement</option>
+                      <option>Construction</option>
+                    </select>
+                  </div>
+                </div>
+
                 <div className="space-y-2">
-                  <label className="text-sm font-bold text-card-foreground/80">Inquiry Type</label>
+                  <label className="text-sm font-bold text-card-foreground/80">Requirement</label>
                   <select 
-                    name="inquiryType" value={formData.inquiryType} onChange={handleChange}
+                    name="requirement" value={formData.requirement} onChange={handleChange}
                     className="w-full bg-background border border-border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all text-foreground appearance-none"
                   >
-                    <option>General Inquiry</option>
-                    <option>Product Specification / Quote</option>
-                    <option>Distributorship Application</option>
-                    <option>Architect / Designer Partnership</option>
+                    <option>Product Catalogue</option>
+                    <option>Technical Consultation</option>
+                    <option>Product Sample</option>
+                    <option>BOQ Support</option>
+                    <option>Budget Estimate</option>
+                    <option>Dealer Inquiry</option>
                   </select>
                 </div>
 
@@ -196,8 +232,10 @@ export default function ContactPage() {
                     <h5 className="font-bold text-lg mb-1">Corporate Office</h5>
                     <p className="text-foreground/70 leading-relaxed">
                       Auranook Architectural Systems Pvt. Ltd.<br />
-                      Level 14, Prestige Trade Tower,<br />
-                      Palace Road, Bangalore 560001, India
+                      Sakri Road, Canara Bank,<br />
+                      Muzaffarpur, Bihar - 843113<br />
+                      it is GSTIN number only<br />
+                      GSTIN: 10ACIFA9918P1ZZ
                     </p>
                   </div>
                 </div>
@@ -219,8 +257,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h5 className="font-bold text-lg mb-1">Direct Lines</h5>
-                    <p className="text-foreground/70 mb-1">+91 1800 123 4567 (Toll Free)</p>
-                    <p className="text-foreground/70">+91 80 4567 8900 (Corporate)</p>
+                    <a href="tel:+919507054062" className="text-foreground/70 mb-1 hover:text-primary transition-colors block">+91 95070 54062</a>
                   </div>
                 </div>
               </div>

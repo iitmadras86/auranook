@@ -21,18 +21,18 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col gap-3">
-          <h4 className="font-bold text-white mb-2 tracking-wide uppercase text-xs">Products</h4>
-          <Link href="/uniceil" className="text-sm text-stone-400 hover:text-primary transition-colors">Uniceil Systems</Link>
-          <Link href="/products" className="text-sm text-stone-400 hover:text-primary transition-colors">Polygranite Sheets</Link>
-          <Link href="/products" className="text-sm text-stone-400 hover:text-primary transition-colors">SPC Flooring</Link>
-          <Link href="/products" className="text-sm text-stone-400 hover:text-primary transition-colors">3D Wall Panels</Link>
+          <h4 className="font-bold text-white mb-2 tracking-wide uppercase text-xs">Brands & Systems</h4>
+          <Link href="/brands/uniceil" className="text-sm text-stone-400 hover:text-primary transition-colors">The Uniceil</Link>
+          <Link href="/brands/polygranite" className="text-sm text-stone-400 hover:text-primary transition-colors">Polygranite</Link>
+          <Link href="/solutions" className="text-sm text-stone-400 hover:text-primary transition-colors">Industry Solutions</Link>
+          <Link href="/products" className="text-sm text-stone-400 hover:text-primary transition-colors">All Products</Link>
         </div>
 
         <div className="flex flex-col gap-3">
           <h4 className="font-bold text-white mb-2 tracking-wide uppercase text-xs">Company</h4>
-          <Link href="/about" className="text-sm text-stone-400 hover:text-primary transition-colors">About Us</Link>
-          <Link href="/projects" className="text-sm text-stone-400 hover:text-primary transition-colors">Our Projects</Link>
-          <Link href="/distributorship" className="text-sm text-stone-400 hover:text-primary transition-colors">Become a Distributor</Link>
+          <Link href="/why-auranook" className="text-sm text-stone-400 hover:text-primary transition-colors">Why Auranook</Link>
+          <Link href="/projects" className="text-sm text-stone-400 hover:text-primary transition-colors">Project Stories</Link>
+          <Link href="/resources" className="text-sm text-stone-400 hover:text-primary transition-colors">Technical Resources</Link>
           <Link href="/contact" className="text-sm text-stone-400 hover:text-primary transition-colors">Contact</Link>
         </div>
 
@@ -40,12 +40,14 @@ export default function Footer() {
           <h4 className="font-bold text-white mb-2 tracking-wide uppercase text-xs">Contact Us</h4>
           <p className="text-sm text-stone-400">
             Auranook Headquarters<br />
-            123 Architectural Avenue<br />
-            Business District, Mumbai 400001
+            Sakri Road, Canara Bank<br />
+            Muzaffarpur, Bihar - 843113<br />
+            it is GSTIN number only<br />
+            GSTIN: 10ACIFA9918P1ZZ
           </p>
           <p className="text-sm text-stone-400 mt-2">
             Email: <a href="mailto:info@auranook.com" className="hover:text-primary">info@auranook.com</a><br />
-            Phone: <a href="tel:+919876543210" className="hover:text-primary">+91 98765 43210</a>
+            Phone: <a href="tel:+919507054062" className="hover:text-primary">+91 95070 54062</a>
           </p>
         </div>
       </div>

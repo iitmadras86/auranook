@@ -1,39 +1,389 @@
-export interface GalleryItem {
+export interface GalleryImage {
   id: string;
-  category: 'Ceiling' | 'Wall' | 'Facade' | 'Commercial' | 'Residential' | 'Hospitality';
-  imageUrl: string;
+  src: string;
+  title: string;
+  description: string;
+  industry: string;
+  brand: string;
+  designIntent: string;
+  systemType: string;
+  projectType: string;
   altText: string;
-  title?: string;
 }
 
-export const galleryItems: GalleryItem[] = [
+export const galleryData: GalleryImage[] = [
+  // ---------------------------------------------------------
+  // Existing Base Images (7)
+  // ---------------------------------------------------------
   {
-    id: 'g1',
-    category: 'Commercial',
-    imageUrl: '/assets/gallery/commercial-1.jpg',
-    altText: 'Acoustic baffle ceilings in a modern commercial office'
+    id: "gal-001",
+    src: "/assets/products/prod_baffle_ceiling.png",
+    title: "Tech Hub Linear Baffles",
+    description: "Continuous linear baffle ceiling installation designed to reduce reverberation in a high-traffic open-plan tech office.",
+    industry: "Commercial Office",
+    brand: "The Uniceil",
+    designIntent: "Acoustic Performance",
+    systemType: "Baffle Ceilings",
+    projectType: "Corporate HQ",
+    altText: "Acoustic baffle ceiling installation in a commercial office using The Uniceil ceiling system."
   },
   {
-    id: 'g2',
-    category: 'Residential',
-    imageUrl: '/assets/gallery/residential-1.jpg',
-    altText: 'Luxury residence featuring polygranite accent wall'
+    id: "gal-002",
+    src: "/assets/uniceil/sector_commercial.png",
+    title: "Executive Boardroom Aesthetics",
+    description: "Premium acoustic ceiling tiles seamlessly integrated with architectural lighting for executive privacy.",
+    industry: "Commercial Office",
+    brand: "The Uniceil",
+    designIntent: "Visual Identity",
+    systemType: "Ceiling Systems",
+    projectType: "Corporate HQ",
+    altText: "Executive boardroom featuring luxury acoustic ceiling systems by The Uniceil."
   },
   {
-    id: 'g3',
-    category: 'Ceiling',
-    imageUrl: '/assets/gallery/ceiling-1.jpg',
-    altText: 'uPVC baffle ceiling installation'
+    id: "gal-003",
+    src: "/assets/products/prod_polygranite.png",
+    title: "Reception Area Cladding",
+    description: "High-gloss decorative Polygranite surface applied to the main reception desk and backdrop.",
+    industry: "Commercial Office",
+    brand: "Polygranite",
+    designIntent: "Premium Interior Surfaces",
+    systemType: "Decorative Surfaces",
+    projectType: "Lobby",
+    altText: "Premium Polygranite decorative sheets used as reception wall cladding in a commercial office."
   },
   {
-    id: 'g4',
-    category: 'Facade',
-    imageUrl: '/assets/gallery/facade-1.jpg',
-    altText: 'Modern building facade using Auranook cladding'
+    id: "gal-004",
+    src: "/assets/uniceil/sector_hospitality.png",
+    title: "Hotel Atrium Facade",
+    description: "Durable exterior facade system providing both weather resistance and a striking visual identity for a luxury hotel.",
+    industry: "Hospitality",
+    brand: "The Uniceil",
+    designIntent: "Exterior Envelope",
+    systemType: "Façade Systems",
+    projectType: "Hotel",
+    altText: "Exterior facade system by The Uniceil installed on a modern luxury hotel building."
+  },
+  {
+    id: "gal-005",
+    src: "/assets/uniceil/sector_luxury_res.png",
+    title: "Luxury Suite Walls",
+    description: "Polygranite wall panels delivering zero-maintenance luxury to hotel suite interiors.",
+    industry: "Hospitality",
+    brand: "Polygranite",
+    designIntent: "Premium Interior Surfaces",
+    systemType: "Wall Systems",
+    projectType: "Suite",
+    altText: "Luxury hotel suite interior featuring Polygranite premium decorative surface wall panels."
+  },
+  {
+    id: "gal-006",
+    src: "/assets/uniceil/sector_healthcare.png",
+    title: "Hospital Corridor Acoustics",
+    description: "Acoustic wall and ceiling treatments ensuring a quiet healing environment and meeting strict hygiene standards.",
+    industry: "Healthcare",
+    brand: "The Uniceil",
+    designIntent: "Acoustic Performance",
+    systemType: "Ceiling Systems",
+    projectType: "Hospital",
+    altText: "Healthcare acoustic ceiling installation by The Uniceil in a hospital corridor."
+  },
+  {
+    id: "gal-007",
+    src: "/assets/uniceil/sector_retail.png",
+    title: "Retail Flagship Display",
+    description: "Custom ceiling and wall system configurations for a premium retail flagship store.",
+    industry: "Retail",
+    brand: "The Uniceil",
+    designIntent: "Visual Identity",
+    systemType: "Ceiling Systems",
+    projectType: "Flagship Store",
+    altText: "Custom architectural ceiling installation by The Uniceil in a retail flagship store."
+  },
+
+  // ---------------------------------------------------------
+  // NEW: Acoustic Performance Expansion (5)
+  // ---------------------------------------------------------
+  {
+    id: "gal-ap-01",
+    src: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop",
+    title: "Open-Plan Acoustic Baffles",
+    description: "Extensive linear baffle system installed across a modern open-plan office to minimize speech transmission.",
+    industry: "Commercial Office",
+    brand: "The Uniceil",
+    designIntent: "Acoustic Performance",
+    systemType: "Baffle Ceilings",
+    projectType: "Workspace",
+    altText: "Open plan office with acoustic baffles"
+  },
+  {
+    id: "gal-ap-02",
+    src: "https://images.unsplash.com/photo-1517502884422-41eaead166d4?q=80&w=2000&auto=format&fit=crop",
+    title: "University Auditorium Acoustics",
+    description: "High-NRC ceiling panels configured specifically for a large-scale educational auditorium.",
+    industry: "Education",
+    brand: "The Uniceil",
+    designIntent: "Acoustic Performance",
+    systemType: "Ceiling Systems",
+    projectType: "Auditorium",
+    altText: "Educational auditorium with acoustic ceiling"
+  },
+  {
+    id: "gal-ap-03",
+    src: "https://images.unsplash.com/photo-1505409859467-3a796fd5798e?q=80&w=2000&auto=format&fit=crop",
+    title: "Executive Conference Acoustics",
+    description: "Sound-dampening ceiling tiles in a glass-walled conference room ensuring complete privacy.",
+    industry: "Commercial Office",
+    brand: "The Uniceil",
+    designIntent: "Acoustic Performance",
+    systemType: "Ceiling Systems",
+    projectType: "Conference Room",
+    altText: "Conference room acoustic ceiling"
+  },
+  {
+    id: "gal-ap-04",
+    src: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2000&auto=format&fit=crop",
+    title: "Collaborative Zone Sound Control",
+    description: "Suspended acoustic clouds positioned over collaborative zones to contain localized noise.",
+    industry: "Commercial Office",
+    brand: "The Uniceil",
+    designIntent: "Acoustic Performance",
+    systemType: "Baffle Ceilings",
+    projectType: "Innovation Hub",
+    altText: "Acoustic clouds over collaboration zone"
+  },
+  {
+    id: "gal-ap-05",
+    src: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=2000&auto=format&fit=crop",
+    title: "Library Quiet Zones",
+    description: "Seamless acoustic ceiling integration in a university library ensuring a distraction-free environment.",
+    industry: "Education",
+    brand: "The Uniceil",
+    designIntent: "Acoustic Performance",
+    systemType: "Ceiling Systems",
+    projectType: "Library",
+    altText: "University library with acoustic ceiling"
+  },
+
+  // ---------------------------------------------------------
+  // NEW: Visual Identity Expansion (5)
+  // ---------------------------------------------------------
+  {
+    id: "gal-vi-01",
+    src: "https://images.unsplash.com/photo-1556761175-5973dc0f32b7?q=80&w=2000&auto=format&fit=crop",
+    title: "Corporate Reception Statement",
+    description: "A sweeping architectural ceiling feature establishing an immediate premium brand identity.",
+    industry: "Commercial Office",
+    brand: "The Uniceil",
+    designIntent: "Visual Identity",
+    systemType: "Ceiling Systems",
+    projectType: "Lobby",
+    altText: "Corporate reception with statement ceiling"
+  },
+  {
+    id: "gal-vi-02",
+    src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2000&auto=format&fit=crop",
+    title: "Feature Wall Geometry",
+    description: "3D architectural wall panels creating dynamic shadows and a contemporary focal point.",
+    industry: "Retail",
+    brand: "Polygranite",
+    designIntent: "Visual Identity",
+    systemType: "Wall Systems",
+    projectType: "Showroom",
+    altText: "3D feature wall in retail showroom"
+  },
+  {
+    id: "gal-vi-03",
+    src: "https://images.unsplash.com/photo-1541888086-45bc11ef6fb0?q=80&w=2000&auto=format&fit=crop",
+    title: "Branded Atrium Space",
+    description: "Custom-colored woodgrain baffles complementing the corporate brand palette in a central atrium.",
+    industry: "Commercial Office",
+    brand: "The Uniceil",
+    designIntent: "Visual Identity",
+    systemType: "Baffle Ceilings",
+    projectType: "Atrium",
+    altText: "Branded atrium with woodgrain baffles"
+  },
+  {
+    id: "gal-vi-04",
+    src: "https://images.unsplash.com/photo-1503174971373-b1f69850bded?q=80&w=2000&auto=format&fit=crop",
+    title: "Luxury Boutique Cladding",
+    description: "High-contrast decorative surfaces framing a high-end luxury boutique entrance.",
+    industry: "Retail",
+    brand: "Polygranite",
+    designIntent: "Visual Identity",
+    systemType: "Decorative Surfaces",
+    projectType: "Boutique",
+    altText: "Luxury boutique with decorative surface cladding"
+  },
+  {
+    id: "gal-vi-05",
+    src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2000&auto=format&fit=crop",
+    title: "Architectural Stairwell",
+    description: "Continuous linear ceilings flowing smoothly down a monumental architectural stairwell.",
+    industry: "Commercial Office",
+    brand: "The Uniceil",
+    designIntent: "Visual Identity",
+    systemType: "Baffle Ceilings",
+    projectType: "Headquarters",
+    altText: "Monumental stairwell with linear ceilings"
+  },
+
+  // ---------------------------------------------------------
+  // NEW: Exterior Envelope Expansion (5)
+  // ---------------------------------------------------------
+  {
+    id: "gal-ee-01",
+    src: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000&auto=format&fit=crop",
+    title: "Modern Commercial Tower Façade",
+    description: "Weather-resistant, UV-stable exterior cladding system on a high-rise commercial tower.",
+    industry: "Commercial Office",
+    brand: "The Uniceil",
+    designIntent: "Exterior Envelope",
+    systemType: "Façade Systems",
+    projectType: "High-Rise",
+    altText: "Modern commercial tower facade"
+  },
+  {
+    id: "gal-ee-02",
+    src: "https://images.unsplash.com/photo-1577903492582-77298dbb9ff3?q=80&w=2000&auto=format&fit=crop",
+    title: "Institutional Building Envelope",
+    description: "Durable architectural cladding protecting a modern educational institution building.",
+    industry: "Education",
+    brand: "The Uniceil",
+    designIntent: "Exterior Envelope",
+    systemType: "Façade Systems",
+    projectType: "Campus Building",
+    altText: "Institutional building exterior envelope"
+  },
+  {
+    id: "gal-ee-03",
+    src: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?q=80&w=2000&auto=format&fit=crop",
+    title: "Hospitality Resort Exterior",
+    description: "Premium exterior façade systems that withstand coastal weather conditions for luxury resorts.",
+    industry: "Hospitality",
+    brand: "The Uniceil",
+    designIntent: "Exterior Envelope",
+    systemType: "Façade Systems",
+    projectType: "Resort",
+    altText: "Hospitality resort exterior facade"
+  },
+  {
+    id: "gal-ee-04",
+    src: "https://images.unsplash.com/photo-1428366890462-dd4baecf492b?q=80&w=2000&auto=format&fit=crop",
+    title: "Geometric Façade Detailing",
+    description: "Complex geometric exterior cladding showcasing the precision and flexibility of the system.",
+    industry: "Commercial Office",
+    brand: "The Uniceil",
+    designIntent: "Exterior Envelope",
+    systemType: "Façade Systems",
+    projectType: "Corporate HQ",
+    altText: "Geometric exterior facade detailing"
+  },
+  {
+    id: "gal-ee-05",
+    src: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?q=80&w=2000&auto=format&fit=crop",
+    title: "Transit Hub Weather Shield",
+    description: "Robust exterior envelope system applied to a high-traffic metropolitan transit hub.",
+    industry: "Airports & Transit Hubs",
+    brand: "The Uniceil",
+    designIntent: "Exterior Envelope",
+    systemType: "Façade Systems",
+    projectType: "Transit Center",
+    altText: "Transit hub exterior weather shield facade"
+  },
+
+  // ---------------------------------------------------------
+  // NEW: Premium Interior Surfaces Expansion (5)
+  // ---------------------------------------------------------
+  {
+    id: "gal-pis-01",
+    src: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000&auto=format&fit=crop",
+    title: "Luxury Hotel Lobby Finishes",
+    description: "Extensive marble-finish Polygranite application delivering absolute opulence without the weight of natural stone.",
+    industry: "Hospitality",
+    brand: "Polygranite",
+    designIntent: "Premium Interior Surfaces",
+    systemType: "Decorative Surfaces",
+    projectType: "Lobby",
+    altText: "Luxury hotel lobby with premium interior surfaces"
+  },
+  {
+    id: "gal-pis-02",
+    src: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=2000&auto=format&fit=crop",
+    title: "High-End Residential Masterpiece",
+    description: "Flawless interior wall treatments in a luxury sea-facing residence.",
+    industry: "Luxury Residential",
+    brand: "Polygranite",
+    designIntent: "Premium Interior Surfaces",
+    systemType: "Wall Systems",
+    projectType: "Private Villa",
+    altText: "Luxury residential interior with premium surfaces"
+  },
+  {
+    id: "gal-pis-03",
+    src: "https://images.unsplash.com/photo-1596079890744-c1a0462d0975?q=80&w=2000&auto=format&fit=crop",
+    title: "Executive Washroom Upgrades",
+    description: "100% moisture-resistant, hyper-hygienic premium surfaces for corporate executive washrooms.",
+    industry: "Commercial Office",
+    brand: "Polygranite",
+    designIntent: "Premium Interior Surfaces",
+    systemType: "Decorative Surfaces",
+    projectType: "Executive Floor",
+    altText: "Executive washroom with premium moisture-resistant surfaces"
+  },
+  {
+    id: "gal-pis-04",
+    src: "https://images.unsplash.com/photo-1582719478250-c89404bb8a0e?q=80&w=2000&auto=format&fit=crop",
+    title: "Spa & Wellness Retreat Cladding",
+    description: "Warm, woodgrain-finish decorative surfaces creating a calming, organic environment in a luxury spa.",
+    industry: "Hospitality",
+    brand: "Polygranite",
+    designIntent: "Premium Interior Surfaces",
+    systemType: "Wall Systems",
+    projectType: "Spa Facility",
+    altText: "Spa retreat with premium woodgrain interior cladding"
+  },
+  {
+    id: "gal-pis-05",
+    src: "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2000&auto=format&fit=crop",
+    title: "Corporate Corridor Aesthetics",
+    description: "High-impact resistant, visually stunning wall panels lining the primary circulation routes of a global HQ.",
+    industry: "Commercial Office",
+    brand: "Polygranite",
+    designIntent: "Premium Interior Surfaces",
+    systemType: "Wall Systems",
+    projectType: "Corridor",
+    altText: "Corporate corridor with premium impact-resistant wall surfaces"
   }
 ];
 
-export function getGalleryByCategory(category: string): GalleryItem[] {
-  if (category === 'All') return galleryItems;
-  return galleryItems.filter(item => item.category === category);
-}
+export const getGalleryByFilter = (industry?: string, brand?: string, intent?: string, systemType?: string, query?: string) => {
+  return galleryData.filter(img => {
+    let match = true;
+    if (industry && industry !== 'All') match = match && img.industry === industry;
+    if (brand && brand !== 'All') match = match && img.brand === brand;
+    if (intent && intent !== 'All') match = match && img.designIntent === intent;
+    if (systemType && systemType !== 'All') match = match && img.systemType === systemType;
+    if (query) {
+      const q = query.toLowerCase();
+      match = match && (
+        img.title.toLowerCase().includes(q) || 
+        img.description.toLowerCase().includes(q) ||
+        img.industry.toLowerCase().includes(q) ||
+        img.brand.toLowerCase().includes(q) ||
+        img.designIntent.toLowerCase().includes(q) ||
+        img.systemType.toLowerCase().includes(q)
+      );
+    }
+    return match;
+  });
+};
+
+export const getUniqueCategories = () => {
+  return {
+    industries: Array.from(new Set(galleryData.map(d => d.industry))),
+    brands: Array.from(new Set(galleryData.map(d => d.brand))),
+    designIntents: Array.from(new Set(galleryData.map(d => d.designIntent))),
+    systemTypes: Array.from(new Set(galleryData.map(d => d.systemType))),
+  };
+};

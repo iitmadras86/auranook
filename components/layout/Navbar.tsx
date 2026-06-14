@@ -7,13 +7,13 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const NAV_LINKS = [
-  { name: "Home", href: "/" },
-  { name: "Uniceil", href: "/uniceil" },
+  { name: "Solutions", href: "/solutions" },
+  { name: "The Uniceil", href: "/brands/uniceil" },
+  { name: "Polygranite", href: "/brands/polygranite" },
   { name: "Products", href: "/products" },
-  { name: "Gallery", href: "/gallery" },
   { name: "Projects", href: "/projects" },
-  { name: "Distributors", href: "/distributorship" },
-  { name: "About", href: "/about" },
+  { name: "Why Auranook", href: "/why-auranook" },
+  { name: "Resources", href: "/resources" },
 ];
 
 export default function Navbar() {

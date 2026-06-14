@@ -51,9 +51,9 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
     "description": product.description,
     "brand": {
       "@type": "Brand",
-      "name": "Auranook"
+      "name": product.brand
     },
-    "category": product.category,
+    "category": product.designIntent,
   };
 
   return (
@@ -97,10 +97,14 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               )}
             </div>
 
-            {/* Product Info */}
             <div className="flex flex-col justify-center">
-              <div className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary font-bold tracking-widest uppercase text-xs mb-6 w-max border border-primary/20">
-                {product.category}
+              <div className="flex gap-2 mb-6">
+                <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary font-bold tracking-widest uppercase text-xs w-max border border-primary/20">
+                  {product.brand}
+                </span>
+                <span className="inline-block px-4 py-1.5 border border-border text-foreground/70 font-bold tracking-widest uppercase text-xs w-max">
+                  {product.designIntent}
+                </span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6 text-foreground">
                 {product.title}

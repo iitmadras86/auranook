@@ -3,8 +3,7 @@
 import { motion, Variants } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Building2, MapPin, Users2, ShieldCheck } from "lucide-react";
-import { products } from "@/data/products";
+import { ArrowRight, Building2, ShieldCheck, Wrench, Package, CheckCircle2 } from "lucide-react";
 import { projects } from "@/data/projects";
 
 // Shared Motion Variants
@@ -31,142 +30,132 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full overflow-hidden">
       {/* 1. Architectural Hero */}
-      <section className="relative h-screen min-h-[600px] w-full flex items-center justify-center overflow-hidden bg-black">
-        {/* Background Video/Image with Parallax or subtle scale */}
+      <section className="relative min-h-[90vh] w-full flex items-center justify-center overflow-hidden bg-black">
         <motion.div 
           initial={{ scale: 1.1 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
           className="absolute inset-0 w-full h-full"
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black/90 z-10" />
           <Image 
-            src="/assets/external_downloads/external_asset_1.jpg" // Placeholder for hero
-            alt="Architectural Surfaces"
+            src="/assets/hero/home_hero.png"
+            alt="Auranook Architectural Solutions"
             fill
-            className="object-cover opacity-80"
+            className="object-cover opacity-70"
             priority
           />
         </motion.div>
 
-        <div className="container relative z-20 mx-auto px-6 md:px-12 flex flex-col items-center text-center">
+        <div className="container relative z-20 mx-auto px-6 md:px-12 flex flex-col items-center text-center mt-20">
           <motion.div 
             initial="hidden"
             animate="visible"
             variants={staggerContainer}
             className="max-w-4xl flex flex-col items-center"
           >
-            <motion.span variants={fadeInUp} className="text-primary font-bold tracking-widest uppercase text-sm mb-4">
-              Auranook Ecosystem
+            <motion.span variants={fadeInUp} className="text-primary font-bold tracking-widest uppercase text-sm mb-6 flex items-center gap-2">
+              <span className="h-px w-8 bg-primary"></span>
+              Auranook Architectural Solutions
+              <span className="h-px w-8 bg-primary"></span>
             </motion.span>
-            <motion.h1 variants={fadeInUp} className="text-5xl md:text-7xl font-extrabold text-white tracking-tight leading-[1.1] mb-6">
-              Architectural Surfaces <br className="hidden md:block"/> Engineered for Modern Spaces
+            <motion.h1 variants={fadeInUp} className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white tracking-tight leading-[1.05] mb-8">
+              Premium Ceiling, Façade, Wall & Surface Systems
             </motion.h1>
-            <motion.p variants={fadeInUp} className="text-lg md:text-xl text-white/80 font-medium max-w-2xl mb-10">
-              Discover our enterprise-grade collections of Uniceil Systems, Polygranite Sheets, SPC Flooring, and 3D Wall Panels.
+            <motion.p variants={fadeInUp} className="text-lg md:text-xl text-white/80 font-medium max-w-2xl mb-12">
+              Connecting architects, designers, developers and contractors with world-class architectural systems for modern design intents.
             </motion.p>
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-              <Link href="/uniceil" className="px-8 py-4 rounded-full bg-primary text-white font-bold tracking-wide hover:brightness-110 transition-all flex items-center justify-center gap-2 group">
-                Explore Uniceil
+              <Link href="/contact" className="px-8 py-4 rounded-none bg-primary text-white font-bold tracking-wide hover:brightness-110 transition-all flex items-center justify-center gap-2 group">
+                Request Consultation
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
-              <Link href="/contact" className="px-8 py-4 rounded-full bg-white/10 text-white font-bold tracking-wide hover:bg-white/20 transition-all backdrop-blur-md flex items-center justify-center">
-                Consult an Expert
+              <Link href="/resources" className="px-8 py-4 rounded-none border-2 border-white/20 text-white font-bold tracking-wide hover:bg-white/10 transition-all backdrop-blur-md flex items-center justify-center">
+                Download Catalogues
               </Link>
             </motion.div>
           </motion.div>
         </div>
       </section>
 
-      {/* 2. Product Ecosystem Section */}
-      <section className="py-24 bg-background">
+      {/* 2. Trusted Brand Partners */}
+      <section className="py-32 bg-background">
         <div className="container mx-auto px-6 md:px-12">
           <motion.div 
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={staggerContainer}
-            className="flex flex-col items-center text-center mb-16"
+            className="flex flex-col items-center text-center mb-20"
           >
-            <motion.h2 variants={fadeInUp} className="text-3xl md:text-5xl font-extrabold text-foreground tracking-tight mb-4">
-              Premium Product Ecosystem
+            <motion.span variants={fadeInUp} className="text-primary font-bold tracking-widest uppercase text-sm mb-4">Official Distribution Partner</motion.span>
+            <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-extrabold text-foreground tracking-tight max-w-3xl">
+              Representing Premium Architectural Brands
             </motion.h2>
-            <motion.p variants={fadeInUp} className="text-muted-foreground text-lg max-w-2xl">
-              From timeless elegance to modern architectural statements, explore our curated categories designed for scale and performance.
-            </motion.p>
           </motion.div>
 
-          <motion.div 
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={staggerContainer}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-          >
-            {products.slice(0, 6).map((product) => (
-              <motion.div key={product.slug} variants={fadeInUp} className="group relative rounded-2xl overflow-hidden bg-white shadow-md border border-border flex flex-col h-full hover:shadow-xl transition-shadow duration-300">
-                <div className="relative h-64 w-full overflow-hidden bg-muted">
-                  <Image 
-                    src={product.images[0] || "/assets/external_downloads/external_asset_2.jpg"} 
-                    alt={product.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute top-4 left-4 px-3 py-1 bg-black/60 backdrop-blur-md text-white text-xs font-bold rounded-full uppercase tracking-wider">
-                    {product.category}
-                  </div>
-                </div>
-                <div className="p-6 flex flex-col flex-1">
-                  <h3 className="text-xl font-bold mb-2 text-foreground group-hover:text-primary transition-colors">{product.title}</h3>
-                  <p className="text-muted-foreground text-sm flex-1 mb-6">{product.shortDescription}</p>
-                  <Link href={`/${product.category.toLowerCase() === 'uniceil' ? 'uniceil' : 'products'}#${product.slug}`} className="inline-flex items-center text-primary font-semibold text-sm group/link mt-auto">
-                    View Specifications
-                    <ArrowRight size={16} className="ml-1 group-hover/link:translate-x-1 transition-transform" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {/* The Uniceil */}
+            <motion.div 
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="group relative bg-muted rounded-none overflow-hidden"
+            >
+              <div className="aspect-[4/3] relative">
+                <Image src="/assets/products/prod_baffle_ceiling.png" alt="The Uniceil" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+                <div className="absolute inset-0 bg-black/40" />
+                <div className="absolute inset-0 p-10 flex flex-col justify-end">
+                  <h3 className="text-4xl font-extrabold text-white mb-2">The Uniceil</h3>
+                  <p className="text-white/80 mb-6 max-w-md">Architectural Ceilings, Walls & Façades</p>
+                  <ul className="space-y-2 mb-8">
+                    {['Baffle Ceilings', 'Wall Systems', 'Facades', 'Acoustic Solutions'].map(item => (
+                      <li key={item} className="text-white flex items-center gap-2">
+                        <CheckCircle2 size={16} className="text-primary" /> {item}
+                      </li>
+                    ))}
+                  </ul>
+                  <Link href="/brands/uniceil" className="inline-flex items-center text-white font-bold hover:text-primary transition-colors gap-2 w-fit">
+                    Explore The Uniceil <ArrowRight size={18} />
                   </Link>
                 </div>
-              </motion.div>
-            ))}
-          </motion.div>
+              </div>
+            </motion.div>
+
+            {/* Polygranite */}
+            <motion.div 
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="group relative bg-muted rounded-none overflow-hidden"
+            >
+              <div className="aspect-[4/3] relative">
+                <Image src="/assets/products/prod_polygranite.png" alt="Polygranite" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+                <div className="absolute inset-0 bg-black/40" />
+                <div className="absolute inset-0 p-10 flex flex-col justify-end">
+                  <h3 className="text-4xl font-extrabold text-white mb-2">Polygranite</h3>
+                  <p className="text-white/80 mb-6 max-w-md">Premium Decorative Surfaces</p>
+                  <ul className="space-y-2 mb-8">
+                    {['Decorative Surfaces', 'Interior Cladding', 'Premium Finishes'].map(item => (
+                      <li key={item} className="text-white flex items-center gap-2">
+                        <CheckCircle2 size={16} className="text-primary" /> {item}
+                      </li>
+                    ))}
+                  </ul>
+                  <Link href="/brands/polygranite" className="inline-flex items-center text-white font-bold hover:text-primary transition-colors gap-2 w-fit">
+                    Explore Polygranite <ArrowRight size={18} />
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
-      {/* 3. Why Auranook (Metrics) */}
-      <section className="py-24 bg-foreground text-background relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary via-transparent to-transparent" />
-        <div className="container mx-auto px-6 md:px-12 relative z-10">
-          <motion.div 
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={staggerContainer}
-            className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12"
-          >
-            <motion.div variants={fadeInUp} className="flex flex-col items-center text-center">
-              <Building2 size={40} className="text-primary mb-4" />
-              <h3 className="text-4xl md:text-5xl font-extrabold mb-2 text-white">500+</h3>
-              <p className="text-white/70 text-sm md:text-base font-medium">Projects Delivered</p>
-            </motion.div>
-            <motion.div variants={fadeInUp} className="flex flex-col items-center text-center">
-              <Users2 size={40} className="text-primary mb-4" />
-              <h3 className="text-4xl md:text-5xl font-extrabold mb-2 text-white">1.2K+</h3>
-              <p className="text-white/70 text-sm md:text-base font-medium">Architects Served</p>
-            </motion.div>
-            <motion.div variants={fadeInUp} className="flex flex-col items-center text-center">
-              <MapPin size={40} className="text-primary mb-4" />
-              <h3 className="text-4xl md:text-5xl font-extrabold mb-2 text-white">50+</h3>
-              <p className="text-white/70 text-sm md:text-base font-medium">Cities Covered</p>
-            </motion.div>
-            <motion.div variants={fadeInUp} className="flex flex-col items-center text-center">
-              <ShieldCheck size={40} className="text-primary mb-4" />
-              <h3 className="text-4xl md:text-5xl font-extrabold mb-2 text-white">100%</h3>
-              <p className="text-white/70 text-sm md:text-base font-medium">Quality Assured</p>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* 4. Featured Projects */}
-      <section className="py-24 bg-stone-100">
+      {/* 3. Solutions by Sector */}
+      <section className="py-32 bg-foreground text-background">
         <div className="container mx-auto px-6 md:px-12">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <motion.div 
@@ -175,20 +164,61 @@ export default function Home() {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              <h2 className="text-3xl md:text-5xl font-extrabold text-foreground tracking-tight mb-4">
-                Featured Projects
+              <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Design Intent Solutions</span>
+              <h2 className="text-4xl md:text-5xl font-extrabold text-background tracking-tight max-w-2xl">
+                Systems Configured for Every Sector
               </h2>
-              <p className="text-muted-foreground text-lg max-w-xl">
-                See how top architects and designers leverage Auranook materials to build award-winning spaces.
-              </p>
             </motion.div>
-            <Link href="/projects" className="shrink-0 px-6 py-3 border-2 border-foreground rounded-full text-foreground font-bold hover:bg-foreground hover:text-background transition-colors flex items-center gap-2">
-              View All Projects
+            <Link href="/solutions" className="shrink-0 px-8 py-4 border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-colors flex items-center gap-2">
+              View All Solutions
               <ArrowRight size={18} />
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {[
+              { name: "Commercial", img: "/assets/uniceil/sector_commercial.png" },
+              { name: "Hospitality", img: "/assets/uniceil/sector_hospitality.png" },
+              { name: "Retail", img: "/assets/uniceil/sector_retail.png" },
+              { name: "Healthcare", img: "/assets/uniceil/sector_healthcare.png" },
+              { name: "Education", img: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2000&auto=format&fit=crop" },
+              { name: "Luxury Res.", img: "/assets/uniceil/sector_luxury_res.png" },
+            ].map((sector, idx) => (
+              <Link href={`/solutions#${sector.name.toLowerCase().replace(' ', '-')}`} key={sector.name}>
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: idx * 0.1 }}
+                  viewport={{ once: true }}
+                  className="group relative aspect-square overflow-hidden bg-muted flex items-end p-4"
+                >
+                  <Image src={sector.img} alt={sector.name} fill className="object-cover opacity-60 group-hover:scale-110 group-hover:opacity-100 transition-all duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+                  <h4 className="relative z-10 text-white font-bold text-lg md:text-xl">{sector.name}</h4>
+                </motion.div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 4. Featured Project Stories */}
+      <section className="py-32 bg-stone-100">
+        <div className="container mx-auto px-6 md:px-12">
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={staggerContainer}
+            className="flex flex-col items-center text-center mb-20"
+          >
+            <motion.span variants={fadeInUp} className="text-primary font-bold tracking-widest uppercase text-sm mb-4">Case Studies</motion.span>
+            <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-extrabold text-foreground tracking-tight">
+              Featured Project Stories
+            </motion.h2>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {projects.slice(0, 2).map((project, idx) => (
               <motion.div 
                 key={project.slug}
@@ -196,29 +226,102 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: idx * 0.2 }}
                 viewport={{ once: true, margin: "-100px" }}
-                className="group relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden cursor-pointer"
+                className="group bg-white flex flex-col"
               >
-                <Image 
-                  src={project.heroImage || "/assets/external_downloads/external_asset_3.jpg"} 
-                  alt={project.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-8 flex flex-col gap-2">
-                  <span className="text-primary font-bold tracking-wider text-xs uppercase">{project.clientSegment}</span>
-                  <h3 className="text-2xl md:text-3xl font-bold text-white group-hover:text-primary transition-colors">{project.title}</h3>
-                  <div className="flex flex-wrap gap-2 mt-2">
-                    {project.materialsUsed.map(mat => (
-                      <span key={mat} className="text-xs bg-white/20 text-white px-3 py-1 rounded-full backdrop-blur-md">
-                        {mat}
-                      </span>
-                    ))}
+                <div className="relative h-[300px] w-full overflow-hidden">
+                  <Image src={project.heroImage} alt={project.title} fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <div className="absolute top-6 left-6 bg-primary text-white text-xs font-bold px-4 py-2 uppercase tracking-widest">
+                    {project.productBrand}
                   </div>
+                </div>
+                <div className="p-8 md:p-12 border border-t-0 border-border flex flex-col flex-1">
+                  <h3 className="text-3xl font-bold mb-6">{project.title}</h3>
+                  <div className="space-y-4 mb-8">
+                    <div>
+                      <span className="text-sm font-bold uppercase tracking-wider text-muted-foreground block mb-1">Challenge</span>
+                      <p className="text-foreground">{project.challenge}</p>
+                    </div>
+                    <div>
+                      <span className="text-sm font-bold uppercase tracking-wider text-muted-foreground block mb-1">Solution</span>
+                      <p className="text-foreground">{project.solution}</p>
+                    </div>
+                  </div>
+                  <Link href={`/projects`} className="mt-auto inline-flex items-center font-bold text-primary hover:text-foreground transition-colors gap-2">
+                    Read Full Story <ArrowRight size={18} />
+                  </Link>
                 </div>
               </motion.div>
             ))}
           </div>
+          <div className="mt-16 flex justify-center">
+            <Link href="/projects" className="px-8 py-4 border-2 border-foreground text-foreground font-bold hover:bg-foreground hover:text-background transition-colors flex items-center gap-2">
+              View All Projects
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. Why Auranook */}
+      <section className="py-32 bg-white">
+        <div className="container mx-auto px-6 md:px-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <motion.div 
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={staggerContainer}
+            >
+              <motion.span variants={fadeInUp} className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Specification Partner</motion.span>
+              <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-extrabold text-foreground tracking-tight mb-8">
+                Why Architects Choose Auranook
+              </motion.h2>
+              <motion.p variants={fadeInUp} className="text-lg text-muted-foreground mb-12">
+                We are more than a material supplier. We are a technical distribution partner dedicated to helping architects, developers, and contractors specify the exact systems required for structural, acoustic, and aesthetic excellence.
+              </motion.p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                {[
+                  { icon: <Wrench size={32} className="text-primary mb-4" />, title: "Technical Expertise", desc: "Detailed consultation, CAD drawings support, and BOQ assistance." },
+                  { icon: <ShieldCheck size={32} className="text-primary mb-4" />, title: "Trusted Brands", desc: "Authorized distributors for The Uniceil and Polygranite." },
+                  { icon: <Building2 size={32} className="text-primary mb-4" />, title: "Project Support", desc: "End-to-end site coordination and vendor network integration." },
+                  { icon: <Package size={32} className="text-primary mb-4" />, title: "Nationwide Supply", desc: "Seamless logistics ensuring timely material delivery." }
+                ].map((item, i) => (
+                  <motion.div key={i} variants={fadeInUp}>
+                    {item.icon}
+                    <h4 className="font-bold text-xl mb-2">{item.title}</h4>
+                    <p className="text-muted-foreground">{item.desc}</p>
+                  </motion.div>
+                ))}
+              </div>
+              <motion.div variants={fadeInUp} className="mt-12">
+                <Link href="/why-auranook" className="inline-flex items-center text-primary font-bold hover:text-foreground transition-colors gap-2">
+                  Learn About Our Partnership Model <ArrowRight size={18} />
+                </Link>
+              </motion.div>
+            </motion.div>
+            
+            <motion.div 
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="relative aspect-[4/5] bg-muted w-full max-w-lg mx-auto"
+            >
+               <Image src="/assets/hero/why_auranook.png" alt="Auranook Consultation" fill className="object-cover" />
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* 6. CTA */}
+      <section className="py-32 bg-primary relative overflow-hidden flex justify-center items-center">
+        <div className="absolute inset-0 bg-[url('/assets/hero/cta_bg.png')] opacity-10 bg-cover bg-center mix-blend-multiply" />
+        <div className="container relative z-10 mx-auto px-6 text-center flex flex-col items-center">
+          <h2 className="text-4xl md:text-6xl font-extrabold text-white mb-8 tracking-tight">Ready to Specify Your Next Project?</h2>
+          <p className="text-xl text-white/90 max-w-2xl mb-10">Engage our technical team for product samples, BOQ generation, and architectural design support.</p>
+          <Link href="/contact" className="px-10 py-5 bg-white text-primary font-extrabold tracking-widest uppercase hover:bg-stone-100 transition-colors">
+            Book a Project Consultation
+          </Link>
         </div>
       </section>
     </div>

@@ -1,10 +1,14 @@
 export interface Project {
   slug: string;
   title: string;
-  clientSegment: string;
+  industry: string;
   challenge: string;
+  recommendedProduct: string;
+  productBrand: string;
   solution: string;
-  materialsUsed: string[];
+  outcome: string;
+  benefitsDelivered: string[];
+  designIntent: string;
   heroImage: string;
   gallery: string[];
 }
@@ -13,25 +17,41 @@ export const projects: Project[] = [
   {
     slug: 'tech-hub-bengaluru',
     title: 'Tech Hub Corporate Office',
-    clientSegment: 'Commercial Interior',
-    challenge: 'The client required a premium, acoustically optimized open workspace without compromising on modern aesthetic appeal.',
-    solution: 'We deployed our Uniceil uPVC Baffle Ceilings across the main floor to drastically reduce noise reverberation while adding a stunning linear architectural element.',
-    materialsUsed: ['Uniceil Baffle Ceilings', 'SPC Flooring', '3D Wall Panels'],
-    heroImage: '/assets/projects/about_hero.png',
+    industry: 'Commercial',
+    challenge: 'The client required acoustic control and a strong visual identity in a large, high-traffic open office without compromising the modern aesthetic appeal.',
+    recommendedProduct: 'Uniceil Acoustic Baffle Ceilings',
+    productBrand: 'The Uniceil',
+    solution: 'We specified and coordinated the installation of a custom baffle configuration engineered to reduce reverberation while maintaining continuous linear sightlines.',
+    outcome: 'Improved acoustic comfort, seamless integration with lighting fixtures, and a premium visual identity that reflects the tech brand.',
+    benefitsDelivered: [
+      'Acoustic Performance (NRC 0.85)',
+      'Contemporary Linear Design',
+      'Rapid Installation Capability'
+    ],
+    designIntent: 'Acoustic Performance',
+    heroImage: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2000&auto=format&fit=crop',
     gallery: [
-      '/assets/projects/about_hero.png'
+      'https://images.unsplash.com/photo-1556761175-5973dc0f32b7?q=80&w=2000&auto=format&fit=crop'
     ]
   },
   {
     slug: 'luxury-residence-mumbai',
     title: 'Sea-Facing Luxury Residence',
-    clientSegment: 'Residential',
-    challenge: 'Creating a highly durable, moisture-resistant yet luxurious surface finish for living areas exposed to coastal humidity.',
-    solution: 'Incorporated Polygranite Sheets in high-gloss marble finish to deliver the opulence of natural stone with zero maintenance and absolute moisture resistance.',
-    materialsUsed: ['Polygranite Sheets'],
-    heroImage: '/assets/projects/polygranite_sheet.png',
+    industry: 'Residential',
+    challenge: 'Creating a highly durable, moisture-resistant yet luxurious surface finish for living areas exposed to coastal humidity and saline air.',
+    recommendedProduct: 'Polygranite Decorative Panels',
+    productBrand: 'Polygranite',
+    solution: 'Specified Polygranite Sheets in a high-gloss marble finish to deliver the opulence of natural stone without the weight and vulnerability of traditional marble.',
+    outcome: 'A stunning, zero-maintenance interior surface that completely resists moisture penetration while elevating the luxury quotient of the residence.',
+    benefitsDelivered: [
+      'Absolute Moisture Resistance',
+      'Zero-Maintenance Luxury',
+      'Structural Load Reduction'
+    ],
+    designIntent: 'Premium Interior Surfaces',
+    heroImage: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2000&auto=format&fit=crop',
     gallery: [
-      '/assets/projects/polygranite_sheet.png'
+      'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000&auto=format&fit=crop'
     ]
   }
 ];

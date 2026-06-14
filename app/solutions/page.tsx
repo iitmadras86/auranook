@@ -3,125 +3,171 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { Briefcase, Building2, Home, Landmark } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 const solutions = [
   {
-    id: "commercial-interiors",
-    title: "Commercial Interiors",
-    description: "High-performance ceiling and wall systems engineered for modern corporate environments, focusing on acoustics, aesthetics, and rapid installation.",
-    icon: <Briefcase className="w-8 h-8" />,
-    image: "/assets/projects/about_hero.png",
-    features: ["NRC Rated Baffles", "Acoustic Wall Panels", "Integrated Lighting Profiles"]
+    id: "commercial",
+    title: "Commercial Offices",
+    challenge: "Modern open-plan offices require exceptional acoustic management, high-performance lighting integration, and corporate brand alignment without compromising on the architectural vision.",
+    recommended: "Acoustic Baffle Systems & Interior Wall Cladding",
+    brand: "The Uniceil & Polygranite",
+    benefits: [
+      "Significant NRC Reduction for focused work",
+      "Seamless integration with HVAC and Lighting",
+      "High-durability wall protection for high-traffic corridors"
+    ],
+    img: "/assets/uniceil/sector_commercial.png"
   },
   {
     id: "hospitality",
-    title: "Hospitality & Retail",
-    description: "Luxurious surface finishes and striking architectural elements that create unforgettable brand experiences and customer journeys.",
-    icon: <Landmark className="w-8 h-8" />,
-    image: "/assets/uniceil/hero_luxury.png",
-    features: ["Polygranite Feature Walls", "Custom 3D Geometries", "High-Traffic SPC Flooring"]
+    title: "Hospitality",
+    challenge: "Hotels and resorts demand luxurious, premium surface finishes that are capable of withstanding heavy guest traffic and rigorous cleaning protocols.",
+    recommended: "Decorative Surface Sheets & Architectural Façades",
+    brand: "Polygranite & The Uniceil",
+    benefits: [
+      "Zero-maintenance marble and stone aesthetics",
+      "100% waterproof surfaces for premium wet zones",
+      "Striking exterior building envelopes to attract guests"
+    ],
+    img: "/assets/uniceil/sector_hospitality.png"
   },
   {
-    id: "residential",
-    title: "Premium Residential",
-    description: "Durable, moisture-resistant, and aesthetically flawless solutions that bring enterprise-grade quality to high-end residential spaces.",
-    icon: <Home className="w-8 h-8" />,
-    image: "/assets/products/hero_polygranite.png",
-    features: ["Waterproof Cladding", "Marble-Finish Surfaces", "Acoustic Home Theater Panels"]
+    id: "retail",
+    title: "Retail",
+    challenge: "Boutiques and showrooms need to establish an immediate, compelling visual identity that highlights merchandise while enduring constant footfall.",
+    recommended: "3D Geometric Panels & SPC Commercial Flooring",
+    brand: "Polygranite",
+    benefits: [
+      "Unique geometric branding opportunities",
+      "Commercial-grade wear layer for extreme foot traffic",
+      "Rapid installation minimizing store downtime"
+    ],
+    img: "/assets/uniceil/sector_retail.png"
   },
   {
-    id: "institutional",
-    title: "Institutional & Healthcare",
-    description: "Hygienic, low-maintenance, and highly durable systems that meet strict institutional standards while maintaining visual appeal.",
-    icon: <Building2 className="w-8 h-8" />,
-    image: "/assets/products/hero_luxury.png",
-    features: ["Anti-bacterial Finishes", "Class A Fire Ratings", "Easy Maintenance Access"]
+    id: "healthcare",
+    title: "Healthcare",
+    challenge: "Hospitals require hygienic, easy-to-clean surfaces that meet stringent infection control standards while maintaining a calming environment for patients.",
+    recommended: "Hygienic Wall Systems & Linear Ceilings",
+    brand: "The Uniceil & Polygranite",
+    benefits: [
+      "Non-porous, antimicrobial surface options",
+      "Washable ceiling systems",
+      "Class-A fire compliance"
+    ],
+    img: "/assets/uniceil/sector_healthcare.png"
+  },
+  {
+    id: "education",
+    title: "Education",
+    challenge: "Schools and universities must prioritize speech intelligibility in lecture halls and extreme durability in public corridors.",
+    recommended: "High-NRC Acoustic Ceilings & Impact-Resistant Surfaces",
+    brand: "The Uniceil & Polygranite",
+    benefits: [
+      "Enhanced speech intelligibility for learning",
+      "High impact resistance against daily wear",
+      "Sustainable and safe material composition"
+    ],
+    img: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2000&auto=format&fit=crop"
+  },
+  {
+    id: "luxury-residential",
+    title: "Luxury Residential",
+    challenge: "High-end homes and residential developments require bespoke, opulent finishes that reflect the owner's status without the heavy maintenance of natural stone.",
+    recommended: "Premium Interior Surfaces",
+    brand: "Polygranite",
+    benefits: [
+      "Flawless high-gloss natural stone textures",
+      "Moisture resistance for luxury coastal properties",
+      "Substantial structural load reduction vs. real stone"
+    ],
+    img: "/assets/uniceil/sector_luxury_res.png"
   }
 ];
 
 export default function SolutionsHub() {
   return (
-    <div className="min-h-screen bg-background pt-24 pb-20">
-      <div className="container mx-auto px-6 md:px-12">
-        {/* Header */}
-        <div className="max-w-3xl mb-24">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
-              Industry <span className="text-primary">Solutions</span>
-            </h1>
-            <p className="text-lg md:text-xl text-foreground/70 leading-relaxed">
-              Tailored architectural systems engineered to meet the specific functional and aesthetic demands of diverse industry sectors.
-            </p>
-          </motion.div>
-        </div>
+    <div className="bg-background pt-24 pb-20">
+      {/* Hero */}
+      <div className="container mx-auto px-6 md:px-12 mb-20 text-center max-w-4xl">
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+          <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Industry Applications</span>
+          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+            Sector-Specific <span className="text-primary">Solutions</span>
+          </h1>
+          <p className="text-lg md:text-xl text-foreground/70 leading-relaxed">
+            Auranook provides specialized architectural systems engineered to meet the distinct challenges of commercial, hospitality, healthcare, and residential environments.
+          </p>
+        </motion.div>
+      </div>
 
-        {/* Solutions List */}
-        <div className="space-y-32 mb-32">
-          {solutions.map((solution, index) => (
+      {/* Solutions Sections */}
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          {solutions.map((sol, idx) => (
             <motion.div 
-              key={solution.id}
+              key={sol.id}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.8 }}
-              className={`flex flex-col ${index % 2 !== 0 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-12 lg:gap-20 items-center`}
+              transition={{ duration: 0.6, delay: (idx % 2) * 0.2 }}
+              className="group relative flex flex-col bg-white border border-border overflow-hidden"
             >
-              <div className="w-full lg:w-1/2 relative aspect-[4/3] rounded-[2rem] overflow-hidden shadow-2xl group">
-                <Image 
-                  src={solution.image} 
-                  alt={solution.title} 
-                  fill 
-                  className="object-cover group-hover:scale-105 transition-transform duration-700" 
-                />
-                <div className="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-[2rem]" />
-              </div>
-              
-              <div className="w-full lg:w-1/2 flex flex-col justify-center">
-                <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-8 border border-primary/20 shadow-[0_0_30px_-5px_rgba(184,159,93,0.3)]">
-                  {solution.icon}
+              {/* Image Header with Hover Layer */}
+              <div className="relative h-80 w-full overflow-hidden bg-muted">
+                <Image src={sol.img} alt={`${sol.title} Architectural Solutions`} fill className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-[cubic-bezier(0.25,1,0.5,1)]" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
+                
+                {/* Overlay Text */}
+                <div className="absolute bottom-6 left-8 right-8 z-10 flex justify-between items-end">
+                  <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight">{sol.title}</h2>
+                  <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-500">
+                    <ArrowRight className="text-white" />
+                  </div>
                 </div>
-                <h2 className="text-3xl md:text-5xl font-extrabold text-foreground mb-6 tracking-tight">
-                  {solution.title}
-                </h2>
-                <p className="text-foreground/80 leading-relaxed text-lg mb-10">
-                  {solution.description}
-                </p>
-                
-                <h4 className="font-bold text-foreground mb-4 uppercase tracking-widest text-sm">Key Advantages</h4>
-                <ul className="space-y-4 mb-10">
-                  {solution.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center gap-3">
-                      <div className="w-2 h-2 rounded-full bg-primary" />
-                      <span className="font-medium text-foreground/80">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                
-                <Link href={`/projects`} className="px-8 py-4 rounded-full bg-secondary text-secondary-foreground font-bold tracking-wide hover:bg-secondary/80 transition-all border border-border w-max">
-                  View Related Projects
-                </Link>
+              </div>
+
+              {/* Content Body */}
+              <div className="p-8 md:p-10 flex flex-col flex-grow">
+                <div className="mb-8">
+                  <span className="text-xs font-bold uppercase tracking-widest text-primary block mb-3">Industry Challenge</span>
+                  <p className="text-base leading-relaxed text-foreground/80">{sol.challenge}</p>
+                </div>
+
+                <div className="p-6 bg-stone-50 border border-stone-200 mb-8 rounded-sm">
+                  <div className="grid grid-cols-1 gap-4">
+                    <div>
+                      <span className="text-xs font-bold uppercase tracking-widest text-primary block mb-1">Recommended Systems</span>
+                      <h4 className="text-lg font-bold text-foreground">{sol.recommended}</h4>
+                    </div>
+                    <div>
+                      <span className="text-xs font-bold uppercase tracking-widest text-primary block mb-1">Applicable Brands</span>
+                      <h4 className="text-lg font-bold text-foreground">{sol.brand}</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mb-10 flex-grow">
+                  <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground block mb-4">Design Benefits</span>
+                  <ul className="space-y-3">
+                    {sol.benefits.map((ben, i) => (
+                      <li key={i} className="flex items-start gap-3 text-sm font-medium text-foreground/90">
+                        <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                        <span className="leading-snug">{ben}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="pt-6 flex flex-wrap gap-4 border-t border-border mt-auto">
+                  <Link href={`/projects?sector=${sol.id}`} className="px-6 py-3 bg-foreground text-background text-sm font-bold hover:bg-foreground/90 transition-colors flex items-center gap-2 w-full justify-center sm:w-auto">
+                    Explore Solutions <ArrowRight size={16} />
+                  </Link>
+                </div>
               </div>
             </motion.div>
           ))}
-        </div>
-
-        {/* CTA */}
-        <div className="bg-foreground text-background rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
-          <div className="absolute inset-0 bg-[url('/assets/products/hero_luxury.png')] opacity-5 bg-cover bg-center mix-blend-overlay" />
-          <div className="relative z-10 max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-5xl font-extrabold mb-6">Need a Specialized Solution?</h2>
-            <p className="text-background/80 text-lg leading-relaxed mb-10">
-              Our engineering team collaborates closely with architects and developers to design bespoke systems for unique structural requirements.
-            </p>
-            <Link href="/contact" className="px-10 py-5 rounded-full bg-primary text-primary-foreground font-bold tracking-wide shadow-xl hover:scale-105 transition-transform inline-flex items-center justify-center">
-              Schedule a Consultation
-            </Link>
-          </div>
         </div>
       </div>
     </div>

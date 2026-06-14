@@ -5,7 +5,7 @@ export async function POST(request: Request) {
     const body = await request.json();
     
     // Destructure expected fields
-    const { name, company, email, phone, inquiryType, message } = body;
+    const { name, company, email, phone, profession, projectStage, requirement, message } = body;
 
     // Basic validation
     if (!name || !email || !message) {
@@ -23,7 +23,9 @@ export async function POST(request: Request) {
       company,
       email,
       phone,
-      inquiryType,
+      profession,
+      projectStage,
+      requirement,
       message,
       timestamp: new Date().toISOString()
     });
