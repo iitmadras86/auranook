@@ -74,10 +74,12 @@ export default function PolygraniteBrandPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { title: "Decorative Surface Sheets", intent: "Premium Interior Surfaces", img: "/assets/products/polygranite_sheet.png" },
-              { title: "Interior Wall Cladding", intent: "Visual Identity", img: "/assets/products/hero_polygranite.png" },
-              { title: "SPC Commercial Flooring", intent: "Flooring Solutions", img: "/assets/products/hero_spc.png" },
-              { title: "3D Geometric Panels", intent: "Visual Identity", img: "/assets/products/hero_3d_panels.png" },
+              { title: "Polygranite Sheets", intent: "Surface Solutions", img: "/assets/products/polygranite_sheet.png", applications: "Walls, Countertops, Decorative Surfaces, Cladding" },
+              { title: "PVC Wall Panels", intent: "Surface Solutions", img: "/assets/products/hero_polygranite.png", applications: "Commercial Interiors, Residential Interiors, Hospitality" },
+              { title: "WPC Panels", intent: "Surface Solutions", img: "/assets/uniceil/sector_hospitality.png", applications: "Moisture-Prone Areas, Exterior Applications" },
+              { title: "3D Wall Panels", intent: "Surface Solutions", img: "/assets/products/hero_3d_panels.png", applications: "Feature Walls, Reception Areas, Retail Spaces" },
+              { title: "Charcoal Panels", intent: "Surface Solutions", img: "/assets/uniceil/sector_luxury_res.png", applications: "Luxury Interiors, Commercial Spaces, Decorative Features" },
+              { title: "PVC Flooring", intent: "Flooring Systems", img: "/assets/products/hero_spc.png", applications: "Offices, Retail, Commercial Interiors" },
             ].map((col, i) => (
               <div key={i} className="group cursor-pointer">
                 <div className="relative h-72 overflow-hidden bg-muted mb-6">
@@ -85,7 +87,8 @@ export default function PolygraniteBrandPage() {
                 </div>
                 <div>
                   <span className="text-xs font-bold uppercase tracking-widest text-primary mb-2 block">{col.intent}</span>
-                  <h3 className="text-2xl font-bold group-hover:text-primary transition-colors">{col.title}</h3>
+                  <h3 className="text-2xl font-bold group-hover:text-primary transition-colors mb-2">{col.title}</h3>
+                  <p className="text-sm text-muted-foreground"><span className="font-bold">Applications:</span> {col.applications}</p>
                 </div>
               </div>
             ))}

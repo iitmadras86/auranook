@@ -6,7 +6,7 @@ export interface GalleryImage {
   industry: string;
   brand: string;
   designIntent: string;
-  systemType: string;
+  systemCategory: string;
   projectType: string;
   altText: string;
 }
@@ -23,7 +23,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Commercial Office",
     brand: "The Uniceil",
     designIntent: "Acoustic Performance",
-    systemType: "Baffle Ceilings",
+    systemCategory: "Ceiling",
     projectType: "Corporate HQ",
     altText: "Acoustic baffle ceiling installation in a commercial office using The Uniceil ceiling system."
   },
@@ -35,7 +35,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Commercial Office",
     brand: "The Uniceil",
     designIntent: "Visual Identity",
-    systemType: "Ceiling Systems",
+    systemCategory: "Ceiling",
     projectType: "Corporate HQ",
     altText: "Executive boardroom featuring luxury acoustic ceiling systems by The Uniceil."
   },
@@ -47,7 +47,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Commercial Office",
     brand: "Polygranite",
     designIntent: "Premium Interior Surfaces",
-    systemType: "Decorative Surfaces",
+    systemCategory: "Surface",
     projectType: "Lobby",
     altText: "Premium Polygranite decorative sheets used as reception wall cladding in a commercial office."
   },
@@ -59,7 +59,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Hospitality",
     brand: "The Uniceil",
     designIntent: "Exterior Envelope",
-    systemType: "Façade Systems",
+    systemCategory: "Façade",
     projectType: "Hotel",
     altText: "Exterior facade system by The Uniceil installed on a modern luxury hotel building."
   },
@@ -71,7 +71,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Hospitality",
     brand: "Polygranite",
     designIntent: "Premium Interior Surfaces",
-    systemType: "Wall Systems",
+    systemCategory: "Wall",
     projectType: "Suite",
     altText: "Luxury hotel suite interior featuring Polygranite premium decorative surface wall panels."
   },
@@ -83,7 +83,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Healthcare",
     brand: "The Uniceil",
     designIntent: "Acoustic Performance",
-    systemType: "Ceiling Systems",
+    systemCategory: "Ceiling",
     projectType: "Hospital",
     altText: "Healthcare acoustic ceiling installation by The Uniceil in a hospital corridor."
   },
@@ -95,7 +95,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Retail",
     brand: "The Uniceil",
     designIntent: "Visual Identity",
-    systemType: "Ceiling Systems",
+    systemCategory: "Ceiling",
     projectType: "Flagship Store",
     altText: "Custom architectural ceiling installation by The Uniceil in a retail flagship store."
   },
@@ -111,7 +111,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Commercial Office",
     brand: "The Uniceil",
     designIntent: "Acoustic Performance",
-    systemType: "Baffle Ceilings",
+    systemCategory: "Ceiling",
     projectType: "Workspace",
     altText: "Open plan office with acoustic baffles"
   },
@@ -123,7 +123,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Education",
     brand: "The Uniceil",
     designIntent: "Acoustic Performance",
-    systemType: "Ceiling Systems",
+    systemCategory: "Ceiling",
     projectType: "Auditorium",
     altText: "Educational auditorium with acoustic ceiling"
   },
@@ -135,7 +135,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Commercial Office",
     brand: "The Uniceil",
     designIntent: "Acoustic Performance",
-    systemType: "Ceiling Systems",
+    systemCategory: "Ceiling",
     projectType: "Conference Room",
     altText: "Conference room acoustic ceiling"
   },
@@ -147,7 +147,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Commercial Office",
     brand: "The Uniceil",
     designIntent: "Acoustic Performance",
-    systemType: "Baffle Ceilings",
+    systemCategory: "Ceiling",
     projectType: "Innovation Hub",
     altText: "Acoustic clouds over collaboration zone"
   },
@@ -159,7 +159,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Education",
     brand: "The Uniceil",
     designIntent: "Acoustic Performance",
-    systemType: "Ceiling Systems",
+    systemCategory: "Ceiling",
     projectType: "Library",
     altText: "University library with acoustic ceiling"
   },
@@ -175,7 +175,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Commercial Office",
     brand: "The Uniceil",
     designIntent: "Visual Identity",
-    systemType: "Ceiling Systems",
+    systemCategory: "Ceiling",
     projectType: "Lobby",
     altText: "Corporate reception with statement ceiling"
   },
@@ -187,7 +187,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Retail",
     brand: "Polygranite",
     designIntent: "Visual Identity",
-    systemType: "Wall Systems",
+    systemCategory: "Wall",
     projectType: "Showroom",
     altText: "3D feature wall in retail showroom"
   },
@@ -199,7 +199,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Commercial Office",
     brand: "The Uniceil",
     designIntent: "Visual Identity",
-    systemType: "Baffle Ceilings",
+    systemCategory: "Ceiling",
     projectType: "Atrium",
     altText: "Branded atrium with woodgrain baffles"
   },
@@ -211,7 +211,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Retail",
     brand: "Polygranite",
     designIntent: "Visual Identity",
-    systemType: "Decorative Surfaces",
+    systemCategory: "Surface",
     projectType: "Boutique",
     altText: "Luxury boutique with decorative surface cladding"
   },
@@ -223,7 +223,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Commercial Office",
     brand: "The Uniceil",
     designIntent: "Visual Identity",
-    systemType: "Baffle Ceilings",
+    systemCategory: "Ceiling",
     projectType: "Headquarters",
     altText: "Monumental stairwell with linear ceilings"
   },
@@ -239,7 +239,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Commercial Office",
     brand: "The Uniceil",
     designIntent: "Exterior Envelope",
-    systemType: "Façade Systems",
+    systemCategory: "Façade",
     projectType: "High-Rise",
     altText: "Modern commercial tower facade"
   },
@@ -251,7 +251,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Education",
     brand: "The Uniceil",
     designIntent: "Exterior Envelope",
-    systemType: "Façade Systems",
+    systemCategory: "Façade",
     projectType: "Campus Building",
     altText: "Institutional building exterior envelope"
   },
@@ -263,7 +263,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Hospitality",
     brand: "The Uniceil",
     designIntent: "Exterior Envelope",
-    systemType: "Façade Systems",
+    systemCategory: "Façade",
     projectType: "Resort",
     altText: "Hospitality resort exterior facade"
   },
@@ -275,7 +275,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Commercial Office",
     brand: "The Uniceil",
     designIntent: "Exterior Envelope",
-    systemType: "Façade Systems",
+    systemCategory: "Façade",
     projectType: "Corporate HQ",
     altText: "Geometric exterior facade detailing"
   },
@@ -287,7 +287,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Airports & Transit Hubs",
     brand: "The Uniceil",
     designIntent: "Exterior Envelope",
-    systemType: "Façade Systems",
+    systemCategory: "Façade",
     projectType: "Transit Center",
     altText: "Transit hub exterior weather shield facade"
   },
@@ -303,7 +303,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Hospitality",
     brand: "Polygranite",
     designIntent: "Premium Interior Surfaces",
-    systemType: "Decorative Surfaces",
+    systemCategory: "Surface",
     projectType: "Lobby",
     altText: "Luxury hotel lobby with premium interior surfaces"
   },
@@ -315,7 +315,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Luxury Residential",
     brand: "Polygranite",
     designIntent: "Premium Interior Surfaces",
-    systemType: "Wall Systems",
+    systemCategory: "Wall",
     projectType: "Private Villa",
     altText: "Luxury residential interior with premium surfaces"
   },
@@ -327,7 +327,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Commercial Office",
     brand: "Polygranite",
     designIntent: "Premium Interior Surfaces",
-    systemType: "Decorative Surfaces",
+    systemCategory: "Surface",
     projectType: "Executive Floor",
     altText: "Executive washroom with premium moisture-resistant surfaces"
   },
@@ -339,7 +339,7 @@ export const galleryData: GalleryImage[] = [
     industry: "Hospitality",
     brand: "Polygranite",
     designIntent: "Premium Interior Surfaces",
-    systemType: "Wall Systems",
+    systemCategory: "Wall",
     projectType: "Spa Facility",
     altText: "Spa retreat with premium woodgrain interior cladding"
   },
@@ -351,19 +351,19 @@ export const galleryData: GalleryImage[] = [
     industry: "Commercial Office",
     brand: "Polygranite",
     designIntent: "Premium Interior Surfaces",
-    systemType: "Wall Systems",
+    systemCategory: "Wall",
     projectType: "Corridor",
     altText: "Corporate corridor with premium impact-resistant wall surfaces"
   }
 ];
 
-export const getGalleryByFilter = (industry?: string, brand?: string, intent?: string, systemType?: string, query?: string) => {
+export const getGalleryByFilter = (industry?: string, brand?: string, intent?: string, systemCategory?: string, query?: string) => {
   return galleryData.filter(img => {
     let match = true;
     if (industry && industry !== 'All') match = match && img.industry === industry;
     if (brand && brand !== 'All') match = match && img.brand === brand;
     if (intent && intent !== 'All') match = match && img.designIntent === intent;
-    if (systemType && systemType !== 'All') match = match && img.systemType === systemType;
+    if (systemCategory && systemCategory !== 'All') match = match && img.systemCategory === systemCategory;
     if (query) {
       const q = query.toLowerCase();
       match = match && (
@@ -372,7 +372,7 @@ export const getGalleryByFilter = (industry?: string, brand?: string, intent?: s
         img.industry.toLowerCase().includes(q) ||
         img.brand.toLowerCase().includes(q) ||
         img.designIntent.toLowerCase().includes(q) ||
-        img.systemType.toLowerCase().includes(q)
+        img.systemCategory.toLowerCase().includes(q)
       );
     }
     return match;
@@ -384,6 +384,6 @@ export const getUniqueCategories = () => {
     industries: Array.from(new Set(galleryData.map(d => d.industry))),
     brands: Array.from(new Set(galleryData.map(d => d.brand))),
     designIntents: Array.from(new Set(galleryData.map(d => d.designIntent))),
-    systemTypes: Array.from(new Set(galleryData.map(d => d.systemType))),
+    systemCategories: Array.from(new Set(galleryData.map(d => d.systemCategory))),
   };
 };

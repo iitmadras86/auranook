@@ -53,7 +53,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       "@type": "Brand",
       "name": product.brand
     },
-    "category": product.designIntent,
+    "category": product.systemCategory,
   };
 
   return (
@@ -98,20 +98,34 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             </div>
 
             <div className="flex flex-col justify-center">
-              <div className="flex gap-2 mb-6">
+              <div className="flex flex-wrap gap-2 mb-6">
                 <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary font-bold tracking-widest uppercase text-xs w-max border border-primary/20">
                   {product.brand}
                 </span>
                 <span className="inline-block px-4 py-1.5 border border-border text-foreground/70 font-bold tracking-widest uppercase text-xs w-max">
-                  {product.designIntent}
+                  {product.systemCategory}
                 </span>
+                {product.status && (
+                  <span className={`inline-block px-4 py-1.5 border font-bold tracking-widest uppercase text-xs w-max ${product.status === 'Coming Soon' ? 'border-amber-500/30 bg-amber-500/10 text-amber-500' : 'border-emerald-500/30 bg-emerald-500/10 text-emerald-500'}`}>
+                    {product.status}
+                  </span>
+                )}
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6 text-foreground">
                 {product.title}
               </h1>
-              <p className="text-xl text-foreground/70 mb-10 leading-relaxed font-medium">
+              <p className="text-xl text-foreground/70 mb-6 leading-relaxed font-medium">
                 {product.description}
               </p>
+
+              {product.definition && (
+                <div className="bg-secondary/50 border border-border rounded-xl p-6 mb-10">
+                  <h4 className="text-sm font-bold tracking-widest uppercase text-foreground/50 mb-2">Architectural Definition</h4>
+                  <p className="text-foreground/80 leading-relaxed italic">
+                    &quot;{product.definition}&quot;
+                  </p>
+                </div>
+              )}
 
               {/* Action Buttons */}
               <div className="flex flex-wrap items-center gap-4 mb-12">
@@ -155,18 +169,49 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               </div>
             </div>
 
-            {/* Applications */}
-            <div>
-              <h2 className="text-3xl font-extrabold mb-8">Ideal Applications</h2>
-              <div className="flex flex-wrap gap-3">
-                {product.applications.map((app, idx) => (
-                  <span key={idx} className="px-5 py-3 rounded-full bg-secondary border border-border text-secondary-foreground font-semibold text-sm">
-                    {app}
-                  </span>
+            {/* Applications & Limitations */}
+            <div className="space-y-12">
+              <div>
+                <h2 className="text-3xl font-extrabold mb-8">Ideal Applications</h2>
+                <div className="flex flex-wrap gap-3">
+                  {product.applications.map((app, idx) => (
+                    <span key={idx} className="px-5 py-3 rounded-full bg-secondary border border-border text-secondary-foreground font-semibold text-sm">
+                      {app}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {product.limitations && product.limitations.length > 0 && (
+                <div>
+                  <h2 className="text-3xl font-extrabold mb-6">Specification Constraints</h2>
+                  <ul className="space-y-3">
+                    {product.limitations.map((limitation, idx) => (
+                      <li key={idx} className="flex items-start gap-3 text-foreground/70 bg-card border border-border rounded-lg p-4">
+                        <span className="text-destructive font-bold mt-0.5">!</span>
+                        <span>{limitation}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* FAQs Section */}
+          {product.faqs && product.faqs.length > 0 && (
+            <div className="mt-20 pt-16 border-t border-border">
+              <h2 className="text-3xl font-extrabold mb-10 text-center">Frequently Asked Questions</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {product.faqs.map((faq, idx) => (
+                  <div key={idx} className="bg-card border border-border rounded-2xl p-8 hover:border-primary/30 transition-colors">
+                    <h4 className="font-bold text-lg mb-3 text-card-foreground">{faq.question}</h4>
+                    <p className="text-card-foreground/70 leading-relaxed">{faq.answer}</p>
+                  </div>
                 ))}
               </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </>

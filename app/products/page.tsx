@@ -5,22 +5,26 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Filter } from "lucide-react";
-import { products, DesignIntent } from "@/data/products";
+import { products, SystemCategory } from "@/data/products";
 
-const intents: ("All" | DesignIntent)[] = [
+const categories: ("All" | SystemCategory)[] = [
   "All", 
-  "Acoustic Performance", 
-  "Visual Identity", 
-  "Exterior Envelope", 
-  "Premium Interior Surfaces"
+  "Ceiling Systems",
+  "Wall Systems",
+  "Façade Systems",
+  "Soffit Systems",
+  "Surface Solutions",
+  "Flooring Systems",
+  "Landscape Systems",
+  "Urban Furniture"
 ];
 
 export default function ProductsHub() {
-  const [activeIntent, setActiveIntent] = useState<"All" | DesignIntent>("All");
+  const [activeCategory, setActiveCategory] = useState<"All" | SystemCategory>("All");
 
-  const filteredProducts = activeIntent === "All" 
+  const filteredProducts = activeCategory === "All" 
     ? products 
-    : products.filter(p => p.designIntent === activeIntent);
+    : products.filter(p => p.systemCategory === activeCategory);
 
   return (
     <div className="min-h-screen bg-background pt-24 pb-20">
@@ -36,7 +40,7 @@ export default function ProductsHub() {
               Design <span className="text-primary">Solutions</span>
             </h1>
             <p className="text-lg md:text-xl text-foreground/70">
-              Discover our enterprise-grade portfolio of architectural solutions engineered for specific design intents.
+              Discover our enterprise-grade portfolio of architectural solutions engineered for specific systems.
             </p>
           </motion.div>
         </div>
@@ -45,17 +49,17 @@ export default function ProductsHub() {
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
           <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-hide">
             <Filter className="w-5 h-5 text-foreground/50 mr-2 shrink-0" />
-            {intents.map((intent) => (
+            {categories.map((category) => (
               <button
-                key={intent}
-                onClick={() => setActiveIntent(intent)}
+                key={category}
+                onClick={() => setActiveCategory(category)}
                 className={`px-6 py-2.5 rounded-full font-bold text-sm tracking-wide whitespace-nowrap transition-all border ${
-                  activeIntent === intent 
+                  activeCategory === category 
                     ? "bg-primary border-primary text-primary-foreground shadow-lg" 
                     : "bg-card border-border text-foreground hover:border-primary/50"
                 }`}
               >
-                {intent}
+                {category}
               </button>
             ))}
           </div>
@@ -98,7 +102,7 @@ export default function ProductsHub() {
                 </div>
 
                 <div className="p-6 flex flex-col flex-grow">
-                  <span className="text-xs font-bold text-primary uppercase tracking-widest mb-2">{product.designIntent}</span>
+                  <span className="text-xs font-bold text-primary uppercase tracking-widest mb-2">{product.systemCategory}</span>
                   <h3 className="text-2xl font-bold text-card-foreground mb-3 tracking-tight group-hover:text-primary transition-colors">
                     {product.title}
                   </h3>
@@ -118,7 +122,7 @@ export default function ProductsHub() {
 
         {filteredProducts.length === 0 && (
           <div className="py-20 text-center">
-            <h3 className="text-2xl font-bold text-foreground/50">No systems found for this intent.</h3>
+            <h3 className="text-2xl font-bold text-foreground/50">No systems found for this category.</h3>
           </div>
         )}
       </div>

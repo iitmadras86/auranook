@@ -80,7 +80,12 @@ export default function UniceilBrandPage() {
               { title: "Baffle & Linear Ceilings", desc: "Linear architectural appearance with superior acoustic benefits.", img: "/assets/uniceil/portfolio_baffle.png" },
               { title: "Acoustic Ceilings", desc: "High NRC rating systems for demanding corporate and educational environments.", img: "/assets/uniceil/portfolio_acoustic.png" },
               { title: "Interior Wall Systems", desc: "Durable, high-impact cladding for high-traffic commercial zones.", img: "/assets/uniceil/portfolio_wall.png" },
-              { title: "Exterior Façades", desc: "Weather-resistant, UV-stable building envelope solutions.", img: "/assets/uniceil/portfolio_facade.png" }
+              { title: "Exterior Façades", desc: "Weather-resistant, UV-stable building envelope solutions.", img: "/assets/uniceil/portfolio_facade.png" },
+              { title: "Soffit Systems", desc: "Premium ceiling systems designed for balconies, verandahs, and overhangs.", img: "/assets/products/prod_facade.png" },
+              { title: "WPE Systems", desc: "Wood Polymer Composite systems designed for resorts, villas, and hospitality exterior projects.", img: "/assets/uniceil/sector_luxury_res.png" },
+              { title: "Decking Systems", desc: "High-performance outdoor decks resistant to moisture and environmental wear.", img: "/assets/uniceil/sector_hospitality.png" },
+              { title: "Louvers", desc: "Elevation design and architectural screening solutions.", img: "/assets/uniceil/sector_commercial.png" },
+              { title: "Railings", desc: "Premium architectural railings for walkways, resorts, and commercial projects.", img: "/assets/uniceil/sector_retail.png" }
             ].map((sys, i) => (
               <motion.div 
                 key={i} 

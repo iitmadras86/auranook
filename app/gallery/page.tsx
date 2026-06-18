@@ -22,7 +22,7 @@ export default function GalleryPage() {
     industry: "All",
     brand: "All",
     designIntent: "All",
-    systemType: "All"
+    systemCategory: "All"
   });
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
@@ -34,7 +34,7 @@ export default function GalleryPage() {
       if (filters.industry !== 'All') match = match && img.industry === filters.industry;
       if (filters.brand !== 'All') match = match && img.brand === filters.brand;
       if (filters.designIntent !== 'All') match = match && img.designIntent === filters.designIntent;
-      if (filters.systemType !== 'All') match = match && img.systemType === filters.systemType;
+      if (filters.systemCategory !== 'All') match = match && img.systemCategory === filters.systemCategory;
       
       if (searchQuery) {
         const q = searchQuery.toLowerCase();
@@ -54,7 +54,7 @@ export default function GalleryPage() {
   };
 
   const clearFilters = () => {
-    setFilters({ industry: "All", brand: "All", designIntent: "All", systemType: "All" });
+    setFilters({ industry: "All", brand: "All", designIntent: "All", systemCategory: "All" });
     setSearchQuery("");
   };
 
@@ -86,7 +86,7 @@ export default function GalleryPage() {
             className="px-6 py-4 border border-border bg-white font-bold flex items-center justify-center gap-2 hover:bg-stone-100 transition-colors shrink-0"
           >
             <Filter size={20} />
-            Filters {(filters.industry !== 'All' || filters.brand !== 'All' || filters.designIntent !== 'All' || filters.systemType !== 'All') && "(Active)"}
+            Filters {(filters.industry !== 'All' || filters.brand !== 'All' || filters.designIntent !== 'All' || filters.systemCategory !== 'All') && "(Active)"}
           </button>
         </div>
 
@@ -121,10 +121,10 @@ export default function GalleryPage() {
                   </select>
                 </div>
                 <div>
-                  <label className="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2 block">System Type</label>
-                  <select value={filters.systemType} onChange={(e) => updateFilter('systemType', e.target.value)} className="w-full p-3 border border-border bg-stone-50 focus:outline-none focus:border-primary">
-                    <option value="All">All Systems</option>
-                    {categories.systemTypes.map(s => <option key={s} value={s}>{s}</option>)}
+                  <label className="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2 block">System Category</label>
+                  <select value={filters.systemCategory} onChange={(e) => updateFilter('systemCategory', e.target.value)} className="w-full p-3 border border-border bg-stone-50 focus:outline-none focus:border-primary">
+                    <option value="All">All Categories</option>
+                    {categories.systemCategories.map(s => <option key={s} value={s}>{s}</option>)}
                   </select>
                 </div>
                 <div className="md:col-span-4 flex justify-end">

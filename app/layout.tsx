@@ -12,9 +12,22 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://auranook.netlify.app"),
-  title: "Auranook | Premium Architectural Solutions & Material Distributor India",
-  description: "Auranook is an authorized specification partner supplying premium architectural ceilings, acoustic systems, exterior façades, and luxury interior surfaces for commercial projects.",
-  keywords: ["Architectural Solutions", "Acoustic Ceilings", "Commercial Interior Surfaces", "Facade Systems India", "The Uniceil Distributor", "Polygranite Sheets", "Building Materials Supplier", "Architectural Material Specification"],
+  title: "Auranook | Architectural Systems & Surface Solutions",
+  description: "Auranook partners with architects, designers, developers and contractors to specify, source and deliver world-class architectural ceiling systems, façade systems, wall systems, surface systems and exterior architectural solutions.",
+  keywords: [
+    "Auranook",
+    "The Uniceil",
+    "Polygranite",
+    "Acoustic Ceiling Systems",
+    "Architectural Façades",
+    "Soffit Systems",
+    "Decking Systems",
+    "Decorative Wall Panels",
+    "WPC Panels",
+    "PVC Wall Panels",
+    "Charcoal Panels",
+    "Architectural Surface Solutions"
+  ],
 };
 
 export default function RootLayout({

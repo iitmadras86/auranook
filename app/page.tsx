@@ -26,6 +26,34 @@ const staggerContainer: Variants = {
   }
 };
 
+const architecturalPillars = [
+  {
+    title: "Interior Architectural Systems",
+    items: ["Baffle Ceilings", "Linear Ceilings", "Acoustic Systems", "Decorative Surfaces"],
+    img: "/assets/uniceil/portfolio_baffle.png"
+  },
+  {
+    title: "Exterior Architectural Systems",
+    items: ["Facades", "Louvers", "Soffits", "Cladding"],
+    img: "/assets/uniceil/portfolio_facade.png"
+  },
+  {
+    title: "Surface & Finishing Solutions",
+    items: ["Polygranite Sheets", "PVC Panels", "WPC Panels", "Charcoal Panels"],
+    img: "/assets/uniceil/portfolio_wall.png"
+  },
+  {
+    title: "Landscape Architecture Solutions",
+    items: ["Decking", "Railings", "Fencing", "Gates"],
+    img: "/assets/uniceil/sector_hospitality.png"
+  },
+  {
+    title: "Sustainable Building Systems",
+    items: ["Recyclable Materials", "Low Maintenance Systems", "Long Lifecycle Products", "Eco-Friendly Composites"],
+    img: "/assets/uniceil/sector_education.png"
+  }
+];
+
 export default function Home() {
   return (
     <div className="flex flex-col w-full overflow-hidden">
@@ -40,7 +68,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black/90 z-10" />
           <Image 
             src="/assets/hero/home_hero.png"
-            alt="Auranook Architectural Solutions"
+            alt="Auranook Architectural Systems"
             fill
             className="object-cover opacity-70"
             priority
@@ -56,14 +84,14 @@ export default function Home() {
           >
             <motion.span variants={fadeInUp} className="text-primary font-bold tracking-widest uppercase text-sm mb-6 flex items-center gap-2">
               <span className="h-px w-8 bg-primary"></span>
-              Auranook Architectural Solutions
+              Auranook Architectural Systems & Surface Solutions
               <span className="h-px w-8 bg-primary"></span>
             </motion.span>
             <motion.h1 variants={fadeInUp} className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white tracking-tight leading-[1.05] mb-8">
-              Premium Ceiling, Façade, Wall & Surface Systems
+              Architectural Systems. Surface Solutions. Built for Modern Design.
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-lg md:text-xl text-white/80 font-medium max-w-2xl mb-12">
-              Connecting architects, designers, developers and contractors with world-class architectural systems for modern design intents.
+              Connecting architects, designers, developers and contractors with premium ceiling, façade, wall, surface and exterior architectural systems.
             </motion.p>
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <Link href="/contact" className="px-8 py-4 rounded-none bg-primary text-white font-bold tracking-wide hover:brightness-110 transition-all flex items-center justify-center gap-2 group">
@@ -110,7 +138,7 @@ export default function Home() {
                   <h3 className="text-4xl font-extrabold text-white mb-2">The Uniceil</h3>
                   <p className="text-white/80 mb-6 max-w-md">Architectural Ceilings, Walls & Façades</p>
                   <ul className="space-y-2 mb-8">
-                    {['Baffle Ceilings', 'Wall Systems', 'Facades', 'Acoustic Solutions'].map(item => (
+                    {['Baffle Ceilings', 'Wall Systems', 'Facades', 'Soffit Systems'].map(item => (
                       <li key={item} className="text-white flex items-center gap-2">
                         <CheckCircle2 size={16} className="text-primary" /> {item}
                       </li>
@@ -136,9 +164,9 @@ export default function Home() {
                 <div className="absolute inset-0 bg-black/40" />
                 <div className="absolute inset-0 p-10 flex flex-col justify-end">
                   <h3 className="text-4xl font-extrabold text-white mb-2">Polygranite</h3>
-                  <p className="text-white/80 mb-6 max-w-md">Premium Decorative Surfaces</p>
+                  <p className="text-white/80 mb-6 max-w-md">Surface Solutions Hub</p>
                   <ul className="space-y-2 mb-8">
-                    {['Decorative Surfaces', 'Interior Cladding', 'Premium Finishes'].map(item => (
+                    {['Polygranite Sheets', 'WPC Panels', 'Charcoal Panels', 'PVC Flooring'].map(item => (
                       <li key={item} className="text-white flex items-center gap-2">
                         <CheckCircle2 size={16} className="text-primary" /> {item}
                       </li>
@@ -154,7 +182,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3. Solutions by Sector */}
+      {/* 3. Architectural Systems Sections */}
       <section className="py-32 bg-foreground text-background">
         <div className="container mx-auto px-6 md:px-12">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
@@ -164,39 +192,43 @@ export default function Home() {
               viewport={{ once: true }}
               variants={fadeInUp}
             >
-              <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Design Intent Solutions</span>
+              <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Complete Ecosystem</span>
               <h2 className="text-4xl md:text-5xl font-extrabold text-background tracking-tight max-w-2xl">
-                Systems Configured for Every Sector
+                Integrated Architectural Systems
               </h2>
             </motion.div>
-            <Link href="/solutions" className="shrink-0 px-8 py-4 border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-colors flex items-center gap-2">
-              View All Solutions
+            <Link href="/products" className="shrink-0 px-8 py-4 border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-colors flex items-center gap-2">
+              View All Systems
               <ArrowRight size={18} />
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {[
-              { name: "Commercial", img: "/assets/uniceil/sector_commercial.png" },
-              { name: "Hospitality", img: "/assets/uniceil/sector_hospitality.png" },
-              { name: "Retail", img: "/assets/uniceil/sector_retail.png" },
-              { name: "Healthcare", img: "/assets/uniceil/sector_healthcare.png" },
-              { name: "Education", img: "/assets/uniceil/sector_education.png" },
-              { name: "Luxury Res.", img: "/assets/uniceil/sector_luxury_res.png" },
-            ].map((sector, idx) => (
-              <Link href={`/solutions#${sector.name.toLowerCase().replace(' ', '-')}`} key={sector.name}>
-                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: idx * 0.1 }}
-                  viewport={{ once: true }}
-                  className="group relative aspect-square overflow-hidden bg-muted flex items-end p-4"
-                >
-                  <Image src={sector.img} alt={sector.name} fill className="object-cover opacity-60 group-hover:scale-110 group-hover:opacity-100 transition-all duration-500" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
-                  <h4 className="relative z-10 text-white font-bold text-lg md:text-xl">{sector.name}</h4>
-                </motion.div>
-              </Link>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {architecturalPillars.map((pillar, idx) => (
+              <motion.div 
+                key={pillar.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                viewport={{ once: true }}
+                className="group bg-stone-900 border border-stone-800 overflow-hidden"
+              >
+                <div className="relative h-64 overflow-hidden">
+                  <Image src={pillar.img} alt={pillar.title} fill className="object-cover opacity-70 group-hover:scale-110 group-hover:opacity-100 transition-all duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-stone-900 to-transparent" />
+                </div>
+                <div className="p-8 relative z-10 -mt-12">
+                  <h4 className="text-white font-bold text-2xl mb-6">{pillar.title}</h4>
+                  <ul className="space-y-3">
+                    {pillar.items.map(item => (
+                      <li key={item} className="text-stone-300 flex items-center gap-2">
+                        <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </motion.div>
             ))}
           </div>
         </div>

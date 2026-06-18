@@ -10,12 +10,12 @@ const solutions = [
     id: "commercial",
     title: "Commercial Offices",
     challenge: "Modern open-plan offices require exceptional acoustic management, high-performance lighting integration, and corporate brand alignment without compromising on the architectural vision.",
-    recommended: "Acoustic Baffle Systems & Interior Wall Cladding",
+    recommended: "Acoustic Baffles, PVC Flooring, Charcoal Panels",
     brand: "The Uniceil & Polygranite",
     benefits: [
       "Significant NRC Reduction for focused work",
       "Seamless integration with HVAC and Lighting",
-      "High-durability wall protection for high-traffic corridors"
+      "High-durability surfaces for high-traffic corridors"
     ],
     img: "/assets/uniceil/sector_commercial.png"
   },
@@ -23,11 +23,11 @@ const solutions = [
     id: "hospitality",
     title: "Hospitality",
     challenge: "Hotels and resorts demand luxurious, premium surface finishes that are capable of withstanding heavy guest traffic and rigorous cleaning protocols.",
-    recommended: "Decorative Surface Sheets & Architectural Façades",
+    recommended: "Polygranite Sheets, Decorative Panels, Soffits, Decking",
     brand: "Polygranite & The Uniceil",
     benefits: [
       "Zero-maintenance marble and stone aesthetics",
-      "100% waterproof surfaces for premium wet zones",
+      "Seamless exterior overhangs and balconies",
       "Striking exterior building envelopes to attract guests"
     ],
     img: "/assets/uniceil/sector_hospitality.png"
@@ -36,7 +36,7 @@ const solutions = [
     id: "retail",
     title: "Retail",
     challenge: "Boutiques and showrooms need to establish an immediate, compelling visual identity that highlights merchandise while enduring constant footfall.",
-    recommended: "3D Geometric Panels & SPC Commercial Flooring",
+    recommended: "Feature Walls, 3D Panels, Decorative Surfaces",
     brand: "Polygranite",
     benefits: [
       "Unique geometric branding opportunities",
@@ -49,7 +49,7 @@ const solutions = [
     id: "healthcare",
     title: "Healthcare",
     challenge: "Hospitals require hygienic, easy-to-clean surfaces that meet stringent infection control standards while maintaining a calming environment for patients.",
-    recommended: "Hygienic Wall Systems & Linear Ceilings",
+    recommended: "Hygienic Wall Panels, Durable Ceiling Systems",
     brand: "The Uniceil & Polygranite",
     benefits: [
       "Non-porous, antimicrobial surface options",
@@ -62,7 +62,7 @@ const solutions = [
     id: "education",
     title: "Education",
     challenge: "Schools and universities must prioritize speech intelligibility in lecture halls and extreme durability in public corridors.",
-    recommended: "High-NRC Acoustic Ceilings & Impact-Resistant Surfaces",
+    recommended: "Acoustic Ceilings, Durable Surface Systems",
     brand: "The Uniceil & Polygranite",
     benefits: [
       "Enhanced speech intelligibility for learning",
@@ -75,14 +75,40 @@ const solutions = [
     id: "luxury-residential",
     title: "Luxury Residential",
     challenge: "High-end homes and residential developments require bespoke, opulent finishes that reflect the owner's status without the heavy maintenance of natural stone.",
-    recommended: "Premium Interior Surfaces",
-    brand: "Polygranite",
+    recommended: "Decking, Decorative Panels, Feature Walls, Soffits",
+    brand: "Polygranite & The Uniceil",
     benefits: [
       "Flawless high-gloss natural stone textures",
-      "Moisture resistance for luxury coastal properties",
+      "Premium outdoor living and decking systems",
       "Substantial structural load reduction vs. real stone"
     ],
     img: "/assets/uniceil/sector_luxury_res.png"
+  },
+  {
+    id: "airports-transit",
+    title: "Airports & Transit",
+    challenge: "Transit hubs require highly durable, large-scale acoustic and architectural systems to manage crowd noise and provide structural aesthetics.",
+    recommended: "Baffle Ceilings, Architectural Facades, Louvers",
+    brand: "The Uniceil",
+    benefits: [
+      "Large-scale acoustic control",
+      "Durable exterior architectural screening",
+      "Weather-resistant performance"
+    ],
+    img: "/assets/uniceil/sector_commercial.png"
+  },
+  {
+    id: "resorts-landscape",
+    title: "Resorts & Landscape Projects",
+    challenge: "Outdoor projects require premium finishing systems that blend naturally with the environment while resisting moisture, UV rays, and physical wear.",
+    recommended: "Decking, Railings, Outdoor Furniture",
+    brand: "Polygranite & The Uniceil",
+    benefits: [
+      "Weather and UV resistant materials",
+      "Seamless indoor-to-outdoor aesthetic flow",
+      "Zero maintenance outdoor finishes"
+    ],
+    img: "/assets/uniceil/sector_hospitality.png"
   }
 ];
 
