@@ -17,7 +17,7 @@ export const galleryData: GalleryImage[] = [
   // ---------------------------------------------------------
   {
     id: "gal-001",
-    src: "/assets/products/prod_baffle_ceiling.png",
+    src: "/assets/systems/baffle-ceilings/sys_baffle_1.png",
     title: "Tech Hub Linear Baffles",
     description: "Continuous linear baffle ceiling installation designed to reduce reverberation in a high-traffic open-plan tech office.",
     industry: "Commercial Office",
@@ -29,7 +29,7 @@ export const galleryData: GalleryImage[] = [
   },
   {
     id: "gal-002",
-    src: "/assets/uniceil/sector_commercial.png",
+    src: "/assets/systems/linear-ceilings/sys_linear_1.png",
     title: "Executive Boardroom Aesthetics",
     description: "Premium acoustic ceiling tiles seamlessly integrated with architectural lighting for executive privacy.",
     industry: "Commercial Office",
@@ -41,7 +41,7 @@ export const galleryData: GalleryImage[] = [
   },
   {
     id: "gal-003",
-    src: "/assets/products/prod_polygranite.png",
+    src: "/assets/systems/polygranite/sys_polygranite_1.png",
     title: "Reception Area Cladding",
     description: "High-gloss decorative Polygranite surface applied to the main reception desk and backdrop.",
     industry: "Commercial Office",
@@ -53,7 +53,7 @@ export const galleryData: GalleryImage[] = [
   },
   {
     id: "gal-004",
-    src: "/assets/uniceil/sector_hospitality.png",
+    src: "/assets/systems/facade/sys_facade_1.png",
     title: "Hotel Atrium Facade",
     description: "Durable exterior facade system providing both weather resistance and a striking visual identity for a luxury hotel.",
     industry: "Hospitality",
@@ -65,7 +65,7 @@ export const galleryData: GalleryImage[] = [
   },
   {
     id: "gal-005",
-    src: "/assets/uniceil/sector_luxury_res.png",
+    src: "/assets/systems/polygranite/sys_polygranite_2.png",
     title: "Luxury Suite Walls",
     description: "Polygranite wall panels delivering zero-maintenance luxury to hotel suite interiors.",
     industry: "Hospitality",
@@ -77,7 +77,7 @@ export const galleryData: GalleryImage[] = [
   },
   {
     id: "gal-006",
-    src: "/assets/uniceil/sector_healthcare.png",
+    src: "/assets/systems/baffle-ceilings/sys_baffle_2.png",
     title: "Hospital Corridor Acoustics",
     description: "Acoustic wall and ceiling treatments ensuring a quiet healing environment and meeting strict hygiene standards.",
     industry: "Healthcare",
@@ -89,7 +89,7 @@ export const galleryData: GalleryImage[] = [
   },
   {
     id: "gal-007",
-    src: "/assets/uniceil/sector_retail.png",
+    src: "/assets/systems/baffle-ceilings/sys_baffle_3.png",
     title: "Retail Flagship Display",
     description: "Custom ceiling and wall system configurations for a premium retail flagship store.",
     industry: "Retail",
@@ -105,7 +105,7 @@ export const galleryData: GalleryImage[] = [
   // ---------------------------------------------------------
   {
     id: "gal-ap-01",
-    src: "/assets/uniceil/sector_retail.png",
+    src: "/assets/systems/baffle-ceilings/sys_baffle_4.png",
     title: "Open-Plan Acoustic Baffles",
     description: "Extensive linear baffle system installed across a modern open-plan office to minimize speech transmission.",
     industry: "Commercial Office",
@@ -117,7 +117,7 @@ export const galleryData: GalleryImage[] = [
   },
   {
     id: "gal-ap-02",
-    src: "/assets/products/prod_baffle_ceiling.png",
+    src: "/assets/systems/baffle-ceilings/sys_baffle_5.png",
     title: "University Auditorium Acoustics",
     description: "High-NRC ceiling panels configured specifically for a large-scale educational auditorium.",
     industry: "Education",
@@ -129,7 +129,7 @@ export const galleryData: GalleryImage[] = [
   },
   {
     id: "gal-ap-03",
-    src: "/assets/uniceil/sector_luxury_res.png",
+    src: "/assets/systems/linear-ceilings/sys_linear_2.png",
     title: "Executive Conference Acoustics",
     description: "Sound-dampening ceiling tiles in a glass-walled conference room ensuring complete privacy.",
     industry: "Commercial Office",
@@ -141,7 +141,7 @@ export const galleryData: GalleryImage[] = [
   },
   {
     id: "gal-ap-04",
-    src: "/assets/uniceil/sector_retail.png",
+    src: "/assets/systems/baffle-ceilings/sys_baffle_6.png",
     title: "Collaborative Zone Sound Control",
     description: "Suspended acoustic clouds positioned over collaborative zones to contain localized noise.",
     industry: "Commercial Office",
@@ -153,7 +153,7 @@ export const galleryData: GalleryImage[] = [
   },
   {
     id: "gal-ap-05",
-    src: "/assets/uniceil/sector_luxury_res.png",
+    src: "/assets/systems/linear-ceilings/sys_linear_3.png",
     title: "Library Quiet Zones",
     description: "Seamless acoustic ceiling integration in a university library ensuring a distraction-free environment.",
     industry: "Education",
@@ -169,7 +169,7 @@ export const galleryData: GalleryImage[] = [
   // ---------------------------------------------------------
   {
     id: "gal-vi-01",
-    src: "/assets/uniceil/sector_commercial.png",
+    src: "/assets/systems/baffle-ceilings/sys_baffle_7.png",
     title: "Corporate Reception Statement",
     description: "A sweeping architectural ceiling feature establishing an immediate premium brand identity.",
     industry: "Commercial Office",
@@ -181,7 +181,7 @@ export const galleryData: GalleryImage[] = [
   },
   {
     id: "gal-vi-02",
-    src: "/assets/products/prod_facade.png",
+    src: "/assets/systems/charcoal/sys_charcoal_1.png",
     title: "Feature Wall Geometry",
     description: "3D architectural wall panels creating dynamic shadows and a contemporary focal point.",
     industry: "Retail",
@@ -193,7 +193,7 @@ export const galleryData: GalleryImage[] = [
   },
   {
     id: "gal-vi-03",
-    src: "/assets/uniceil/portfolio_facade.png",
+    src: "/assets/systems/linear-ceilings/sys_linear_4.png",
     title: "Branded Atrium Space",
     description: "Custom-colored woodgrain baffles complementing the corporate brand palette in a central atrium.",
     industry: "Commercial Office",
@@ -205,7 +205,7 @@ export const galleryData: GalleryImage[] = [
   },
   {
     id: "gal-vi-04",
-    src: "/assets/products/prod_baffle_ceiling.png",
+    src: "/assets/systems/polygranite/sys_polygranite_3.png",
     title: "Luxury Boutique Cladding",
     description: "High-contrast decorative surfaces framing a high-end luxury boutique entrance.",
     industry: "Retail",
@@ -217,7 +217,7 @@ export const galleryData: GalleryImage[] = [
   },
   {
     id: "gal-vi-05",
-    src: "/assets/uniceil/sector_hospitality.png",
+    src: "/assets/systems/linear-ceilings/sys_linear_5.png",
     title: "Architectural Stairwell",
     description: "Continuous linear ceilings flowing smoothly down a monumental architectural stairwell.",
     industry: "Commercial Office",
@@ -233,7 +233,7 @@ export const galleryData: GalleryImage[] = [
   // ---------------------------------------------------------
   {
     id: "gal-ee-01",
-    src: "/assets/uniceil/sector_commercial.png",
+    src: "/assets/systems/facade/sys_facade_2.png",
     title: "Modern Commercial Tower Façade",
     description: "Weather-resistant, UV-stable exterior cladding system on a high-rise commercial tower.",
     industry: "Commercial Office",
@@ -245,7 +245,7 @@ export const galleryData: GalleryImage[] = [
   },
   {
     id: "gal-ee-02",
-    src: "/assets/uniceil/portfolio_facade.png",
+    src: "/assets/systems/facade/sys_facade_3.png",
     title: "Institutional Building Envelope",
     description: "Durable architectural cladding protecting a modern educational institution building.",
     industry: "Education",
@@ -257,7 +257,7 @@ export const galleryData: GalleryImage[] = [
   },
   {
     id: "gal-ee-03",
-    src: "/assets/uniceil/portfolio_wall.png",
+    src: "/assets/systems/facade/sys_facade_4.png",
     title: "Hospitality Resort Exterior",
     description: "Premium exterior façade systems that withstand coastal weather conditions for luxury resorts.",
     industry: "Hospitality",
@@ -269,7 +269,7 @@ export const galleryData: GalleryImage[] = [
   },
   {
     id: "gal-ee-04",
-    src: "/assets/uniceil/sector_hospitality.png",
+    src: "/assets/systems/facade/sys_facade_5.png",
     title: "Geometric Façade Detailing",
     description: "Complex geometric exterior cladding showcasing the precision and flexibility of the system.",
     industry: "Commercial Office",
@@ -281,7 +281,7 @@ export const galleryData: GalleryImage[] = [
   },
   {
     id: "gal-ee-05",
-    src: "/assets/uniceil/portfolio_baffle.png",
+    src: "/assets/systems/facade/sys_facade_6.png",
     title: "Transit Hub Weather Shield",
     description: "Robust exterior envelope system applied to a high-traffic metropolitan transit hub.",
     industry: "Airports & Transit Hubs",
@@ -297,7 +297,7 @@ export const galleryData: GalleryImage[] = [
   // ---------------------------------------------------------
   {
     id: "gal-pis-01",
-    src: "/assets/uniceil/portfolio_wall.png",
+    src: "/assets/systems/polygranite/sys_polygranite_4.png",
     title: "Luxury Hotel Lobby Finishes",
     description: "Extensive marble-finish Polygranite application delivering absolute opulence without the weight of natural stone.",
     industry: "Hospitality",
@@ -309,7 +309,7 @@ export const galleryData: GalleryImage[] = [
   },
   {
     id: "gal-pis-02",
-    src: "/assets/uniceil/portfolio_wall.png",
+    src: "/assets/systems/polygranite/sys_polygranite_5.png",
     title: "High-End Residential Masterpiece",
     description: "Flawless interior wall treatments in a luxury sea-facing residence.",
     industry: "Luxury Residential",
@@ -321,7 +321,7 @@ export const galleryData: GalleryImage[] = [
   },
   {
     id: "gal-pis-03",
-    src: "/assets/uniceil/portfolio_wall.png",
+    src: "/assets/systems/pvc-panels/sys_pvc_1.png",
     title: "Executive Washroom Upgrades",
     description: "100% moisture-resistant, hyper-hygienic premium surfaces for corporate executive washrooms.",
     industry: "Commercial Office",
@@ -333,7 +333,7 @@ export const galleryData: GalleryImage[] = [
   },
   {
     id: "gal-pis-04",
-    src: "/assets/uniceil/sector_hospitality.png",
+    src: "/assets/systems/wpc-panels/sys_wpc_1.png",
     title: "Spa & Wellness Retreat Cladding",
     description: "Warm, woodgrain-finish decorative surfaces creating a calming, organic environment in a luxury spa.",
     industry: "Hospitality",
@@ -345,7 +345,7 @@ export const galleryData: GalleryImage[] = [
   },
   {
     id: "gal-pis-05",
-    src: "/assets/uniceil/portfolio_acoustic.png",
+    src: "/assets/systems/polygranite/sys_polygranite_6.png",
     title: "Corporate Corridor Aesthetics",
     description: "High-impact resistant, visually stunning wall panels lining the primary circulation routes of a global HQ.",
     industry: "Commercial Office",

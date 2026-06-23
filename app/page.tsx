@@ -30,27 +30,27 @@ const architecturalPillars = [
   {
     title: "Interior Architectural Systems",
     items: ["Baffle Ceilings", "Linear Ceilings", "Acoustic Systems", "Decorative Surfaces"],
-    img: "/assets/uniceil/portfolio_baffle.png"
+    img: "/assets/systems/baffle-ceilings/sys_baffle_2.png"
   },
   {
     title: "Exterior Architectural Systems",
     items: ["Facades", "Louvers", "Soffits", "Cladding"],
-    img: "/assets/uniceil/portfolio_facade.png"
+    img: "/assets/systems/facade/sys_facade_2.png"
   },
   {
     title: "Surface & Finishing Solutions",
     items: ["Polygranite Sheets", "PVC Panels", "WPC Panels", "Charcoal Panels"],
-    img: "/assets/uniceil/portfolio_wall.png"
+    img: "/assets/systems/pvc-panels/sys_pvc_1.png"
   },
   {
     title: "Landscape Architecture Solutions",
     items: ["Decking", "Railings", "Fencing", "Gates"],
-    img: "/assets/uniceil/sector_hospitality.png"
+    img: "/assets/systems/soffit/sys_soffit_3.png"
   },
   {
     title: "Sustainable Building Systems",
     items: ["Recyclable Materials", "Low Maintenance Systems", "Long Lifecycle Products", "Eco-Friendly Composites"],
-    img: "/assets/uniceil/sector_education.png"
+    img: "/assets/systems/baffle-ceilings/sys_baffle_5.png"
   }
 ];
 
@@ -132,7 +132,7 @@ export default function Home() {
               className="group relative bg-muted rounded-none overflow-hidden"
             >
               <div className="aspect-[4/3] relative">
-                <Image src="/assets/products/prod_baffle_ceiling.png" alt="The Uniceil" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+                <Image src="/assets/systems/baffle-ceilings/sys_baffle_3.png" alt="The Uniceil" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-black/40" />
                 <div className="absolute inset-0 p-10 flex flex-col justify-end">
                   <h3 className="text-4xl font-extrabold text-white mb-2">The Uniceil</h3>
@@ -160,7 +160,7 @@ export default function Home() {
               className="group relative bg-muted rounded-none overflow-hidden"
             >
               <div className="aspect-[4/3] relative">
-                <Image src="/assets/products/prod_polygranite.png" alt="Polygranite" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
+                <Image src="/assets/systems/polygranite/sys_polygranite_2.png" alt="Polygranite" fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-black/40" />
                 <div className="absolute inset-0 p-10 flex flex-col justify-end">
                   <h3 className="text-4xl font-extrabold text-white mb-2">Polygranite</h3>

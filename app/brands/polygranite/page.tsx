@@ -13,7 +13,7 @@ export default function PolygraniteBrandPage() {
         <div className="absolute inset-0 w-full h-full">
           <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-transparent z-10" />
           <Image 
-            src="/assets/products/polygranite_sheet.png"
+            src="/assets/systems/polygranite/sys_polygranite_5.png"
             alt="Polygranite - Premium Surface Solutions"
             fill
             className="object-cover opacity-80"
@@ -74,12 +74,12 @@ export default function PolygraniteBrandPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { title: "Polygranite Sheets", intent: "Surface Solutions", img: "/assets/products/polygranite_sheet.png", applications: "Walls, Countertops, Decorative Surfaces, Cladding" },
-              { title: "PVC Wall Panels", intent: "Surface Solutions", img: "/assets/products/hero_polygranite.png", applications: "Commercial Interiors, Residential Interiors, Hospitality" },
-              { title: "WPC Panels", intent: "Surface Solutions", img: "/assets/uniceil/sector_hospitality.png", applications: "Moisture-Prone Areas, Exterior Applications" },
-              { title: "3D Wall Panels", intent: "Surface Solutions", img: "/assets/products/hero_3d_panels.png", applications: "Feature Walls, Reception Areas, Retail Spaces" },
-              { title: "Charcoal Panels", intent: "Surface Solutions", img: "/assets/uniceil/sector_luxury_res.png", applications: "Luxury Interiors, Commercial Spaces, Decorative Features" },
-              { title: "PVC Flooring", intent: "Flooring Systems", img: "/assets/products/hero_spc.png", applications: "Offices, Retail, Commercial Interiors" },
+              { title: "Polygranite Sheets", intent: "Surface Solutions", img: "/assets/systems/polygranite/sys_polygranite_8.png", applications: "Walls, Countertops, Decorative Surfaces, Cladding" },
+              { title: "PVC Wall Panels", intent: "Surface Solutions", img: "/assets/systems/pvc-panels/sys_pvc_4.png", applications: "Commercial Interiors, Residential Interiors, Hospitality" },
+              { title: "WPC Panels", intent: "Surface Solutions", img: "/assets/systems/wpc-panels/sys_wpc_1.png", applications: "Moisture-Prone Areas, Exterior Applications" },
+              { title: "3D Wall Panels", intent: "Surface Solutions", img: "/assets/systems/wpc-panels/sys_wpc_3.png", applications: "Feature Walls, Reception Areas, Retail Spaces" },
+              { title: "Charcoal Panels", intent: "Surface Solutions", img: "/assets/systems/charcoal/sys_charcoal_3.png", applications: "Luxury Interiors, Commercial Spaces, Decorative Features" },
+              { title: "PVC Flooring", intent: "Flooring Systems", img: "/assets/systems/pvc-panels/sys_pvc_5.png", applications: "Offices, Retail, Commercial Interiors" },
             ].map((col, i) => (
               <div key={i} className="group cursor-pointer">
                 <div className="relative h-72 overflow-hidden bg-muted mb-6">
@@ -101,7 +101,7 @@ export default function PolygraniteBrandPage() {
         <div className="container mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative aspect-[4/3] bg-muted">
-               <Image src="/assets/projects/polygranite_sheet.png" alt="Polygranite Applications" fill className="object-cover" />
+               <Image src="/assets/systems/polygranite/sys_polygranite_6.png" alt="Polygranite Applications" fill className="object-cover" />
             </div>
             <div>
               <h2 className="text-4xl font-extrabold mb-6 text-white">Ideal Application Areas</h2>

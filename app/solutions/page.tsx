@@ -17,7 +17,7 @@ const solutions = [
       "Seamless integration with HVAC and Lighting",
       "High-durability surfaces for high-traffic corridors"
     ],
-    img: "/assets/uniceil/sector_commercial.png"
+    img: "/assets/systems/linear-ceilings/sys_linear_1.png"
   },
   {
     id: "hospitality",
@@ -30,7 +30,7 @@ const solutions = [
       "Seamless exterior overhangs and balconies",
       "Striking exterior building envelopes to attract guests"
     ],
-    img: "/assets/uniceil/sector_hospitality.png"
+    img: "/assets/systems/baffle-ceilings/sys_baffle_8.png"
   },
   {
     id: "retail",
@@ -43,7 +43,7 @@ const solutions = [
       "Commercial-grade wear layer for extreme foot traffic",
       "Rapid installation minimizing store downtime"
     ],
-    img: "/assets/uniceil/sector_retail.png"
+    img: "/assets/systems/polygranite/sys_polygranite_7.png"
   },
   {
     id: "healthcare",
@@ -56,7 +56,7 @@ const solutions = [
       "Washable ceiling systems",
       "Class-A fire compliance"
     ],
-    img: "/assets/uniceil/sector_healthcare.png"
+    img: "/assets/systems/pvc-panels/sys_pvc_2.png"
   },
   {
     id: "education",
@@ -69,7 +69,7 @@ const solutions = [
       "High impact resistance against daily wear",
       "Sustainable and safe material composition"
     ],
-    img: "/assets/uniceil/sector_education.png"
+    img: "/assets/systems/baffle-ceilings/sys_baffle_6.png"
   },
   {
     id: "luxury-residential",
@@ -82,7 +82,7 @@ const solutions = [
       "Premium outdoor living and decking systems",
       "Substantial structural load reduction vs. real stone"
     ],
-    img: "/assets/uniceil/sector_luxury_res.png"
+    img: "/assets/systems/polygranite/sys_polygranite_3.png"
   },
   {
     id: "airports-transit",
@@ -95,7 +95,7 @@ const solutions = [
       "Durable exterior architectural screening",
       "Weather-resistant performance"
     ],
-    img: "/assets/uniceil/sector_commercial.png"
+    img: "/assets/systems/facade/sys_facade_2.png"
   },
   {
     id: "resorts-landscape",
@@ -108,7 +108,7 @@ const solutions = [
       "Seamless indoor-to-outdoor aesthetic flow",
       "Zero maintenance outdoor finishes"
     ],
-    img: "/assets/uniceil/sector_hospitality.png"
+    img: "/assets/systems/facade/sys_facade_3.png"
   }
 ];
 

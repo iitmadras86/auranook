@@ -41,7 +41,7 @@ export default function WhyAuranook() {
         <div className="absolute inset-0 w-full h-full">
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent z-10" />
           <Image 
-            src="/assets/projects/about_hero.png"
+            src="/assets/systems/facade/sys_facade_5.png"
             alt="Why Partner With Auranook"
             fill
             className="object-cover opacity-70"
@@ -88,7 +88,7 @@ export default function WhyAuranook() {
                  transition={{ duration: 0.8, delay: 0.2 }}
                  className="aspect-[4/5] relative rounded-3xl overflow-hidden group shadow-2xl mt-12"
                >
-                 <Image src="/assets/products/prod_baffle_ceiling.png" alt="Acoustic Ceiling Architecture" fill className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-out" />
+                 <Image src="/assets/systems/baffle-ceilings/sys_baffle_4.png" alt="Acoustic Ceiling Architecture" fill className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-out" />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
                    <p className="text-white font-bold text-lg tracking-wide">Precision Engineering</p>
                  </div>
@@ -102,13 +102,13 @@ export default function WhyAuranook() {
                  className="space-y-4 md:space-y-6"
                >
                  <div className="aspect-square relative rounded-3xl overflow-hidden group shadow-xl">
-                   <Image src="/assets/products/prod_polygranite.png" alt="Premium Surfaces" fill className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-out" />
+                   <Image src="/assets/systems/polygranite/sys_polygranite_4.png" alt="Premium Surfaces" fill className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-out" />
                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
                      <p className="text-white font-bold text-lg tracking-wide">Material Mastery</p>
                    </div>
                  </div>
                  <div className="aspect-[4/3] relative rounded-3xl overflow-hidden group shadow-xl">
-                   <Image src="/assets/products/prod_facade.png" alt="Facade Integration" fill className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-out" />
+                   <Image src="/assets/systems/facade/sys_facade_6.png" alt="Facade Integration" fill className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-out" />
                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
                      <p className="text-white font-bold text-lg tracking-wide">Flawless Integration</p>
                    </div>

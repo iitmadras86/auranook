@@ -29,9 +29,9 @@ export const projects: Project[] = [
       'Rapid Installation Capability'
     ],
     designIntent: 'Acoustic Performance',
-    heroImage: '/assets/uniceil/portfolio_baffle.png',
+    heroImage: '/assets/systems/baffle-ceilings/sys_baffle_7.png',
     gallery: [
-      '/assets/uniceil/portfolio_baffle.png'
+      '/assets/systems/baffle-ceilings/sys_baffle_7.png'
     ]
   },
   {
@@ -49,9 +49,9 @@ export const projects: Project[] = [
       'Structural Load Reduction'
     ],
     designIntent: 'Premium Interior Surfaces',
-    heroImage: '/assets/products/prod_facade.png',
+    heroImage: '/assets/projects/sea_view_residence.png',
     gallery: [
-      '/assets/uniceil/sector_hospitality.png'
+      '/assets/projects/sea_view_residence.png'
     ]
   }
 ];
