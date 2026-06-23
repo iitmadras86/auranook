@@ -77,7 +77,7 @@ export default function PolygraniteBrandPage() {
               { title: "Polygranite Sheets", intent: "Surface Solutions", img: "/assets/systems/polygranite/sys_polygranite_8.png", applications: "Walls, Countertops, Decorative Surfaces, Cladding" },
               { title: "PVC Wall Panels", intent: "Surface Solutions", img: "/assets/systems/pvc-panels/sys_pvc_4.png", applications: "Commercial Interiors, Residential Interiors, Hospitality" },
               { title: "WPC Panels", intent: "Surface Solutions", img: "/assets/systems/wpc-panels/sys_wpc_1.png", applications: "Moisture-Prone Areas, Exterior Applications" },
-              { title: "3D Wall Panels", intent: "Surface Solutions", img: "/assets/systems/wpc-panels/sys_wpc_3.png", applications: "Feature Walls, Reception Areas, Retail Spaces" },
+              { title: "3D Wall Panels", intent: "Surface Solutions", img: "/assets/products/prod_3d_wall.png", applications: "Feature Walls, Reception Areas, Retail Spaces" },
               { title: "Charcoal Panels", intent: "Surface Solutions", img: "/assets/systems/charcoal/sys_charcoal_3.png", applications: "Luxury Interiors, Commercial Spaces, Decorative Features" },
               { title: "PVC Flooring", intent: "Flooring Systems", img: "/assets/systems/pvc-panels/sys_pvc_5.png", applications: "Offices, Retail, Commercial Interiors" },
             ].map((col, i) => (

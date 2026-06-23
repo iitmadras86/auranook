@@ -63,7 +63,7 @@ export default function UniceilPage() {
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             <div className="w-full lg:w-1/2 relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl group">
               <Image 
-                src="/assets/uniceil/hero_luxury.png" 
+                src="/assets/systems/baffle-ceilings/sys_baffle_6.png" 
                 alt="uPVC Baffle Ceilings"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -110,7 +110,7 @@ export default function UniceilPage() {
           <div className="flex flex-col lg:flex-row-reverse gap-16 items-center">
             <div className="w-full lg:w-1/2 relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl group">
               <Image 
-                src="/assets/uniceil/hero_luxury.png" 
+                src="/assets/systems/polygranite/sys_polygranite_3.png" 
                 alt="Decorative Wall Systems"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -162,7 +162,7 @@ export default function UniceilPage() {
                 Exterior-grade uPVC profiles engineered for extreme weather resistance. High UV stability ensures vibrant colors for decades, while specialized mounting systems withstand high wind loads.
               </p>
               <div className="aspect-[16/9] relative rounded-xl overflow-hidden mb-8">
-                <Image src="/assets/uniceil/hero_luxury.png" alt="Facade" fill className="object-cover" />
+                <Image src="/assets/systems/facade/sys_facade_6.png" alt="Facade" fill className="object-cover" />
               </div>
               <ul className="space-y-2 mb-8">
                 <li className="text-sm text-foreground font-medium flex items-center gap-2"><div className="w-1.5 h-1.5 bg-primary rounded-full"/> Extreme Weather Durability</li>
@@ -178,7 +178,7 @@ export default function UniceilPage() {
                 Custom-engineered noise reduction systems for airports, educational institutions, and corporate spaces. Our NRC-rated baffles and wall panels control reverberation beautifully.
               </p>
               <div className="aspect-[16/9] relative rounded-xl overflow-hidden mb-8">
-                <Image src="/assets/projects/about_hero.png" alt="Acoustic Solutions" fill className="object-cover" />
+                <Image src="/assets/systems/baffle-ceilings/sys_baffle_4.png" alt="Acoustic Solutions" fill className="object-cover" />
               </div>
               <ul className="space-y-2 mb-8">
                 <li className="text-sm text-foreground font-medium flex items-center gap-2"><div className="w-1.5 h-1.5 bg-primary rounded-full"/> NRC Ratings up to 0.85</li>

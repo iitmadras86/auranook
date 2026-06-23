@@ -65,11 +65,11 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(globalSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(globalSchema) }} suppressHydrationWarning />
       </head>
-      <body className={`${manrope.variable} font-sans antialiased bg-stone-50 text-stone-900 selection:bg-primary selection:text-white`}>
+      <body className={`${manrope.variable} font-sans antialiased bg-stone-50 text-stone-900 selection:bg-primary selection:text-white`} suppressHydrationWarning>
         <Navbar />
         <main className="min-h-screen flex flex-col relative">
           {children}
